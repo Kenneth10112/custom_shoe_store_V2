@@ -19,14 +19,6 @@
         End Try
     End Sub
 
-    Private Sub btn_logs_Click(sender As Object, e As EventArgs) Handles btn_logs.Click
-
-    End Sub
-
-    Private Sub btn_Login_Click(sender As Object, e As EventArgs) Handles btn_Login.Click
-
-    End Sub
-
     Private Sub btn_Accounts_Click(sender As Object, e As EventArgs) Handles btn_Accounts.Click
         Try
             If mainTabControl.SelectedIndex <> 1 Then
@@ -46,6 +38,31 @@
     End Sub
 
     Private Sub btn_Orders_Click(sender As Object, e As EventArgs) Handles btn_Orders.Click
+        Try
+            If mainTabControl.SelectedIndex <> 4 Then
+                mainTabControl.SelectedIndex = 4
+            End If
+        Catch ex As Exception
+
+        End Try
+    End Sub
+    Private Sub btn_logs_Click(sender As Object, e As EventArgs) Handles btn_logs.Click
+        Try
+            If mainTabControl.SelectedIndex <> 5 Then
+                mainTabControl.SelectedIndex = 5
+            End If
+        Catch ex As Exception
+
+        End Try
+
+    End Sub
+
+    Private Sub btn_Login_Click(sender As Object, e As EventArgs) Handles btn_Login.Click
+        Try
+
+        Catch ex As Exception
+
+        End Try
 
     End Sub
 
