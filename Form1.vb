@@ -7,15 +7,13 @@
 
     End Sub
 
-    Private Sub SplitContainer1_Panel2_Paint(sender As Object, e As PaintEventArgs) Handles SplitContainer1.Panel2.Paint
 
-    End Sub
 
     Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
 
     End Sub
 
-    Private Sub Label10_Click(sender As Object, e As EventArgs) Handles Label10.Click
+    Private Sub Label10_Click(sender As Object, e As EventArgs)
 
     End Sub
 
