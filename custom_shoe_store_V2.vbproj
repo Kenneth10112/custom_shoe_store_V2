@@ -86,7 +86,7 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="imports\MPanel.vb">
+    <Compile Include="imports\MTabControl.vb">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="login.Designer.vb">
@@ -94,9 +94,6 @@
     </Compile>
     <Compile Include="login.vb">
       <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="imports\MTabControl.vb">
-      <SubType>Component</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -123,9 +120,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="imports\MTabControl.resx">
-      <DependentUpon>MTabControl.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
