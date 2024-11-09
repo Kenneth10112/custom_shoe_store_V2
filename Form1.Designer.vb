@@ -22,6 +22,7 @@ Partial Class mainForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim ListViewItem1 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
         Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
         Me.btn_Dashboard = New System.Windows.Forms.Button()
         Me.btn_Accounts = New System.Windows.Forms.Button()
@@ -31,63 +32,20 @@ Partial Class mainForm
         Me.btn_logs = New System.Windows.Forms.Button()
         Me.btn_Login = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label64 = New System.Windows.Forms.Label()
+        Me.Label65 = New System.Windows.Forms.Label()
         Me.mainTabControl = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.Label66 = New System.Windows.Forms.Label()
+        Me.Label62 = New System.Windows.Forms.Label()
+        Me.Label61 = New System.Windows.Forms.Label()
+        Me.Label67 = New System.Windows.Forms.Label()
+        Me.Label69 = New System.Windows.Forms.Label()
+        Me.Label70 = New System.Windows.Forms.Label()
+        Me.Panel6 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
-        Me.ListBox2 = New System.Windows.Forms.ListBox()
-        Me.ListBox3 = New System.Windows.Forms.ListBox()
-        Me.ListBox4 = New System.Windows.Forms.ListBox()
-        Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.ProgressBar2 = New System.Windows.Forms.ProgressBar()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.ProgressBar4 = New System.Windows.Forms.ProgressBar()
-        Me.Label18 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.ProgressBar3 = New System.Windows.Forms.ProgressBar()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.Label19 = New System.Windows.Forms.Label()
-        Me.ProgressBar5 = New System.Windows.Forms.ProgressBar()
-        Me.Label20 = New System.Windows.Forms.Label()
-        Me.Label21 = New System.Windows.Forms.Label()
-        Me.ProgressBar6 = New System.Windows.Forms.ProgressBar()
-        Me.Label22 = New System.Windows.Forms.Label()
-        Me.Label23 = New System.Windows.Forms.Label()
-        Me.ProgressBar7 = New System.Windows.Forms.ProgressBar()
-        Me.Label24 = New System.Windows.Forms.Label()
-        Me.Label25 = New System.Windows.Forms.Label()
-        Me.ProgressBar8 = New System.Windows.Forms.ProgressBar()
-        Me.Label26 = New System.Windows.Forms.Label()
-        Me.Label27 = New System.Windows.Forms.Label()
-        Me.ProgressBar9 = New System.Windows.Forms.ProgressBar()
-        Me.Label28 = New System.Windows.Forms.Label()
-        Me.Label29 = New System.Windows.Forms.Label()
-        Me.ProgressBar10 = New System.Windows.Forms.ProgressBar()
-        Me.Label30 = New System.Windows.Forms.Label()
-        Me.Label31 = New System.Windows.Forms.Label()
-        Me.ProgressBar11 = New System.Windows.Forms.ProgressBar()
-        Me.Label32 = New System.Windows.Forms.Label()
-        Me.Label33 = New System.Windows.Forms.Label()
-        Me.ProgressBar12 = New System.Windows.Forms.ProgressBar()
-        Me.Label34 = New System.Windows.Forms.Label()
-        Me.Label35 = New System.Windows.Forms.Label()
+        Me.Label63 = New System.Windows.Forms.Label()
         Me.Label36 = New System.Windows.Forms.Label()
         Me.Label37 = New System.Windows.Forms.Label()
         Me.ProgressBar13 = New System.Windows.Forms.ProgressBar()
@@ -125,26 +83,77 @@ Partial Class mainForm
         Me.Label59 = New System.Windows.Forms.Label()
         Me.ProgressBar24 = New System.Windows.Forms.ProgressBar()
         Me.Label60 = New System.Windows.Forms.Label()
-        Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.Label61 = New System.Windows.Forms.Label()
-        Me.Label67 = New System.Windows.Forms.Label()
-        Me.Label69 = New System.Windows.Forms.Label()
-        Me.Label70 = New System.Windows.Forms.Label()
-        Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.Label62 = New System.Windows.Forms.Label()
-        Me.Label63 = New System.Windows.Forms.Label()
-        Me.Label64 = New System.Windows.Forms.Label()
-        Me.Label65 = New System.Windows.Forms.Label()
-        Me.Label66 = New System.Windows.Forms.Label()
+        Me.Label35 = New System.Windows.Forms.Label()
+        Me.Label29 = New System.Windows.Forms.Label()
+        Me.ProgressBar10 = New System.Windows.Forms.ProgressBar()
+        Me.Label30 = New System.Windows.Forms.Label()
+        Me.Label31 = New System.Windows.Forms.Label()
+        Me.ProgressBar11 = New System.Windows.Forms.ProgressBar()
+        Me.Label32 = New System.Windows.Forms.Label()
+        Me.Label33 = New System.Windows.Forms.Label()
+        Me.ProgressBar12 = New System.Windows.Forms.ProgressBar()
+        Me.Label34 = New System.Windows.Forms.Label()
+        Me.Label23 = New System.Windows.Forms.Label()
+        Me.ProgressBar7 = New System.Windows.Forms.ProgressBar()
+        Me.Label24 = New System.Windows.Forms.Label()
+        Me.Label25 = New System.Windows.Forms.Label()
+        Me.ProgressBar8 = New System.Windows.Forms.ProgressBar()
+        Me.Label26 = New System.Windows.Forms.Label()
+        Me.Label27 = New System.Windows.Forms.Label()
+        Me.ProgressBar9 = New System.Windows.Forms.ProgressBar()
+        Me.Label28 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.ProgressBar3 = New System.Windows.Forms.ProgressBar()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.ProgressBar5 = New System.Windows.Forms.ProgressBar()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.ProgressBar6 = New System.Windows.Forms.ProgressBar()
+        Me.Label22 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.ProgressBar4 = New System.Windows.Forms.ProgressBar()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.ProgressBar2 = New System.Windows.Forms.ProgressBar()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.ListBox4 = New System.Windows.Forms.ListBox()
+        Me.ListBox3 = New System.Windows.Forms.ListBox()
+        Me.ListBox2 = New System.Windows.Forms.ListBox()
+        Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.ListView1 = New System.Windows.Forms.ListView()
+        Me.accountID = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.accountName = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.accountType = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.TabPage4 = New System.Windows.Forms.TabPage()
+        Me.TabPage5 = New System.Windows.Forms.TabPage()
+        Me.TabPage6 = New System.Windows.Forms.TabPage()
+        Me.TabPage7 = New System.Windows.Forms.TabPage()
         Me.FlowLayoutPanel1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.mainTabControl.SuspendLayout()
         Me.TabPage1.SuspendLayout()
+        Me.Panel5.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.TabPage2.SuspendLayout()
-        Me.Panel5.SuspendLayout()
         Me.SuspendLayout()
         '
         'FlowLayoutPanel1
@@ -235,10 +244,35 @@ Partial Class mainForm
         Me.Panel1.Size = New System.Drawing.Size(152, 126)
         Me.Panel1.TabIndex = 1
         '
+        'Label64
+        '
+        Me.Label64.AutoSize = True
+        Me.Label64.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label64.Location = New System.Drawing.Point(41, 72)
+        Me.Label64.Name = "Label64"
+        Me.Label64.Size = New System.Drawing.Size(75, 16)
+        Me.Label64.TabIndex = 27
+        Me.Label64.Text = "Admin user"
+        '
+        'Label65
+        '
+        Me.Label65.AutoSize = True
+        Me.Label65.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label65.Location = New System.Drawing.Point(10, 25)
+        Me.Label65.Name = "Label65"
+        Me.Label65.Size = New System.Drawing.Size(133, 31)
+        Me.Label65.TabIndex = 26
+        Me.Label65.Text = "Welcome"
+        '
         'mainTabControl
         '
         Me.mainTabControl.Controls.Add(Me.TabPage1)
         Me.mainTabControl.Controls.Add(Me.TabPage2)
+        Me.mainTabControl.Controls.Add(Me.TabPage3)
+        Me.mainTabControl.Controls.Add(Me.TabPage4)
+        Me.mainTabControl.Controls.Add(Me.TabPage5)
+        Me.mainTabControl.Controls.Add(Me.TabPage6)
+        Me.mainTabControl.Controls.Add(Me.TabPage7)
         Me.mainTabControl.Location = New System.Drawing.Point(149, 0)
         Me.mainTabControl.Name = "mainTabControl"
         Me.mainTabControl.SelectedIndex = 0
@@ -257,6 +291,88 @@ Partial Class mainForm
         Me.TabPage1.Size = New System.Drawing.Size(1165, 634)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "TabPage1"
+        '
+        'Panel5
+        '
+        Me.Panel5.BackColor = System.Drawing.Color.Silver
+        Me.Panel5.Controls.Add(Me.Label66)
+        Me.Panel5.Controls.Add(Me.Label62)
+        Me.Panel5.Controls.Add(Me.Label61)
+        Me.Panel5.Controls.Add(Me.Label67)
+        Me.Panel5.Controls.Add(Me.Label69)
+        Me.Panel5.Controls.Add(Me.Label70)
+        Me.Panel5.Controls.Add(Me.Panel6)
+        Me.Panel5.Location = New System.Drawing.Point(792, 6)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(365, 245)
+        Me.Panel5.TabIndex = 26
+        '
+        'Label66
+        '
+        Me.Label66.AutoSize = True
+        Me.Label66.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label66.Location = New System.Drawing.Point(235, 145)
+        Me.Label66.Name = "Label66"
+        Me.Label66.Size = New System.Drawing.Size(84, 31)
+        Me.Label66.TabIndex = 23
+        Me.Label66.Text = "7 pcs"
+        '
+        'Label62
+        '
+        Me.Label62.AutoSize = True
+        Me.Label62.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label62.Location = New System.Drawing.Point(33, 145)
+        Me.Label62.Name = "Label62"
+        Me.Label62.Size = New System.Drawing.Size(94, 31)
+        Me.Label62.TabIndex = 22
+        Me.Label62.Text = "12345"
+        '
+        'Label61
+        '
+        Me.Label61.AutoSize = True
+        Me.Label61.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label61.Location = New System.Drawing.Point(17, 45)
+        Me.Label61.Name = "Label61"
+        Me.Label61.Size = New System.Drawing.Size(65, 16)
+        Me.Label61.TabIndex = 21
+        Me.Label61.Text = "For today"
+        '
+        'Label67
+        '
+        Me.Label67.AutoSize = True
+        Me.Label67.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label67.Location = New System.Drawing.Point(203, 120)
+        Me.Label67.Name = "Label67"
+        Me.Label67.Size = New System.Drawing.Size(138, 16)
+        Me.Label67.TabIndex = 12
+        Me.Label67.Text = "Sold Product count"
+        '
+        'Label69
+        '
+        Me.Label69.AutoSize = True
+        Me.Label69.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label69.Location = New System.Drawing.Point(36, 119)
+        Me.Label69.Name = "Label69"
+        Me.Label69.Size = New System.Drawing.Size(88, 16)
+        Me.Label69.TabIndex = 3
+        Me.Label69.Text = "Total Sales"
+        '
+        'Label70
+        '
+        Me.Label70.AutoSize = True
+        Me.Label70.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label70.Location = New System.Drawing.Point(14, 14)
+        Me.Label70.Name = "Label70"
+        Me.Label70.Size = New System.Drawing.Size(333, 31)
+        Me.Label70.TabIndex = 2
+        Me.Label70.Text = "Sales and Sold Products"
+        '
+        'Panel6
+        '
+        Me.Panel6.Location = New System.Drawing.Point(20, 320)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(701, 308)
+        Me.Panel6.TabIndex = 1
         '
         'Panel4
         '
@@ -341,542 +457,15 @@ Partial Class mainForm
         Me.Panel4.Size = New System.Drawing.Size(1151, 368)
         Me.Panel4.TabIndex = 2
         '
-        'Panel2
-        '
-        Me.Panel2.BackColor = System.Drawing.Color.Silver
-        Me.Panel2.Controls.Add(Me.ListBox4)
-        Me.Panel2.Controls.Add(Me.ListBox3)
-        Me.Panel2.Controls.Add(Me.ListBox2)
-        Me.Panel2.Controls.Add(Me.ListBox1)
-        Me.Panel2.Controls.Add(Me.Label10)
-        Me.Panel2.Controls.Add(Me.Label8)
-        Me.Panel2.Controls.Add(Me.Label9)
-        Me.Panel2.Controls.Add(Me.Label6)
-        Me.Panel2.Controls.Add(Me.Label7)
-        Me.Panel2.Controls.Add(Me.Label4)
-        Me.Panel2.Controls.Add(Me.Label5)
-        Me.Panel2.Controls.Add(Me.Label3)
-        Me.Panel2.Controls.Add(Me.Label2)
-        Me.Panel2.Controls.Add(Me.Label1)
-        Me.Panel2.Controls.Add(Me.Panel3)
-        Me.Panel2.Location = New System.Drawing.Point(6, 6)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(780, 245)
-        Me.Panel2.TabIndex = 0
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(150, 96)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(15, 16)
-        Me.Label3.TabIndex = 11
-        Me.Label3.Text = "6"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(65, 95)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(88, 16)
-        Me.Label2.TabIndex = 3
-        Me.Label2.Text = "Not started:"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(14, 14)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(103, 31)
-        Me.Label1.TabIndex = 2
-        Me.Label1.Text = "Orders"
-        '
-        'Panel3
-        '
-        Me.Panel3.Location = New System.Drawing.Point(20, 320)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(701, 308)
-        Me.Panel3.TabIndex = 1
-        '
-        'TabPage2
-        '
-        Me.TabPage2.Controls.Add(Me.ListView1)
-        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(1165, 634)
-        Me.TabPage2.TabIndex = 1
-        Me.TabPage2.Text = "TabPage2"
-        Me.TabPage2.UseVisualStyleBackColor = True
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(317, 97)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(15, 16)
-        Me.Label4.TabIndex = 14
-        Me.Label4.Text = "3"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(232, 96)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(90, 16)
-        Me.Label5.TabIndex = 12
-        Me.Label5.Text = "In progress:"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(484, 98)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(22, 16)
-        Me.Label6.TabIndex = 17
-        Me.Label6.Text = "10"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(399, 97)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(71, 16)
-        Me.Label7.TabIndex = 15
-        Me.Label7.Text = "Finished:"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(651, 96)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(15, 16)
-        Me.Label8.TabIndex = 20
-        Me.Label8.Text = "2"
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(566, 95)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(74, 16)
-        Me.Label9.TabIndex = 18
-        Me.Label9.Text = "Outgoing:"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(17, 45)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(65, 16)
-        Me.Label10.TabIndex = 21
-        Me.Label10.Text = "For today"
-        '
-        'ListBox1
-        '
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Items.AddRange(New Object() {"sampleOrder1", "sampleOrder2", "sampleOrder3", "sampleOrder4", "sampleOrder5", "sampleOrder6"})
-        Me.ListBox1.Location = New System.Drawing.Point(68, 121)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(120, 95)
-        Me.ListBox1.TabIndex = 22
-        '
-        'ListBox2
-        '
-        Me.ListBox2.FormattingEnabled = True
-        Me.ListBox2.Items.AddRange(New Object() {"sampleOrder1", "sampleOrder2", "sampleOrder3"})
-        Me.ListBox2.Location = New System.Drawing.Point(235, 121)
-        Me.ListBox2.Name = "ListBox2"
-        Me.ListBox2.Size = New System.Drawing.Size(120, 95)
-        Me.ListBox2.TabIndex = 23
-        '
-        'ListBox3
-        '
-        Me.ListBox3.FormattingEnabled = True
-        Me.ListBox3.Items.AddRange(New Object() {"sampleOrder1", "sampleOrder2", "sampleOrder3", "sampleOrder4", "sampleOrder5", "sampleOrder6", "sampleOrder7", "sampleOrder8", "sampleOrder9", "sampleOrder10"})
-        Me.ListBox3.Location = New System.Drawing.Point(402, 121)
-        Me.ListBox3.Name = "ListBox3"
-        Me.ListBox3.Size = New System.Drawing.Size(120, 95)
-        Me.ListBox3.TabIndex = 24
-        '
-        'ListBox4
-        '
-        Me.ListBox4.FormattingEnabled = True
-        Me.ListBox4.Items.AddRange(New Object() {"sampleOrder1", "sampleOrder2"})
-        Me.ListBox4.Location = New System.Drawing.Point(569, 121)
-        Me.ListBox4.Name = "ListBox4"
-        Me.ListBox4.Size = New System.Drawing.Size(120, 95)
-        Me.ListBox4.TabIndex = 25
-        '
-        'ProgressBar1
-        '
-        Me.ProgressBar1.Location = New System.Drawing.Point(42, 97)
-        Me.ProgressBar1.Name = "ProgressBar1"
-        Me.ProgressBar1.Size = New System.Drawing.Size(159, 23)
-        Me.ProgressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous
-        Me.ProgressBar1.TabIndex = 0
-        Me.ProgressBar1.Value = 38
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(179, 69)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(22, 16)
-        Me.Label11.TabIndex = 27
-        Me.Label11.Text = "37"
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(39, 68)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(143, 16)
-        Me.Label12.TabIndex = 26
-        Me.Label12.Text = "sampleItem1 Stock:"
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(361, 69)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(22, 16)
-        Me.Label13.TabIndex = 30
-        Me.Label13.Text = "37"
-        '
-        'ProgressBar2
-        '
-        Me.ProgressBar2.Location = New System.Drawing.Point(224, 97)
-        Me.ProgressBar2.Name = "ProgressBar2"
-        Me.ProgressBar2.Size = New System.Drawing.Size(159, 23)
-        Me.ProgressBar2.Style = System.Windows.Forms.ProgressBarStyle.Continuous
-        Me.ProgressBar2.TabIndex = 28
-        Me.ProgressBar2.Value = 38
-        '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(221, 68)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(143, 16)
-        Me.Label14.TabIndex = 29
-        Me.Label14.Text = "sampleItem1 Stock:"
-        '
-        'Label17
-        '
-        Me.Label17.AutoSize = True
-        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.Location = New System.Drawing.Point(548, 69)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(22, 16)
-        Me.Label17.TabIndex = 33
-        Me.Label17.Text = "37"
-        '
-        'ProgressBar4
-        '
-        Me.ProgressBar4.Location = New System.Drawing.Point(411, 97)
-        Me.ProgressBar4.Name = "ProgressBar4"
-        Me.ProgressBar4.Size = New System.Drawing.Size(159, 23)
-        Me.ProgressBar4.Style = System.Windows.Forms.ProgressBarStyle.Continuous
-        Me.ProgressBar4.TabIndex = 31
-        Me.ProgressBar4.Value = 38
-        '
-        'Label18
-        '
-        Me.Label18.AutoSize = True
-        Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.Location = New System.Drawing.Point(408, 68)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(143, 16)
-        Me.Label18.TabIndex = 32
-        Me.Label18.Text = "sampleItem1 Stock:"
-        '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(548, 144)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(22, 16)
-        Me.Label15.TabIndex = 42
-        Me.Label15.Text = "37"
-        '
-        'ProgressBar3
-        '
-        Me.ProgressBar3.Location = New System.Drawing.Point(411, 172)
-        Me.ProgressBar3.Name = "ProgressBar3"
-        Me.ProgressBar3.Size = New System.Drawing.Size(159, 23)
-        Me.ProgressBar3.Style = System.Windows.Forms.ProgressBarStyle.Continuous
-        Me.ProgressBar3.TabIndex = 40
-        Me.ProgressBar3.Value = 38
-        '
-        'Label16
-        '
-        Me.Label16.AutoSize = True
-        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(408, 143)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(143, 16)
-        Me.Label16.TabIndex = 41
-        Me.Label16.Text = "sampleItem1 Stock:"
-        '
-        'Label19
-        '
-        Me.Label19.AutoSize = True
-        Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label19.Location = New System.Drawing.Point(361, 144)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(22, 16)
-        Me.Label19.TabIndex = 39
-        Me.Label19.Text = "77"
-        '
-        'ProgressBar5
-        '
-        Me.ProgressBar5.Location = New System.Drawing.Point(224, 172)
-        Me.ProgressBar5.Name = "ProgressBar5"
-        Me.ProgressBar5.Size = New System.Drawing.Size(159, 23)
-        Me.ProgressBar5.Style = System.Windows.Forms.ProgressBarStyle.Continuous
-        Me.ProgressBar5.TabIndex = 37
-        Me.ProgressBar5.Value = 77
-        '
-        'Label20
-        '
-        Me.Label20.AutoSize = True
-        Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label20.Location = New System.Drawing.Point(221, 143)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(143, 16)
-        Me.Label20.TabIndex = 38
-        Me.Label20.Text = "sampleItem1 Stock:"
-        '
-        'Label21
-        '
-        Me.Label21.AutoSize = True
-        Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label21.Location = New System.Drawing.Point(179, 144)
-        Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(22, 16)
-        Me.Label21.TabIndex = 36
-        Me.Label21.Text = "37"
-        '
-        'ProgressBar6
-        '
-        Me.ProgressBar6.Location = New System.Drawing.Point(42, 172)
-        Me.ProgressBar6.Name = "ProgressBar6"
-        Me.ProgressBar6.Size = New System.Drawing.Size(159, 23)
-        Me.ProgressBar6.Style = System.Windows.Forms.ProgressBarStyle.Continuous
-        Me.ProgressBar6.TabIndex = 34
-        Me.ProgressBar6.Value = 38
-        '
-        'Label22
-        '
-        Me.Label22.AutoSize = True
-        Me.Label22.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label22.Location = New System.Drawing.Point(39, 143)
-        Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(143, 16)
-        Me.Label22.TabIndex = 35
-        Me.Label22.Text = "sampleItem1 Stock:"
-        '
-        'Label23
-        '
-        Me.Label23.AutoSize = True
-        Me.Label23.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label23.Location = New System.Drawing.Point(548, 216)
-        Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(15, 16)
-        Me.Label23.TabIndex = 51
-        Me.Label23.Text = "5"
-        '
-        'ProgressBar7
-        '
-        Me.ProgressBar7.Location = New System.Drawing.Point(411, 244)
-        Me.ProgressBar7.Name = "ProgressBar7"
-        Me.ProgressBar7.Size = New System.Drawing.Size(159, 23)
-        Me.ProgressBar7.Style = System.Windows.Forms.ProgressBarStyle.Continuous
-        Me.ProgressBar7.TabIndex = 49
-        Me.ProgressBar7.Value = 5
-        '
-        'Label24
-        '
-        Me.Label24.AutoSize = True
-        Me.Label24.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label24.Location = New System.Drawing.Point(408, 215)
-        Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(143, 16)
-        Me.Label24.TabIndex = 50
-        Me.Label24.Text = "sampleItem1 Stock:"
-        '
-        'Label25
-        '
-        Me.Label25.AutoSize = True
-        Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label25.Location = New System.Drawing.Point(361, 216)
-        Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(22, 16)
-        Me.Label25.TabIndex = 48
-        Me.Label25.Text = "37"
-        '
-        'ProgressBar8
-        '
-        Me.ProgressBar8.Location = New System.Drawing.Point(224, 244)
-        Me.ProgressBar8.Name = "ProgressBar8"
-        Me.ProgressBar8.Size = New System.Drawing.Size(159, 23)
-        Me.ProgressBar8.Style = System.Windows.Forms.ProgressBarStyle.Continuous
-        Me.ProgressBar8.TabIndex = 46
-        Me.ProgressBar8.Value = 38
-        '
-        'Label26
-        '
-        Me.Label26.AutoSize = True
-        Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label26.Location = New System.Drawing.Point(221, 215)
-        Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(143, 16)
-        Me.Label26.TabIndex = 47
-        Me.Label26.Text = "sampleItem1 Stock:"
-        '
-        'Label27
-        '
-        Me.Label27.AutoSize = True
-        Me.Label27.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label27.Location = New System.Drawing.Point(179, 216)
-        Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(22, 16)
-        Me.Label27.TabIndex = 45
-        Me.Label27.Text = "37"
-        '
-        'ProgressBar9
-        '
-        Me.ProgressBar9.Location = New System.Drawing.Point(42, 244)
-        Me.ProgressBar9.Name = "ProgressBar9"
-        Me.ProgressBar9.Size = New System.Drawing.Size(159, 23)
-        Me.ProgressBar9.Style = System.Windows.Forms.ProgressBarStyle.Continuous
-        Me.ProgressBar9.TabIndex = 43
-        Me.ProgressBar9.Value = 38
-        '
-        'Label28
-        '
-        Me.Label28.AutoSize = True
-        Me.Label28.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label28.Location = New System.Drawing.Point(39, 215)
-        Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(143, 16)
-        Me.Label28.TabIndex = 44
-        Me.Label28.Text = "sampleItem1 Stock:"
-        '
-        'Label29
-        '
-        Me.Label29.AutoSize = True
-        Me.Label29.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label29.Location = New System.Drawing.Point(548, 288)
-        Me.Label29.Name = "Label29"
-        Me.Label29.Size = New System.Drawing.Size(22, 16)
-        Me.Label29.TabIndex = 60
-        Me.Label29.Text = "23"
-        '
-        'ProgressBar10
-        '
-        Me.ProgressBar10.Location = New System.Drawing.Point(411, 316)
-        Me.ProgressBar10.Name = "ProgressBar10"
-        Me.ProgressBar10.Size = New System.Drawing.Size(159, 23)
-        Me.ProgressBar10.Style = System.Windows.Forms.ProgressBarStyle.Continuous
-        Me.ProgressBar10.TabIndex = 58
-        Me.ProgressBar10.Value = 23
-        '
-        'Label30
-        '
-        Me.Label30.AutoSize = True
-        Me.Label30.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label30.Location = New System.Drawing.Point(408, 287)
-        Me.Label30.Name = "Label30"
-        Me.Label30.Size = New System.Drawing.Size(143, 16)
-        Me.Label30.TabIndex = 59
-        Me.Label30.Text = "sampleItem1 Stock:"
-        '
-        'Label31
-        '
-        Me.Label31.AutoSize = True
-        Me.Label31.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label31.Location = New System.Drawing.Point(361, 288)
-        Me.Label31.Name = "Label31"
-        Me.Label31.Size = New System.Drawing.Size(22, 16)
-        Me.Label31.TabIndex = 57
-        Me.Label31.Text = "37"
-        '
-        'ProgressBar11
-        '
-        Me.ProgressBar11.Location = New System.Drawing.Point(224, 316)
-        Me.ProgressBar11.Name = "ProgressBar11"
-        Me.ProgressBar11.Size = New System.Drawing.Size(159, 23)
-        Me.ProgressBar11.Style = System.Windows.Forms.ProgressBarStyle.Continuous
-        Me.ProgressBar11.TabIndex = 55
-        Me.ProgressBar11.Value = 38
-        '
-        'Label32
-        '
-        Me.Label32.AutoSize = True
-        Me.Label32.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label32.Location = New System.Drawing.Point(221, 287)
-        Me.Label32.Name = "Label32"
-        Me.Label32.Size = New System.Drawing.Size(143, 16)
-        Me.Label32.TabIndex = 56
-        Me.Label32.Text = "sampleItem1 Stock:"
-        '
-        'Label33
-        '
-        Me.Label33.AutoSize = True
-        Me.Label33.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label33.Location = New System.Drawing.Point(179, 288)
-        Me.Label33.Name = "Label33"
-        Me.Label33.Size = New System.Drawing.Size(22, 16)
-        Me.Label33.TabIndex = 54
-        Me.Label33.Text = "37"
-        '
-        'ProgressBar12
-        '
-        Me.ProgressBar12.Location = New System.Drawing.Point(42, 316)
-        Me.ProgressBar12.Name = "ProgressBar12"
-        Me.ProgressBar12.Size = New System.Drawing.Size(159, 23)
-        Me.ProgressBar12.Style = System.Windows.Forms.ProgressBarStyle.Continuous
-        Me.ProgressBar12.TabIndex = 52
-        Me.ProgressBar12.Value = 38
-        '
-        'Label34
-        '
-        Me.Label34.AutoSize = True
-        Me.Label34.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label34.Location = New System.Drawing.Point(39, 287)
-        Me.Label34.Name = "Label34"
-        Me.Label34.Size = New System.Drawing.Size(143, 16)
-        Me.Label34.TabIndex = 53
-        Me.Label34.Text = "sampleItem1 Stock:"
-        '
-        'Label35
-        '
-        Me.Label35.AutoSize = True
-        Me.Label35.BackColor = System.Drawing.Color.Transparent
-        Me.Label35.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label35.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label35.Location = New System.Drawing.Point(99, 176)
-        Me.Label35.Name = "Label35"
-        Me.Label35.Size = New System.Drawing.Size(443, 55)
-        Me.Label35.TabIndex = 61
-        Me.Label35.Text = "Subject for change"
+        'Label63
+        '
+        Me.Label63.AutoSize = True
+        Me.Label63.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label63.Location = New System.Drawing.Point(14, 19)
+        Me.Label63.Name = "Label63"
+        Me.Label63.Size = New System.Drawing.Size(103, 31)
+        Me.Label63.TabIndex = 26
+        Me.Label63.Text = "Stocks"
         '
         'Label36
         '
@@ -1238,126 +827,615 @@ Partial Class mainForm
         Me.Label60.TabIndex = 63
         Me.Label60.Text = "sampleItem1 Stock:"
         '
-        'Panel5
+        'Label35
         '
-        Me.Panel5.BackColor = System.Drawing.Color.Silver
-        Me.Panel5.Controls.Add(Me.Label66)
-        Me.Panel5.Controls.Add(Me.Label62)
-        Me.Panel5.Controls.Add(Me.Label61)
-        Me.Panel5.Controls.Add(Me.Label67)
-        Me.Panel5.Controls.Add(Me.Label69)
-        Me.Panel5.Controls.Add(Me.Label70)
-        Me.Panel5.Controls.Add(Me.Panel6)
-        Me.Panel5.Location = New System.Drawing.Point(792, 6)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(365, 245)
-        Me.Panel5.TabIndex = 26
+        Me.Label35.AutoSize = True
+        Me.Label35.BackColor = System.Drawing.Color.Transparent
+        Me.Label35.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label35.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label35.Location = New System.Drawing.Point(99, 176)
+        Me.Label35.Name = "Label35"
+        Me.Label35.Size = New System.Drawing.Size(443, 55)
+        Me.Label35.TabIndex = 61
+        Me.Label35.Text = "Subject for change"
         '
-        'Label61
+        'Label29
         '
-        Me.Label61.AutoSize = True
-        Me.Label61.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label61.Location = New System.Drawing.Point(17, 45)
-        Me.Label61.Name = "Label61"
-        Me.Label61.Size = New System.Drawing.Size(65, 16)
-        Me.Label61.TabIndex = 21
-        Me.Label61.Text = "For today"
+        Me.Label29.AutoSize = True
+        Me.Label29.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label29.Location = New System.Drawing.Point(548, 288)
+        Me.Label29.Name = "Label29"
+        Me.Label29.Size = New System.Drawing.Size(22, 16)
+        Me.Label29.TabIndex = 60
+        Me.Label29.Text = "23"
         '
-        'Label67
+        'ProgressBar10
         '
-        Me.Label67.AutoSize = True
-        Me.Label67.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label67.Location = New System.Drawing.Point(203, 120)
-        Me.Label67.Name = "Label67"
-        Me.Label67.Size = New System.Drawing.Size(138, 16)
-        Me.Label67.TabIndex = 12
-        Me.Label67.Text = "Sold Product count"
+        Me.ProgressBar10.Location = New System.Drawing.Point(411, 316)
+        Me.ProgressBar10.Name = "ProgressBar10"
+        Me.ProgressBar10.Size = New System.Drawing.Size(159, 23)
+        Me.ProgressBar10.Style = System.Windows.Forms.ProgressBarStyle.Continuous
+        Me.ProgressBar10.TabIndex = 58
+        Me.ProgressBar10.Value = 23
         '
-        'Label69
+        'Label30
         '
-        Me.Label69.AutoSize = True
-        Me.Label69.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label69.Location = New System.Drawing.Point(36, 119)
-        Me.Label69.Name = "Label69"
-        Me.Label69.Size = New System.Drawing.Size(88, 16)
-        Me.Label69.TabIndex = 3
-        Me.Label69.Text = "Total Sales"
+        Me.Label30.AutoSize = True
+        Me.Label30.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label30.Location = New System.Drawing.Point(408, 287)
+        Me.Label30.Name = "Label30"
+        Me.Label30.Size = New System.Drawing.Size(143, 16)
+        Me.Label30.TabIndex = 59
+        Me.Label30.Text = "sampleItem1 Stock:"
         '
-        'Label70
+        'Label31
         '
-        Me.Label70.AutoSize = True
-        Me.Label70.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label70.Location = New System.Drawing.Point(14, 14)
-        Me.Label70.Name = "Label70"
-        Me.Label70.Size = New System.Drawing.Size(333, 31)
-        Me.Label70.TabIndex = 2
-        Me.Label70.Text = "Sales and Sold Products"
+        Me.Label31.AutoSize = True
+        Me.Label31.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label31.Location = New System.Drawing.Point(361, 288)
+        Me.Label31.Name = "Label31"
+        Me.Label31.Size = New System.Drawing.Size(22, 16)
+        Me.Label31.TabIndex = 57
+        Me.Label31.Text = "37"
         '
-        'Panel6
+        'ProgressBar11
         '
-        Me.Panel6.Location = New System.Drawing.Point(20, 320)
-        Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(701, 308)
-        Me.Panel6.TabIndex = 1
+        Me.ProgressBar11.Location = New System.Drawing.Point(224, 316)
+        Me.ProgressBar11.Name = "ProgressBar11"
+        Me.ProgressBar11.Size = New System.Drawing.Size(159, 23)
+        Me.ProgressBar11.Style = System.Windows.Forms.ProgressBarStyle.Continuous
+        Me.ProgressBar11.TabIndex = 55
+        Me.ProgressBar11.Value = 38
         '
-        'Label62
+        'Label32
         '
-        Me.Label62.AutoSize = True
-        Me.Label62.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label62.Location = New System.Drawing.Point(33, 145)
-        Me.Label62.Name = "Label62"
-        Me.Label62.Size = New System.Drawing.Size(94, 31)
-        Me.Label62.TabIndex = 22
-        Me.Label62.Text = "12345"
+        Me.Label32.AutoSize = True
+        Me.Label32.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label32.Location = New System.Drawing.Point(221, 287)
+        Me.Label32.Name = "Label32"
+        Me.Label32.Size = New System.Drawing.Size(143, 16)
+        Me.Label32.TabIndex = 56
+        Me.Label32.Text = "sampleItem1 Stock:"
         '
-        'Label63
+        'Label33
         '
-        Me.Label63.AutoSize = True
-        Me.Label63.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label63.Location = New System.Drawing.Point(14, 19)
-        Me.Label63.Name = "Label63"
-        Me.Label63.Size = New System.Drawing.Size(103, 31)
-        Me.Label63.TabIndex = 26
-        Me.Label63.Text = "Stocks"
+        Me.Label33.AutoSize = True
+        Me.Label33.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label33.Location = New System.Drawing.Point(179, 288)
+        Me.Label33.Name = "Label33"
+        Me.Label33.Size = New System.Drawing.Size(22, 16)
+        Me.Label33.TabIndex = 54
+        Me.Label33.Text = "37"
         '
-        'Label64
+        'ProgressBar12
         '
-        Me.Label64.AutoSize = True
-        Me.Label64.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label64.Location = New System.Drawing.Point(41, 72)
-        Me.Label64.Name = "Label64"
-        Me.Label64.Size = New System.Drawing.Size(75, 16)
-        Me.Label64.TabIndex = 27
-        Me.Label64.Text = "Admin user"
+        Me.ProgressBar12.Location = New System.Drawing.Point(42, 316)
+        Me.ProgressBar12.Name = "ProgressBar12"
+        Me.ProgressBar12.Size = New System.Drawing.Size(159, 23)
+        Me.ProgressBar12.Style = System.Windows.Forms.ProgressBarStyle.Continuous
+        Me.ProgressBar12.TabIndex = 52
+        Me.ProgressBar12.Value = 38
         '
-        'Label65
+        'Label34
         '
-        Me.Label65.AutoSize = True
-        Me.Label65.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label65.Location = New System.Drawing.Point(10, 25)
-        Me.Label65.Name = "Label65"
-        Me.Label65.Size = New System.Drawing.Size(133, 31)
-        Me.Label65.TabIndex = 26
-        Me.Label65.Text = "Welcome"
+        Me.Label34.AutoSize = True
+        Me.Label34.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label34.Location = New System.Drawing.Point(39, 287)
+        Me.Label34.Name = "Label34"
+        Me.Label34.Size = New System.Drawing.Size(143, 16)
+        Me.Label34.TabIndex = 53
+        Me.Label34.Text = "sampleItem1 Stock:"
         '
-        'Label66
+        'Label23
         '
-        Me.Label66.AutoSize = True
-        Me.Label66.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label66.Location = New System.Drawing.Point(235, 145)
-        Me.Label66.Name = "Label66"
-        Me.Label66.Size = New System.Drawing.Size(84, 31)
-        Me.Label66.TabIndex = 23
-        Me.Label66.Text = "7 pcs"
+        Me.Label23.AutoSize = True
+        Me.Label23.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label23.Location = New System.Drawing.Point(548, 216)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(15, 16)
+        Me.Label23.TabIndex = 51
+        Me.Label23.Text = "5"
+        '
+        'ProgressBar7
+        '
+        Me.ProgressBar7.Location = New System.Drawing.Point(411, 244)
+        Me.ProgressBar7.Name = "ProgressBar7"
+        Me.ProgressBar7.Size = New System.Drawing.Size(159, 23)
+        Me.ProgressBar7.Style = System.Windows.Forms.ProgressBarStyle.Continuous
+        Me.ProgressBar7.TabIndex = 49
+        Me.ProgressBar7.Value = 5
+        '
+        'Label24
+        '
+        Me.Label24.AutoSize = True
+        Me.Label24.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label24.Location = New System.Drawing.Point(408, 215)
+        Me.Label24.Name = "Label24"
+        Me.Label24.Size = New System.Drawing.Size(143, 16)
+        Me.Label24.TabIndex = 50
+        Me.Label24.Text = "sampleItem1 Stock:"
+        '
+        'Label25
+        '
+        Me.Label25.AutoSize = True
+        Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label25.Location = New System.Drawing.Point(361, 216)
+        Me.Label25.Name = "Label25"
+        Me.Label25.Size = New System.Drawing.Size(22, 16)
+        Me.Label25.TabIndex = 48
+        Me.Label25.Text = "37"
+        '
+        'ProgressBar8
+        '
+        Me.ProgressBar8.Location = New System.Drawing.Point(224, 244)
+        Me.ProgressBar8.Name = "ProgressBar8"
+        Me.ProgressBar8.Size = New System.Drawing.Size(159, 23)
+        Me.ProgressBar8.Style = System.Windows.Forms.ProgressBarStyle.Continuous
+        Me.ProgressBar8.TabIndex = 46
+        Me.ProgressBar8.Value = 38
+        '
+        'Label26
+        '
+        Me.Label26.AutoSize = True
+        Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label26.Location = New System.Drawing.Point(221, 215)
+        Me.Label26.Name = "Label26"
+        Me.Label26.Size = New System.Drawing.Size(143, 16)
+        Me.Label26.TabIndex = 47
+        Me.Label26.Text = "sampleItem1 Stock:"
+        '
+        'Label27
+        '
+        Me.Label27.AutoSize = True
+        Me.Label27.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label27.Location = New System.Drawing.Point(179, 216)
+        Me.Label27.Name = "Label27"
+        Me.Label27.Size = New System.Drawing.Size(22, 16)
+        Me.Label27.TabIndex = 45
+        Me.Label27.Text = "37"
+        '
+        'ProgressBar9
+        '
+        Me.ProgressBar9.Location = New System.Drawing.Point(42, 244)
+        Me.ProgressBar9.Name = "ProgressBar9"
+        Me.ProgressBar9.Size = New System.Drawing.Size(159, 23)
+        Me.ProgressBar9.Style = System.Windows.Forms.ProgressBarStyle.Continuous
+        Me.ProgressBar9.TabIndex = 43
+        Me.ProgressBar9.Value = 38
+        '
+        'Label28
+        '
+        Me.Label28.AutoSize = True
+        Me.Label28.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label28.Location = New System.Drawing.Point(39, 215)
+        Me.Label28.Name = "Label28"
+        Me.Label28.Size = New System.Drawing.Size(143, 16)
+        Me.Label28.TabIndex = 44
+        Me.Label28.Text = "sampleItem1 Stock:"
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.Location = New System.Drawing.Point(548, 144)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(22, 16)
+        Me.Label15.TabIndex = 42
+        Me.Label15.Text = "37"
+        '
+        'ProgressBar3
+        '
+        Me.ProgressBar3.Location = New System.Drawing.Point(411, 172)
+        Me.ProgressBar3.Name = "ProgressBar3"
+        Me.ProgressBar3.Size = New System.Drawing.Size(159, 23)
+        Me.ProgressBar3.Style = System.Windows.Forms.ProgressBarStyle.Continuous
+        Me.ProgressBar3.TabIndex = 40
+        Me.ProgressBar3.Value = 38
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.Location = New System.Drawing.Point(408, 143)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(143, 16)
+        Me.Label16.TabIndex = 41
+        Me.Label16.Text = "sampleItem1 Stock:"
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label19.Location = New System.Drawing.Point(361, 144)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(22, 16)
+        Me.Label19.TabIndex = 39
+        Me.Label19.Text = "77"
+        '
+        'ProgressBar5
+        '
+        Me.ProgressBar5.Location = New System.Drawing.Point(224, 172)
+        Me.ProgressBar5.Name = "ProgressBar5"
+        Me.ProgressBar5.Size = New System.Drawing.Size(159, 23)
+        Me.ProgressBar5.Style = System.Windows.Forms.ProgressBarStyle.Continuous
+        Me.ProgressBar5.TabIndex = 37
+        Me.ProgressBar5.Value = 77
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label20.Location = New System.Drawing.Point(221, 143)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(143, 16)
+        Me.Label20.TabIndex = 38
+        Me.Label20.Text = "sampleItem1 Stock:"
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label21.Location = New System.Drawing.Point(179, 144)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(22, 16)
+        Me.Label21.TabIndex = 36
+        Me.Label21.Text = "37"
+        '
+        'ProgressBar6
+        '
+        Me.ProgressBar6.Location = New System.Drawing.Point(42, 172)
+        Me.ProgressBar6.Name = "ProgressBar6"
+        Me.ProgressBar6.Size = New System.Drawing.Size(159, 23)
+        Me.ProgressBar6.Style = System.Windows.Forms.ProgressBarStyle.Continuous
+        Me.ProgressBar6.TabIndex = 34
+        Me.ProgressBar6.Value = 38
+        '
+        'Label22
+        '
+        Me.Label22.AutoSize = True
+        Me.Label22.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label22.Location = New System.Drawing.Point(39, 143)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(143, 16)
+        Me.Label22.TabIndex = 35
+        Me.Label22.Text = "sampleItem1 Stock:"
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.Location = New System.Drawing.Point(548, 69)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(22, 16)
+        Me.Label17.TabIndex = 33
+        Me.Label17.Text = "37"
+        '
+        'ProgressBar4
+        '
+        Me.ProgressBar4.Location = New System.Drawing.Point(411, 97)
+        Me.ProgressBar4.Name = "ProgressBar4"
+        Me.ProgressBar4.Size = New System.Drawing.Size(159, 23)
+        Me.ProgressBar4.Style = System.Windows.Forms.ProgressBarStyle.Continuous
+        Me.ProgressBar4.TabIndex = 31
+        Me.ProgressBar4.Value = 38
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label18.Location = New System.Drawing.Point(408, 68)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(143, 16)
+        Me.Label18.TabIndex = 32
+        Me.Label18.Text = "sampleItem1 Stock:"
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.Location = New System.Drawing.Point(361, 69)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(22, 16)
+        Me.Label13.TabIndex = 30
+        Me.Label13.Text = "37"
+        '
+        'ProgressBar2
+        '
+        Me.ProgressBar2.Location = New System.Drawing.Point(224, 97)
+        Me.ProgressBar2.Name = "ProgressBar2"
+        Me.ProgressBar2.Size = New System.Drawing.Size(159, 23)
+        Me.ProgressBar2.Style = System.Windows.Forms.ProgressBarStyle.Continuous
+        Me.ProgressBar2.TabIndex = 28
+        Me.ProgressBar2.Value = 38
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.Location = New System.Drawing.Point(221, 68)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(143, 16)
+        Me.Label14.TabIndex = 29
+        Me.Label14.Text = "sampleItem1 Stock:"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(179, 69)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(22, 16)
+        Me.Label11.TabIndex = 27
+        Me.Label11.Text = "37"
+        '
+        'ProgressBar1
+        '
+        Me.ProgressBar1.Location = New System.Drawing.Point(42, 97)
+        Me.ProgressBar1.Name = "ProgressBar1"
+        Me.ProgressBar1.Size = New System.Drawing.Size(159, 23)
+        Me.ProgressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous
+        Me.ProgressBar1.TabIndex = 0
+        Me.ProgressBar1.Value = 38
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Location = New System.Drawing.Point(39, 68)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(143, 16)
+        Me.Label12.TabIndex = 26
+        Me.Label12.Text = "sampleItem1 Stock:"
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.Silver
+        Me.Panel2.Controls.Add(Me.ListBox4)
+        Me.Panel2.Controls.Add(Me.ListBox3)
+        Me.Panel2.Controls.Add(Me.ListBox2)
+        Me.Panel2.Controls.Add(Me.ListBox1)
+        Me.Panel2.Controls.Add(Me.Label10)
+        Me.Panel2.Controls.Add(Me.Label8)
+        Me.Panel2.Controls.Add(Me.Label9)
+        Me.Panel2.Controls.Add(Me.Label6)
+        Me.Panel2.Controls.Add(Me.Label7)
+        Me.Panel2.Controls.Add(Me.Label4)
+        Me.Panel2.Controls.Add(Me.Label5)
+        Me.Panel2.Controls.Add(Me.Label3)
+        Me.Panel2.Controls.Add(Me.Label2)
+        Me.Panel2.Controls.Add(Me.Label1)
+        Me.Panel2.Controls.Add(Me.Panel3)
+        Me.Panel2.Location = New System.Drawing.Point(6, 6)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(780, 245)
+        Me.Panel2.TabIndex = 0
+        '
+        'ListBox4
+        '
+        Me.ListBox4.FormattingEnabled = True
+        Me.ListBox4.Items.AddRange(New Object() {"sampleOrder1", "sampleOrder2"})
+        Me.ListBox4.Location = New System.Drawing.Point(569, 121)
+        Me.ListBox4.Name = "ListBox4"
+        Me.ListBox4.Size = New System.Drawing.Size(120, 95)
+        Me.ListBox4.TabIndex = 25
+        '
+        'ListBox3
+        '
+        Me.ListBox3.FormattingEnabled = True
+        Me.ListBox3.Items.AddRange(New Object() {"sampleOrder1", "sampleOrder2", "sampleOrder3", "sampleOrder4", "sampleOrder5", "sampleOrder6", "sampleOrder7", "sampleOrder8", "sampleOrder9", "sampleOrder10"})
+        Me.ListBox3.Location = New System.Drawing.Point(402, 121)
+        Me.ListBox3.Name = "ListBox3"
+        Me.ListBox3.Size = New System.Drawing.Size(120, 95)
+        Me.ListBox3.TabIndex = 24
+        '
+        'ListBox2
+        '
+        Me.ListBox2.FormattingEnabled = True
+        Me.ListBox2.Items.AddRange(New Object() {"sampleOrder1", "sampleOrder2", "sampleOrder3"})
+        Me.ListBox2.Location = New System.Drawing.Point(235, 121)
+        Me.ListBox2.Name = "ListBox2"
+        Me.ListBox2.Size = New System.Drawing.Size(120, 95)
+        Me.ListBox2.TabIndex = 23
+        '
+        'ListBox1
+        '
+        Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.Items.AddRange(New Object() {"sampleOrder1", "sampleOrder2", "sampleOrder3", "sampleOrder4", "sampleOrder5", "sampleOrder6"})
+        Me.ListBox1.Location = New System.Drawing.Point(68, 121)
+        Me.ListBox1.Name = "ListBox1"
+        Me.ListBox1.Size = New System.Drawing.Size(120, 95)
+        Me.ListBox1.TabIndex = 22
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(17, 45)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(65, 16)
+        Me.Label10.TabIndex = 21
+        Me.Label10.Text = "For today"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(651, 96)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(15, 16)
+        Me.Label8.TabIndex = 20
+        Me.Label8.Text = "2"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(566, 95)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(74, 16)
+        Me.Label9.TabIndex = 18
+        Me.Label9.Text = "Outgoing:"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(484, 98)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(22, 16)
+        Me.Label6.TabIndex = 17
+        Me.Label6.Text = "10"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(399, 97)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(71, 16)
+        Me.Label7.TabIndex = 15
+        Me.Label7.Text = "Finished:"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(317, 97)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(15, 16)
+        Me.Label4.TabIndex = 14
+        Me.Label4.Text = "3"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(232, 96)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(90, 16)
+        Me.Label5.TabIndex = 12
+        Me.Label5.Text = "In progress:"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(150, 96)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(15, 16)
+        Me.Label3.TabIndex = 11
+        Me.Label3.Text = "6"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(65, 95)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(88, 16)
+        Me.Label2.TabIndex = 3
+        Me.Label2.Text = "Not started:"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(14, 14)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(103, 31)
+        Me.Label1.TabIndex = 2
+        Me.Label1.Text = "Orders"
+        '
+        'Panel3
+        '
+        Me.Panel3.Location = New System.Drawing.Point(20, 320)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(701, 308)
+        Me.Panel3.TabIndex = 1
+        '
+        'TabPage2
+        '
+        Me.TabPage2.Controls.Add(Me.ListView1)
+        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage2.Name = "TabPage2"
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage2.Size = New System.Drawing.Size(1165, 634)
+        Me.TabPage2.TabIndex = 1
+        Me.TabPage2.Text = "TabPage2"
+        Me.TabPage2.UseVisualStyleBackColor = True
         '
         'ListView1
         '
+        Me.ListView1.Alignment = System.Windows.Forms.ListViewAlignment.[Default]
+        Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.accountID, Me.accountName, Me.accountType})
         Me.ListView1.HideSelection = False
+        Me.ListView1.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem1})
         Me.ListView1.Location = New System.Drawing.Point(7, 7)
         Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(734, 618)
+        Me.ListView1.Size = New System.Drawing.Size(547, 618)
         Me.ListView1.TabIndex = 0
         Me.ListView1.UseCompatibleStateImageBehavior = False
+        Me.ListView1.View = System.Windows.Forms.View.Details
+        '
+        'accountID
+        '
+        Me.accountID.Text = "accountID"
+        Me.accountID.Width = 135
+        '
+        'accountName
+        '
+        Me.accountName.Text = "accountName"
+        Me.accountName.Width = 214
+        '
+        'accountType
+        '
+        Me.accountType.Text = "accountType"
+        Me.accountType.Width = 194
+        '
+        'TabPage3
+        '
+        Me.TabPage3.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage3.Name = "TabPage3"
+        Me.TabPage3.Size = New System.Drawing.Size(1165, 634)
+        Me.TabPage3.TabIndex = 2
+        Me.TabPage3.Text = "TabPage3"
+        Me.TabPage3.UseVisualStyleBackColor = True
+        '
+        'TabPage4
+        '
+        Me.TabPage4.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage4.Name = "TabPage4"
+        Me.TabPage4.Size = New System.Drawing.Size(1165, 634)
+        Me.TabPage4.TabIndex = 3
+        Me.TabPage4.Text = "TabPage4"
+        Me.TabPage4.UseVisualStyleBackColor = True
+        '
+        'TabPage5
+        '
+        Me.TabPage5.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage5.Name = "TabPage5"
+        Me.TabPage5.Size = New System.Drawing.Size(1165, 634)
+        Me.TabPage5.TabIndex = 4
+        Me.TabPage5.Text = "TabPage5"
+        Me.TabPage5.UseVisualStyleBackColor = True
+        '
+        'TabPage6
+        '
+        Me.TabPage6.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage6.Name = "TabPage6"
+        Me.TabPage6.Size = New System.Drawing.Size(1165, 634)
+        Me.TabPage6.TabIndex = 5
+        Me.TabPage6.Text = "TabPage6"
+        Me.TabPage6.UseVisualStyleBackColor = True
+        '
+        'TabPage7
+        '
+        Me.TabPage7.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage7.Name = "TabPage7"
+        Me.TabPage7.Size = New System.Drawing.Size(1165, 634)
+        Me.TabPage7.TabIndex = 6
+        Me.TabPage7.Text = "TabPage7"
+        Me.TabPage7.UseVisualStyleBackColor = True
         '
         'mainForm
         '
@@ -1374,13 +1452,13 @@ Partial Class mainForm
         Me.Panel1.PerformLayout()
         Me.mainTabControl.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
+        Me.Panel5.ResumeLayout(False)
+        Me.Panel5.PerformLayout()
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         Me.TabPage2.ResumeLayout(False)
-        Me.Panel5.ResumeLayout(False)
-        Me.Panel5.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1500,4 +1578,12 @@ Partial Class mainForm
     Friend WithEvents ProgressBar1 As ProgressBar
     Friend WithEvents Label12 As Label
     Friend WithEvents ListView1 As ListView
+    Friend WithEvents accountID As ColumnHeader
+    Friend WithEvents accountName As ColumnHeader
+    Friend WithEvents accountType As ColumnHeader
+    Friend WithEvents TabPage3 As TabPage
+    Friend WithEvents TabPage4 As TabPage
+    Friend WithEvents TabPage5 As TabPage
+    Friend WithEvents TabPage6 As TabPage
+    Friend WithEvents TabPage7 As TabPage
 End Class
