@@ -31,7 +31,9 @@ Partial Class mainForm
         Me.TabPage5 = New System.Windows.Forms.TabPage()
         Me.TabPage6 = New System.Windows.Forms.TabPage()
         Me.TabPage7 = New System.Windows.Forms.TabPage()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.TabControl1.SuspendLayout()
+        Me.TabPage7.SuspendLayout()
         Me.SuspendLayout()
         '
         'TabControl1
@@ -119,12 +121,22 @@ Partial Class mainForm
         '
         'TabPage7
         '
+        Me.TabPage7.Controls.Add(Me.Label1)
         Me.TabPage7.Location = New System.Drawing.Point(4, 24)
         Me.TabPage7.Name = "TabPage7"
         Me.TabPage7.Size = New System.Drawing.Size(1331, 586)
         Me.TabPage7.TabIndex = 6
         Me.TabPage7.Text = "SignUp / LogIn"
         Me.TabPage7.UseVisualStyleBackColor = True
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(443, 185)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(76, 13)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "some changes"
         '
         'mainForm
         '
@@ -136,6 +148,8 @@ Partial Class mainForm
         Me.Name = "mainForm"
         Me.Text = "Custom Shoe Store Management"
         Me.TabControl1.ResumeLayout(False)
+        Me.TabPage7.ResumeLayout(False)
+        Me.TabPage7.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -150,4 +164,5 @@ Partial Class mainForm
     Friend WithEvents TabPage5 As TabPage
     Friend WithEvents TabPage6 As TabPage
     Friend WithEvents TabPage7 As TabPage
+    Friend WithEvents Label1 As Label
 End Class
