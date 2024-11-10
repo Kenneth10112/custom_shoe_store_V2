@@ -59,8 +59,11 @@
 
     Private Sub btn_Login_Click(sender As Object, e As EventArgs) Handles btn_Login.Click
         Try
+            Dim login As New login()
+            login.Show()
 
         Catch ex As Exception
+            MessageBox.Show("An error occurred while opening Form2: " & ex.Message)
 
         End Try
 
