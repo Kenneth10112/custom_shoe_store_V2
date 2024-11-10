@@ -66,5 +66,23 @@
 
     End Sub
 
+    Private Sub cbox_modify_accountDetails_CheckedChanged(sender As Object, e As EventArgs) Handles cbox_modify_accountDetails.CheckedChanged
+        If cbox_modify_accountDetails.Checked Then
+            panel_modifying_account_elements.Visible = True
+        Else
+            panel_modifying_account_elements.Visible = False
+        End If
+    End Sub
 
+    Private Sub ListView2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListView2.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub Panel12_Paint(sender As Object, e As PaintEventArgs) Handles Panel12.Paint
+
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs)
+
+    End Sub
 End Class
