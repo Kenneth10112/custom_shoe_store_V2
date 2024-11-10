@@ -26,8 +26,8 @@ Partial Class mainForm
         Dim ListViewItem2 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SampleCustomer1 edited their chosen shoe/s")
         Dim ListViewItem3 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SampleCustomer1 completed their account details")
         Dim ListViewItem4 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
-        Dim ListViewItem6 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"sample ID", "sample name", "sample type"}, -1)
         Dim ListViewItem5 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"SampleID", "Sample Details", "Sample Method", "Sample Date", "sample Total amount"}, -1)
+        Dim ListViewItem6 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"sample ID", "sample name", "sample type"}, -1)
         Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
         Me.btn_Dashboard = New System.Windows.Forms.Button()
         Me.btn_Accounts = New System.Windows.Forms.Button()
@@ -88,10 +88,71 @@ Partial Class mainForm
         Me.ColumnHeader6 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader7 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.TabPage4 = New System.Windows.Forms.TabPage()
+        Me.Panel15 = New System.Windows.Forms.Panel()
+        Me.Panel16 = New System.Windows.Forms.Panel()
+        Me.Button11 = New System.Windows.Forms.Button()
+        Me.Label131 = New System.Windows.Forms.Label()
+        Me.Label132 = New System.Windows.Forms.Label()
+        Me.TextBox18 = New System.Windows.Forms.TextBox()
+        Me.TextBox19 = New System.Windows.Forms.TextBox()
+        Me.Button10 = New System.Windows.Forms.Button()
+        Me.ComboBox9 = New System.Windows.Forms.ComboBox()
+        Me.Label128 = New System.Windows.Forms.Label()
+        Me.Button9 = New System.Windows.Forms.Button()
+        Me.Label127 = New System.Windows.Forms.Label()
+        Me.Label122 = New System.Windows.Forms.Label()
+        Me.Label123 = New System.Windows.Forms.Label()
+        Me.Label124 = New System.Windows.Forms.Label()
+        Me.Label119 = New System.Windows.Forms.Label()
+        Me.Label120 = New System.Windows.Forms.Label()
+        Me.Label121 = New System.Windows.Forms.Label()
+        Me.ListView5 = New System.Windows.Forms.ListView()
+        Me.ColumnHeader10 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader16 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader17 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.Label118 = New System.Windows.Forms.Label()
+        Me.Label117 = New System.Windows.Forms.Label()
+        Me.Label116 = New System.Windows.Forms.Label()
+        Me.Label115 = New System.Windows.Forms.Label()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.TabControl1 = New System.Windows.Forms.TabControl()
+        Me.TabPage7 = New System.Windows.Forms.TabPage()
+        Me.Panel13 = New System.Windows.Forms.Panel()
+        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.Panel12 = New System.Windows.Forms.Panel()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Panel14 = New System.Windows.Forms.Panel()
+        Me.ComboBox8 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox7 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox6 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox5 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
+        Me.Label114 = New System.Windows.Forms.Label()
+        Me.Label113 = New System.Windows.Forms.Label()
+        Me.Label112 = New System.Windows.Forms.Label()
+        Me.Label111 = New System.Windows.Forms.Label()
+        Me.Label110 = New System.Windows.Forms.Label()
+        Me.Label109 = New System.Windows.Forms.Label()
+        Me.TextBox15 = New System.Windows.Forms.TextBox()
+        Me.Label108 = New System.Windows.Forms.Label()
+        Me.TabPage8 = New System.Windows.Forms.TabPage()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Panel11 = New System.Windows.Forms.Panel()
+        Me.ListView4 = New System.Windows.Forms.ListView()
+        Me.ColumnHeader9 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader11 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader12 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader13 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader14 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader15 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.Label106 = New System.Windows.Forms.Label()
+        Me.Label107 = New System.Windows.Forms.Label()
+        Me.Label104 = New System.Windows.Forms.Label()
+        Me.Label105 = New System.Windows.Forms.Label()
         Me.panel_modifying_account_elements = New System.Windows.Forms.Panel()
         Me.Label103 = New System.Windows.Forms.Label()
         Me.ComboBox3 = New System.Windows.Forms.ComboBox()
@@ -226,69 +287,6 @@ Partial Class mainForm
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.mainTabControl = New System.Windows.Forms.TabControl()
-        Me.Label104 = New System.Windows.Forms.Label()
-        Me.Label105 = New System.Windows.Forms.Label()
-        Me.Label106 = New System.Windows.Forms.Label()
-        Me.Label107 = New System.Windows.Forms.Label()
-        Me.ListView4 = New System.Windows.Forms.ListView()
-        Me.ColumnHeader9 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader11 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader12 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader13 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader14 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader15 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.TabControl1 = New System.Windows.Forms.TabControl()
-        Me.TabPage7 = New System.Windows.Forms.TabPage()
-        Me.TabPage8 = New System.Windows.Forms.TabPage()
-        Me.Panel12 = New System.Windows.Forms.Panel()
-        Me.Panel13 = New System.Windows.Forms.Panel()
-        Me.Label108 = New System.Windows.Forms.Label()
-        Me.TextBox15 = New System.Windows.Forms.TextBox()
-        Me.Panel14 = New System.Windows.Forms.Panel()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Label109 = New System.Windows.Forms.Label()
-        Me.Label110 = New System.Windows.Forms.Label()
-        Me.Label111 = New System.Windows.Forms.Label()
-        Me.Label112 = New System.Windows.Forms.Label()
-        Me.Label113 = New System.Windows.Forms.Label()
-        Me.Label114 = New System.Windows.Forms.Label()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox5 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox6 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox7 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox8 = New System.Windows.Forms.ComboBox()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
-        Me.Panel15 = New System.Windows.Forms.Panel()
-        Me.Label115 = New System.Windows.Forms.Label()
-        Me.Label116 = New System.Windows.Forms.Label()
-        Me.Label117 = New System.Windows.Forms.Label()
-        Me.Label118 = New System.Windows.Forms.Label()
-        Me.ListView5 = New System.Windows.Forms.ListView()
-        Me.ColumnHeader10 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader16 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader17 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.Label119 = New System.Windows.Forms.Label()
-        Me.Label120 = New System.Windows.Forms.Label()
-        Me.Label121 = New System.Windows.Forms.Label()
-        Me.Label122 = New System.Windows.Forms.Label()
-        Me.Label123 = New System.Windows.Forms.Label()
-        Me.Label124 = New System.Windows.Forms.Label()
-        Me.Label125 = New System.Windows.Forms.Label()
-        Me.Label126 = New System.Windows.Forms.Label()
-        Me.Label127 = New System.Windows.Forms.Label()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.Label128 = New System.Windows.Forms.Label()
-        Me.ComboBox9 = New System.Windows.Forms.ComboBox()
-        Me.Button10 = New System.Windows.Forms.Button()
-        Me.Panel16 = New System.Windows.Forms.Panel()
-        Me.Button11 = New System.Windows.Forms.Button()
-        Me.Label131 = New System.Windows.Forms.Label()
-        Me.Label132 = New System.Windows.Forms.Label()
-        Me.TextBox18 = New System.Windows.Forms.TextBox()
-        Me.TextBox19 = New System.Windows.Forms.TextBox()
         Me.FlowLayoutPanel1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.TabPage6.SuspendLayout()
@@ -298,7 +296,14 @@ Partial Class mainForm
         Me.Panel8.SuspendLayout()
         Me.Panel7.SuspendLayout()
         Me.TabPage4.SuspendLayout()
+        Me.Panel15.SuspendLayout()
+        Me.Panel16.SuspendLayout()
         Me.TabPage3.SuspendLayout()
+        Me.TabControl1.SuspendLayout()
+        Me.TabPage7.SuspendLayout()
+        Me.Panel13.SuspendLayout()
+        Me.Panel12.SuspendLayout()
+        Me.Panel14.SuspendLayout()
         Me.TabPage2.SuspendLayout()
         Me.Panel11.SuspendLayout()
         Me.panel_modifying_account_elements.SuspendLayout()
@@ -307,13 +312,6 @@ Partial Class mainForm
         Me.Panel4.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.mainTabControl.SuspendLayout()
-        Me.TabControl1.SuspendLayout()
-        Me.TabPage7.SuspendLayout()
-        Me.Panel12.SuspendLayout()
-        Me.Panel13.SuspendLayout()
-        Me.Panel14.SuspendLayout()
-        Me.Panel15.SuspendLayout()
-        Me.Panel16.SuspendLayout()
         Me.SuspendLayout()
         '
         'FlowLayoutPanel1
@@ -924,6 +922,254 @@ Partial Class mainForm
         Me.TabPage4.Text = "TabPage4"
         Me.TabPage4.UseVisualStyleBackColor = True
         '
+        'Panel15
+        '
+        Me.Panel15.Controls.Add(Me.Panel16)
+        Me.Panel15.Controls.Add(Me.Button10)
+        Me.Panel15.Controls.Add(Me.ComboBox9)
+        Me.Panel15.Controls.Add(Me.Label128)
+        Me.Panel15.Controls.Add(Me.Button9)
+        Me.Panel15.Controls.Add(Me.Label127)
+        Me.Panel15.Controls.Add(Me.Label122)
+        Me.Panel15.Controls.Add(Me.Label123)
+        Me.Panel15.Controls.Add(Me.Label124)
+        Me.Panel15.Controls.Add(Me.Label119)
+        Me.Panel15.Controls.Add(Me.Label120)
+        Me.Panel15.Controls.Add(Me.Label121)
+        Me.Panel15.Controls.Add(Me.ListView5)
+        Me.Panel15.Controls.Add(Me.Label118)
+        Me.Panel15.Controls.Add(Me.Label117)
+        Me.Panel15.Controls.Add(Me.Label116)
+        Me.Panel15.Controls.Add(Me.Label115)
+        Me.Panel15.Location = New System.Drawing.Point(5, 4)
+        Me.Panel15.Name = "Panel15"
+        Me.Panel15.Size = New System.Drawing.Size(1152, 621)
+        Me.Panel15.TabIndex = 0
+        '
+        'Panel16
+        '
+        Me.Panel16.Controls.Add(Me.Button11)
+        Me.Panel16.Controls.Add(Me.Label131)
+        Me.Panel16.Controls.Add(Me.Label132)
+        Me.Panel16.Controls.Add(Me.TextBox18)
+        Me.Panel16.Controls.Add(Me.TextBox19)
+        Me.Panel16.Location = New System.Drawing.Point(605, 451)
+        Me.Panel16.Name = "Panel16"
+        Me.Panel16.Size = New System.Drawing.Size(315, 110)
+        Me.Panel16.TabIndex = 52
+        Me.Panel16.Visible = False
+        '
+        'Button11
+        '
+        Me.Button11.Location = New System.Drawing.Point(16, 66)
+        Me.Button11.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button11.Name = "Button11"
+        Me.Button11.Size = New System.Drawing.Size(285, 32)
+        Me.Button11.TabIndex = 49
+        Me.Button11.Text = "Confirm Changes"
+        Me.Button11.UseVisualStyleBackColor = True
+        '
+        'Label131
+        '
+        Me.Label131.AutoSize = True
+        Me.Label131.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label131.Location = New System.Drawing.Point(13, 12)
+        Me.Label131.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label131.Name = "Label131"
+        Me.Label131.Size = New System.Drawing.Size(117, 17)
+        Me.Label131.TabIndex = 40
+        Me.Label131.Text = "Material Name:"
+        '
+        'Label132
+        '
+        Me.Label132.AutoSize = True
+        Me.Label132.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label132.Location = New System.Drawing.Point(13, 38)
+        Me.Label132.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label132.Name = "Label132"
+        Me.Label132.Size = New System.Drawing.Size(114, 17)
+        Me.Label132.TabIndex = 41
+        Me.Label132.Text = "Material stock:"
+        '
+        'TextBox18
+        '
+        Me.TextBox18.Location = New System.Drawing.Point(131, 39)
+        Me.TextBox18.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBox18.Name = "TextBox18"
+        Me.TextBox18.Size = New System.Drawing.Size(170, 20)
+        Me.TextBox18.TabIndex = 46
+        Me.TextBox18.Text = "(stock)"
+        '
+        'TextBox19
+        '
+        Me.TextBox19.Location = New System.Drawing.Point(134, 12)
+        Me.TextBox19.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBox19.Name = "TextBox19"
+        Me.TextBox19.Size = New System.Drawing.Size(167, 20)
+        Me.TextBox19.TabIndex = 45
+        Me.TextBox19.Text = "(name)"
+        '
+        'Button10
+        '
+        Me.Button10.Location = New System.Drawing.Point(182, 451)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(417, 110)
+        Me.Button10.TabIndex = 17
+        Me.Button10.Text = "Change Selected Item Detail"
+        Me.Button10.UseVisualStyleBackColor = True
+        '
+        'ComboBox9
+        '
+        Me.ComboBox9.FormattingEnabled = True
+        Me.ComboBox9.Location = New System.Drawing.Point(80, 167)
+        Me.ComboBox9.Name = "ComboBox9"
+        Me.ComboBox9.Size = New System.Drawing.Size(379, 21)
+        Me.ComboBox9.TabIndex = 16
+        '
+        'Label128
+        '
+        Me.Label128.AutoSize = True
+        Me.Label128.Location = New System.Drawing.Point(24, 170)
+        Me.Label128.Name = "Label128"
+        Me.Label128.Size = New System.Drawing.Size(49, 13)
+        Me.Label128.TabIndex = 15
+        Me.Label128.Text = "Filter by: "
+        '
+        'Button9
+        '
+        Me.Button9.Location = New System.Drawing.Point(465, 166)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(75, 23)
+        Me.Button9.TabIndex = 14
+        Me.Button9.Text = "Confirm Filter"
+        Me.Button9.UseVisualStyleBackColor = True
+        '
+        'Label127
+        '
+        Me.Label127.AutoSize = True
+        Me.Label127.Location = New System.Drawing.Point(919, 30)
+        Me.Label127.Name = "Label127"
+        Me.Label127.Size = New System.Drawing.Size(92, 13)
+        Me.Label127.TabIndex = 11
+        Me.Label127.Text = "Least Comfortable"
+        '
+        'Label122
+        '
+        Me.Label122.AutoSize = True
+        Me.Label122.Location = New System.Drawing.Point(639, 102)
+        Me.Label122.Name = "Label122"
+        Me.Label122.Size = New System.Drawing.Size(129, 13)
+        Me.Label122.TabIndex = 10
+        Me.Label122.Text = "Most Comfortable Material"
+        '
+        'Label123
+        '
+        Me.Label123.AutoSize = True
+        Me.Label123.Location = New System.Drawing.Point(639, 66)
+        Me.Label123.Name = "Label123"
+        Me.Label123.Size = New System.Drawing.Size(108, 13)
+        Me.Label123.TabIndex = 9
+        Me.Label123.Text = "Lowest Price Material"
+        '
+        'Label124
+        '
+        Me.Label124.AutoSize = True
+        Me.Label124.Location = New System.Drawing.Point(639, 30)
+        Me.Label124.Name = "Label124"
+        Me.Label124.Size = New System.Drawing.Size(114, 13)
+        Me.Label124.TabIndex = 8
+        Me.Label124.Text = "Average Price Material"
+        '
+        'Label119
+        '
+        Me.Label119.AutoSize = True
+        Me.Label119.Location = New System.Drawing.Point(341, 102)
+        Me.Label119.Name = "Label119"
+        Me.Label119.Size = New System.Drawing.Size(122, 13)
+        Me.Label119.TabIndex = 7
+        Me.Label119.Text = "Most Expensive Material"
+        '
+        'Label120
+        '
+        Me.Label120.AutoSize = True
+        Me.Label120.Location = New System.Drawing.Point(341, 66)
+        Me.Label120.Name = "Label120"
+        Me.Label120.Size = New System.Drawing.Size(101, 13)
+        Me.Label120.TabIndex = 6
+        Me.Label120.Text = "Least Used Material"
+        '
+        'Label121
+        '
+        Me.Label121.AutoSize = True
+        Me.Label121.Location = New System.Drawing.Point(341, 30)
+        Me.Label121.Name = "Label121"
+        Me.Label121.Size = New System.Drawing.Size(98, 13)
+        Me.Label121.TabIndex = 5
+        Me.Label121.Text = "Most Used Material"
+        '
+        'ListView5
+        '
+        Me.ListView5.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader10, Me.ColumnHeader16, Me.ColumnHeader17})
+        Me.ListView5.HideSelection = False
+        Me.ListView5.Location = New System.Drawing.Point(24, 195)
+        Me.ListView5.Name = "ListView5"
+        Me.ListView5.Size = New System.Drawing.Size(1105, 250)
+        Me.ListView5.TabIndex = 4
+        Me.ListView5.UseCompatibleStateImageBehavior = False
+        Me.ListView5.View = System.Windows.Forms.View.Details
+        '
+        'ColumnHeader10
+        '
+        Me.ColumnHeader10.Text = "Material Name"
+        Me.ColumnHeader10.Width = 541
+        '
+        'ColumnHeader16
+        '
+        Me.ColumnHeader16.Text = "Material stock"
+        Me.ColumnHeader16.Width = 234
+        '
+        'ColumnHeader17
+        '
+        Me.ColumnHeader17.Text = "Stock Status"
+        Me.ColumnHeader17.Width = 206
+        '
+        'Label118
+        '
+        Me.Label118.AutoSize = True
+        Me.Label118.Location = New System.Drawing.Point(38, 108)
+        Me.Label118.Name = "Label118"
+        Me.Label118.Size = New System.Drawing.Size(67, 13)
+        Me.Label118.TabIndex = 3
+        Me.Label118.Text = "Out of Stock"
+        '
+        'Label117
+        '
+        Me.Label117.AutoSize = True
+        Me.Label117.Location = New System.Drawing.Point(38, 91)
+        Me.Label117.Name = "Label117"
+        Me.Label117.Size = New System.Drawing.Size(78, 13)
+        Me.Label117.TabIndex = 2
+        Me.Label117.Text = "Low on Stocks"
+        '
+        'Label116
+        '
+        Me.Label116.AutoSize = True
+        Me.Label116.Location = New System.Drawing.Point(38, 74)
+        Me.Label116.Name = "Label116"
+        Me.Label116.Size = New System.Drawing.Size(109, 13)
+        Me.Label116.TabIndex = 1
+        Me.Label116.Text = "Have Enough Stocks"
+        '
+        'Label115
+        '
+        Me.Label115.AutoSize = True
+        Me.Label115.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label115.Location = New System.Drawing.Point(16, 14)
+        Me.Label115.Name = "Label115"
+        Me.Label115.Size = New System.Drawing.Size(191, 46)
+        Me.Label115.TabIndex = 0
+        Me.Label115.Text = "Inventory"
+        '
         'TabPage3
         '
         Me.TabPage3.Controls.Add(Me.TabControl1)
@@ -933,6 +1179,245 @@ Partial Class mainForm
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "TabPage3"
         Me.TabPage3.UseVisualStyleBackColor = True
+        '
+        'TabControl1
+        '
+        Me.TabControl1.Controls.Add(Me.TabPage7)
+        Me.TabControl1.Controls.Add(Me.TabPage8)
+        Me.TabControl1.Location = New System.Drawing.Point(5, 4)
+        Me.TabControl1.Name = "TabControl1"
+        Me.TabControl1.SelectedIndex = 0
+        Me.TabControl1.Size = New System.Drawing.Size(1157, 627)
+        Me.TabControl1.TabIndex = 0
+        '
+        'TabPage7
+        '
+        Me.TabPage7.Controls.Add(Me.Panel13)
+        Me.TabPage7.Controls.Add(Me.Panel12)
+        Me.TabPage7.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage7.Name = "TabPage7"
+        Me.TabPage7.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage7.Size = New System.Drawing.Size(1149, 601)
+        Me.TabPage7.TabIndex = 0
+        Me.TabPage7.Text = "Customize Shoe"
+        Me.TabPage7.UseVisualStyleBackColor = True
+        '
+        'Panel13
+        '
+        Me.Panel13.Controls.Add(Me.RichTextBox1)
+        Me.Panel13.Controls.Add(Me.Button8)
+        Me.Panel13.Location = New System.Drawing.Point(772, 6)
+        Me.Panel13.Name = "Panel13"
+        Me.Panel13.Size = New System.Drawing.Size(371, 589)
+        Me.Panel13.TabIndex = 1
+        '
+        'RichTextBox1
+        '
+        Me.RichTextBox1.Location = New System.Drawing.Point(19, 18)
+        Me.RichTextBox1.Name = "RichTextBox1"
+        Me.RichTextBox1.Size = New System.Drawing.Size(337, 489)
+        Me.RichTextBox1.TabIndex = 8
+        Me.RichTextBox1.Text = "Summary: (Customization details and costing details will appear here " & Global.Microsoft.VisualBasic.ChrW(10) & "after click" &
+    "ing the button on the bottom left)"
+        '
+        'Button8
+        '
+        Me.Button8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button8.Location = New System.Drawing.Point(3, 513)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(365, 73)
+        Me.Button8.TabIndex = 7
+        Me.Button8.Text = "Finalize"
+        Me.Button8.UseVisualStyleBackColor = True
+        '
+        'Panel12
+        '
+        Me.Panel12.BackColor = System.Drawing.Color.DarkGray
+        Me.Panel12.Controls.Add(Me.Button4)
+        Me.Panel12.Controls.Add(Me.Button7)
+        Me.Panel12.Controls.Add(Me.Button6)
+        Me.Panel12.Controls.Add(Me.Panel14)
+        Me.Panel12.Controls.Add(Me.TextBox15)
+        Me.Panel12.Controls.Add(Me.Label108)
+        Me.Panel12.Location = New System.Drawing.Point(6, 6)
+        Me.Panel12.Name = "Panel12"
+        Me.Panel12.Size = New System.Drawing.Size(760, 589)
+        Me.Panel12.TabIndex = 0
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(606, 11)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(141, 23)
+        Me.Button4.TabIndex = 6
+        Me.Button4.Text = "Make for new user"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Button7
+        '
+        Me.Button7.Location = New System.Drawing.Point(524, 11)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(76, 23)
+        Me.Button7.TabIndex = 5
+        Me.Button7.Text = "Select"
+        Me.Button7.UseVisualStyleBackColor = True
+        '
+        'Button6
+        '
+        Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button6.Location = New System.Drawing.Point(3, 479)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(754, 107)
+        Me.Button6.TabIndex = 4
+        Me.Button6.Text = "View Summary"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
+        'Panel14
+        '
+        Me.Panel14.BackColor = System.Drawing.Color.White
+        Me.Panel14.Controls.Add(Me.ComboBox8)
+        Me.Panel14.Controls.Add(Me.ComboBox7)
+        Me.Panel14.Controls.Add(Me.ComboBox6)
+        Me.Panel14.Controls.Add(Me.ComboBox5)
+        Me.Panel14.Controls.Add(Me.ComboBox4)
+        Me.Panel14.Controls.Add(Me.Label114)
+        Me.Panel14.Controls.Add(Me.Label113)
+        Me.Panel14.Controls.Add(Me.Label112)
+        Me.Panel14.Controls.Add(Me.Label111)
+        Me.Panel14.Controls.Add(Me.Label110)
+        Me.Panel14.Controls.Add(Me.Label109)
+        Me.Panel14.Location = New System.Drawing.Point(3, 46)
+        Me.Panel14.Name = "Panel14"
+        Me.Panel14.Size = New System.Drawing.Size(754, 427)
+        Me.Panel14.TabIndex = 3
+        '
+        'ComboBox8
+        '
+        Me.ComboBox8.FormattingEnabled = True
+        Me.ComboBox8.Items.AddRange(New Object() {"Cotton", "Polyester", "Nylon", "Elastic Cord", "Leather"})
+        Me.ComboBox8.Location = New System.Drawing.Point(95, 230)
+        Me.ComboBox8.Name = "ComboBox8"
+        Me.ComboBox8.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox8.TabIndex = 18
+        '
+        'ComboBox7
+        '
+        Me.ComboBox7.FormattingEnabled = True
+        Me.ComboBox7.Items.AddRange(New Object() {"EVA (Ethylene Vinyl Acetate)", "Polyurethane (PU)", "TPU (Thermoplastic Polyurethane)", "Gel"})
+        Me.ComboBox7.Location = New System.Drawing.Point(95, 193)
+        Me.ComboBox7.Name = "ComboBox7"
+        Me.ComboBox7.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox7.TabIndex = 17
+        '
+        'ComboBox6
+        '
+        Me.ComboBox6.FormattingEnabled = True
+        Me.ComboBox6.Items.AddRange(New Object() {"Rubber", "Carbon Rubber", "Gum Rubber", "TPU (Thermoplastic Polyurethane)", "EVA (Ethylene Vinyl Acetate)"})
+        Me.ComboBox6.Location = New System.Drawing.Point(95, 159)
+        Me.ComboBox6.Name = "ComboBox6"
+        Me.ComboBox6.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox6.TabIndex = 16
+        '
+        'ComboBox5
+        '
+        Me.ComboBox5.FormattingEnabled = True
+        Me.ComboBox5.Items.AddRange(New Object() {"Microfiber", "Memory Gel", "Sheepskin", "Gel", "Leather", "Memory Foam", "Cork", "Polyurethane Foam (PU Foam)"})
+        Me.ComboBox5.Location = New System.Drawing.Point(95, 125)
+        Me.ComboBox5.Name = "ComboBox5"
+        Me.ComboBox5.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox5.TabIndex = 15
+        '
+        'ComboBox4
+        '
+        Me.ComboBox4.FormattingEnabled = True
+        Me.ComboBox4.Items.AddRange(New Object() {"Leather", "Mesh", "Canvas", "Synthetic Leather", "Knit Fabric", "Suede", "Denim", "Synthetic Mesh"})
+        Me.ComboBox4.Location = New System.Drawing.Point(95, 92)
+        Me.ComboBox4.Name = "ComboBox4"
+        Me.ComboBox4.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox4.TabIndex = 14
+        '
+        'Label114
+        '
+        Me.Label114.AutoSize = True
+        Me.Label114.Location = New System.Drawing.Point(31, 233)
+        Me.Label114.Name = "Label114"
+        Me.Label114.Size = New System.Drawing.Size(34, 13)
+        Me.Label114.TabIndex = 13
+        Me.Label114.Text = "Lace:"
+        '
+        'Label113
+        '
+        Me.Label113.AutoSize = True
+        Me.Label113.Location = New System.Drawing.Point(31, 196)
+        Me.Label113.Name = "Label113"
+        Me.Label113.Size = New System.Drawing.Size(46, 13)
+        Me.Label113.TabIndex = 11
+        Me.Label113.Text = "Midsole:"
+        '
+        'Label112
+        '
+        Me.Label112.AutoSize = True
+        Me.Label112.Location = New System.Drawing.Point(31, 162)
+        Me.Label112.Name = "Label112"
+        Me.Label112.Size = New System.Drawing.Size(46, 13)
+        Me.Label112.TabIndex = 9
+        Me.Label112.Text = "Outsole:"
+        '
+        'Label111
+        '
+        Me.Label111.AutoSize = True
+        Me.Label111.Location = New System.Drawing.Point(31, 128)
+        Me.Label111.Name = "Label111"
+        Me.Label111.Size = New System.Drawing.Size(38, 13)
+        Me.Label111.TabIndex = 7
+        Me.Label111.Text = "Insole:"
+        '
+        'Label110
+        '
+        Me.Label110.AutoSize = True
+        Me.Label110.Location = New System.Drawing.Point(31, 95)
+        Me.Label110.Name = "Label110"
+        Me.Label110.Size = New System.Drawing.Size(34, 13)
+        Me.Label110.TabIndex = 5
+        Me.Label110.Text = "Body:"
+        '
+        'Label109
+        '
+        Me.Label109.AutoSize = True
+        Me.Label109.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label109.Location = New System.Drawing.Point(29, 25)
+        Me.Label109.Name = "Label109"
+        Me.Label109.Size = New System.Drawing.Size(594, 50)
+        Me.Label109.TabIndex = 0
+        Me.Label109.Text = "Select a part's option to customize that part with the selected option " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Each par" &
+    "t should have an option selected"
+        '
+        'TextBox15
+        '
+        Me.TextBox15.Location = New System.Drawing.Point(109, 12)
+        Me.TextBox15.Name = "TextBox15"
+        Me.TextBox15.Size = New System.Drawing.Size(239, 20)
+        Me.TextBox15.TabIndex = 1
+        '
+        'Label108
+        '
+        Me.Label108.AutoSize = True
+        Me.Label108.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label108.Location = New System.Drawing.Point(12, 12)
+        Me.Label108.Name = "Label108"
+        Me.Label108.Size = New System.Drawing.Size(91, 20)
+        Me.Label108.TabIndex = 0
+        Me.Label108.Text = "Customer:"
+        '
+        'TabPage8
+        '
+        Me.TabPage8.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage8.Name = "TabPage8"
+        Me.TabPage8.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage8.Size = New System.Drawing.Size(1149, 601)
+        Me.TabPage8.TabIndex = 1
+        Me.TabPage8.Text = "Add / Modify / Delete options"
+        Me.TabPage8.UseVisualStyleBackColor = True
         '
         'TabPage2
         '
@@ -982,6 +1467,97 @@ Partial Class mainForm
         Me.Panel11.Name = "Panel11"
         Me.Panel11.Size = New System.Drawing.Size(801, 577)
         Me.Panel11.TabIndex = 1
+        '
+        'ListView4
+        '
+        Me.ListView4.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader9, Me.ColumnHeader11, Me.ColumnHeader12, Me.ColumnHeader13, Me.ColumnHeader14, Me.ColumnHeader15})
+        Me.ListView4.HideSelection = False
+        Me.ListView4.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem5})
+        Me.ListView4.Location = New System.Drawing.Point(55, 324)
+        Me.ListView4.Margin = New System.Windows.Forms.Padding(2)
+        Me.ListView4.Name = "ListView4"
+        Me.ListView4.Size = New System.Drawing.Size(708, 251)
+        Me.ListView4.TabIndex = 56
+        Me.ListView4.UseCompatibleStateImageBehavior = False
+        Me.ListView4.View = System.Windows.Forms.View.Details
+        '
+        'ColumnHeader9
+        '
+        Me.ColumnHeader9.Text = "Order ID"
+        Me.ColumnHeader9.Width = 108
+        '
+        'ColumnHeader11
+        '
+        Me.ColumnHeader11.Text = "Order Details"
+        Me.ColumnHeader11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.ColumnHeader11.Width = 254
+        '
+        'ColumnHeader12
+        '
+        Me.ColumnHeader12.Text = "Delivery Method"
+        Me.ColumnHeader12.Width = 108
+        '
+        'ColumnHeader13
+        '
+        Me.ColumnHeader13.Text = "Due Date"
+        Me.ColumnHeader13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.ColumnHeader13.Width = 133
+        '
+        'ColumnHeader14
+        '
+        Me.ColumnHeader14.Text = "Order Total Amount"
+        Me.ColumnHeader14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.ColumnHeader14.Width = 170
+        '
+        'ColumnHeader15
+        '
+        Me.ColumnHeader15.Text = "Payment Status"
+        Me.ColumnHeader15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.ColumnHeader15.Width = 170
+        '
+        'Label106
+        '
+        Me.Label106.AutoSize = True
+        Me.Label106.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label106.Location = New System.Drawing.Point(202, 305)
+        Me.Label106.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label106.Name = "Label106"
+        Me.Label106.Size = New System.Drawing.Size(53, 17)
+        Me.Label106.TabIndex = 55
+        Me.Label106.Text = "(count)"
+        '
+        'Label107
+        '
+        Me.Label107.AutoSize = True
+        Me.Label107.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label107.Location = New System.Drawing.Point(52, 305)
+        Me.Label107.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label107.Name = "Label107"
+        Me.Label107.Size = New System.Drawing.Size(152, 17)
+        Me.Label107.TabIndex = 54
+        Me.Label107.Text = "Total Orders Count:"
+        '
+        'Label104
+        '
+        Me.Label104.AutoSize = True
+        Me.Label104.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label104.Location = New System.Drawing.Point(230, 285)
+        Me.Label104.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label104.Name = "Label104"
+        Me.Label104.Size = New System.Drawing.Size(46, 17)
+        Me.Label104.TabIndex = 53
+        Me.Label104.Text = "(date)"
+        '
+        'Label105
+        '
+        Me.Label105.AutoSize = True
+        Me.Label105.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label105.Location = New System.Drawing.Point(52, 285)
+        Me.Label105.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label105.Name = "Label105"
+        Me.Label105.Size = New System.Drawing.Size(174, 17)
+        Me.Label105.TabIndex = 52
+        Me.Label105.Text = "Account creation Date:"
         '
         'panel_modifying_account_elements
         '
@@ -1504,7 +2080,7 @@ Partial Class mainForm
         Me.Label36.BackColor = System.Drawing.Color.Transparent
         Me.Label36.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label36.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label36.Location = New System.Drawing.Point(587, 157)
+        Me.Label36.Location = New System.Drawing.Point(636, 145)
         Me.Label36.Name = "Label36"
         Me.Label36.Size = New System.Drawing.Size(497, 110)
         Me.Label36.TabIndex = 98
@@ -1518,7 +2094,7 @@ Partial Class mainForm
         Me.Label37.Name = "Label37"
         Me.Label37.Size = New System.Drawing.Size(22, 16)
         Me.Label37.TabIndex = 97
-        Me.Label37.Text = "23"
+        Me.Label37.Text = "65"
         '
         'ProgressBar13
         '
@@ -1527,17 +2103,17 @@ Partial Class mainForm
         Me.ProgressBar13.Size = New System.Drawing.Size(159, 23)
         Me.ProgressBar13.Style = System.Windows.Forms.ProgressBarStyle.Continuous
         Me.ProgressBar13.TabIndex = 95
-        Me.ProgressBar13.Value = 23
+        Me.ProgressBar13.Value = 65
         '
         'Label38
         '
         Me.Label38.AutoSize = True
-        Me.Label38.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label38.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label38.Location = New System.Drawing.Point(950, 288)
         Me.Label38.Name = "Label38"
-        Me.Label38.Size = New System.Drawing.Size(143, 16)
+        Me.Label38.Size = New System.Drawing.Size(141, 15)
         Me.Label38.TabIndex = 96
-        Me.Label38.Text = "sampleItem1 Stock:"
+        Me.Label38.Text = "sampleItem24 Stock:"
         '
         'Label39
         '
@@ -1547,7 +2123,7 @@ Partial Class mainForm
         Me.Label39.Name = "Label39"
         Me.Label39.Size = New System.Drawing.Size(22, 16)
         Me.Label39.TabIndex = 94
-        Me.Label39.Text = "37"
+        Me.Label39.Text = "78"
         '
         'ProgressBar14
         '
@@ -1556,17 +2132,17 @@ Partial Class mainForm
         Me.ProgressBar14.Size = New System.Drawing.Size(159, 23)
         Me.ProgressBar14.Style = System.Windows.Forms.ProgressBarStyle.Continuous
         Me.ProgressBar14.TabIndex = 92
-        Me.ProgressBar14.Value = 38
+        Me.ProgressBar14.Value = 78
         '
         'Label40
         '
         Me.Label40.AutoSize = True
-        Me.Label40.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label40.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label40.Location = New System.Drawing.Point(763, 288)
         Me.Label40.Name = "Label40"
-        Me.Label40.Size = New System.Drawing.Size(143, 16)
+        Me.Label40.Size = New System.Drawing.Size(141, 15)
         Me.Label40.TabIndex = 93
-        Me.Label40.Text = "sampleItem1 Stock:"
+        Me.Label40.Text = "sampleItem23 Stock:"
         '
         'Label41
         '
@@ -1576,7 +2152,7 @@ Partial Class mainForm
         Me.Label41.Name = "Label41"
         Me.Label41.Size = New System.Drawing.Size(22, 16)
         Me.Label41.TabIndex = 91
-        Me.Label41.Text = "37"
+        Me.Label41.Text = "35"
         '
         'ProgressBar15
         '
@@ -1585,17 +2161,17 @@ Partial Class mainForm
         Me.ProgressBar15.Size = New System.Drawing.Size(159, 23)
         Me.ProgressBar15.Style = System.Windows.Forms.ProgressBarStyle.Continuous
         Me.ProgressBar15.TabIndex = 89
-        Me.ProgressBar15.Value = 38
+        Me.ProgressBar15.Value = 35
         '
         'Label42
         '
         Me.Label42.AutoSize = True
-        Me.Label42.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label42.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label42.Location = New System.Drawing.Point(581, 288)
         Me.Label42.Name = "Label42"
-        Me.Label42.Size = New System.Drawing.Size(143, 16)
+        Me.Label42.Size = New System.Drawing.Size(141, 15)
         Me.Label42.TabIndex = 90
-        Me.Label42.Text = "sampleItem1 Stock:"
+        Me.Label42.Text = "sampleItem22 Stock:"
         '
         'Label43
         '
@@ -1603,9 +2179,9 @@ Partial Class mainForm
         Me.Label43.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label43.Location = New System.Drawing.Point(1090, 217)
         Me.Label43.Name = "Label43"
-        Me.Label43.Size = New System.Drawing.Size(15, 16)
+        Me.Label43.Size = New System.Drawing.Size(22, 16)
         Me.Label43.TabIndex = 88
-        Me.Label43.Text = "5"
+        Me.Label43.Text = "55"
         '
         'ProgressBar16
         '
@@ -1614,17 +2190,17 @@ Partial Class mainForm
         Me.ProgressBar16.Size = New System.Drawing.Size(159, 23)
         Me.ProgressBar16.Style = System.Windows.Forms.ProgressBarStyle.Continuous
         Me.ProgressBar16.TabIndex = 86
-        Me.ProgressBar16.Value = 5
+        Me.ProgressBar16.Value = 55
         '
         'Label44
         '
         Me.Label44.AutoSize = True
-        Me.Label44.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label44.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label44.Location = New System.Drawing.Point(950, 216)
         Me.Label44.Name = "Label44"
-        Me.Label44.Size = New System.Drawing.Size(143, 16)
+        Me.Label44.Size = New System.Drawing.Size(141, 15)
         Me.Label44.TabIndex = 87
-        Me.Label44.Text = "sampleItem1 Stock:"
+        Me.Label44.Text = "sampleItem18 Stock:"
         '
         'Label45
         '
@@ -1634,7 +2210,7 @@ Partial Class mainForm
         Me.Label45.Name = "Label45"
         Me.Label45.Size = New System.Drawing.Size(22, 16)
         Me.Label45.TabIndex = 85
-        Me.Label45.Text = "37"
+        Me.Label45.Text = "33"
         '
         'ProgressBar17
         '
@@ -1643,17 +2219,17 @@ Partial Class mainForm
         Me.ProgressBar17.Size = New System.Drawing.Size(159, 23)
         Me.ProgressBar17.Style = System.Windows.Forms.ProgressBarStyle.Continuous
         Me.ProgressBar17.TabIndex = 83
-        Me.ProgressBar17.Value = 38
+        Me.ProgressBar17.Value = 33
         '
         'Label46
         '
         Me.Label46.AutoSize = True
-        Me.Label46.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label46.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label46.Location = New System.Drawing.Point(763, 216)
         Me.Label46.Name = "Label46"
-        Me.Label46.Size = New System.Drawing.Size(143, 16)
+        Me.Label46.Size = New System.Drawing.Size(141, 15)
         Me.Label46.TabIndex = 84
-        Me.Label46.Text = "sampleItem1 Stock:"
+        Me.Label46.Text = "sampleItem17 Stock:"
         '
         'Label47
         '
@@ -1663,7 +2239,7 @@ Partial Class mainForm
         Me.Label47.Name = "Label47"
         Me.Label47.Size = New System.Drawing.Size(22, 16)
         Me.Label47.TabIndex = 82
-        Me.Label47.Text = "37"
+        Me.Label47.Text = "12"
         '
         'ProgressBar18
         '
@@ -1672,17 +2248,17 @@ Partial Class mainForm
         Me.ProgressBar18.Size = New System.Drawing.Size(159, 23)
         Me.ProgressBar18.Style = System.Windows.Forms.ProgressBarStyle.Continuous
         Me.ProgressBar18.TabIndex = 80
-        Me.ProgressBar18.Value = 38
+        Me.ProgressBar18.Value = 12
         '
         'Label48
         '
         Me.Label48.AutoSize = True
-        Me.Label48.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label48.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label48.Location = New System.Drawing.Point(581, 216)
         Me.Label48.Name = "Label48"
-        Me.Label48.Size = New System.Drawing.Size(143, 16)
+        Me.Label48.Size = New System.Drawing.Size(141, 15)
         Me.Label48.TabIndex = 81
-        Me.Label48.Text = "sampleItem1 Stock:"
+        Me.Label48.Text = "sampleItem16 Stock:"
         '
         'Label49
         '
@@ -1692,7 +2268,7 @@ Partial Class mainForm
         Me.Label49.Name = "Label49"
         Me.Label49.Size = New System.Drawing.Size(22, 16)
         Me.Label49.TabIndex = 79
-        Me.Label49.Text = "37"
+        Me.Label49.Text = "40"
         '
         'ProgressBar19
         '
@@ -1701,17 +2277,17 @@ Partial Class mainForm
         Me.ProgressBar19.Size = New System.Drawing.Size(159, 23)
         Me.ProgressBar19.Style = System.Windows.Forms.ProgressBarStyle.Continuous
         Me.ProgressBar19.TabIndex = 77
-        Me.ProgressBar19.Value = 38
+        Me.ProgressBar19.Value = 40
         '
         'Label50
         '
         Me.Label50.AutoSize = True
-        Me.Label50.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label50.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label50.Location = New System.Drawing.Point(950, 144)
         Me.Label50.Name = "Label50"
-        Me.Label50.Size = New System.Drawing.Size(143, 16)
+        Me.Label50.Size = New System.Drawing.Size(141, 15)
         Me.Label50.TabIndex = 78
-        Me.Label50.Text = "sampleItem1 Stock:"
+        Me.Label50.Text = "sampleItem12 Stock:"
         '
         'Label51
         '
@@ -1721,7 +2297,7 @@ Partial Class mainForm
         Me.Label51.Name = "Label51"
         Me.Label51.Size = New System.Drawing.Size(22, 16)
         Me.Label51.TabIndex = 76
-        Me.Label51.Text = "77"
+        Me.Label51.Text = "76"
         '
         'ProgressBar20
         '
@@ -1730,17 +2306,17 @@ Partial Class mainForm
         Me.ProgressBar20.Size = New System.Drawing.Size(159, 23)
         Me.ProgressBar20.Style = System.Windows.Forms.ProgressBarStyle.Continuous
         Me.ProgressBar20.TabIndex = 74
-        Me.ProgressBar20.Value = 77
+        Me.ProgressBar20.Value = 76
         '
         'Label52
         '
         Me.Label52.AutoSize = True
-        Me.Label52.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label52.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label52.Location = New System.Drawing.Point(763, 144)
         Me.Label52.Name = "Label52"
-        Me.Label52.Size = New System.Drawing.Size(143, 16)
+        Me.Label52.Size = New System.Drawing.Size(141, 15)
         Me.Label52.TabIndex = 75
-        Me.Label52.Text = "sampleItem1 Stock:"
+        Me.Label52.Text = "sampleItem11 Stock:"
         '
         'Label53
         '
@@ -1750,7 +2326,7 @@ Partial Class mainForm
         Me.Label53.Name = "Label53"
         Me.Label53.Size = New System.Drawing.Size(22, 16)
         Me.Label53.TabIndex = 73
-        Me.Label53.Text = "37"
+        Me.Label53.Text = "65"
         '
         'ProgressBar21
         '
@@ -1759,17 +2335,17 @@ Partial Class mainForm
         Me.ProgressBar21.Size = New System.Drawing.Size(159, 23)
         Me.ProgressBar21.Style = System.Windows.Forms.ProgressBarStyle.Continuous
         Me.ProgressBar21.TabIndex = 71
-        Me.ProgressBar21.Value = 38
+        Me.ProgressBar21.Value = 65
         '
         'Label54
         '
         Me.Label54.AutoSize = True
-        Me.Label54.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label54.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label54.Location = New System.Drawing.Point(581, 144)
         Me.Label54.Name = "Label54"
-        Me.Label54.Size = New System.Drawing.Size(143, 16)
+        Me.Label54.Size = New System.Drawing.Size(141, 15)
         Me.Label54.TabIndex = 72
-        Me.Label54.Text = "sampleItem1 Stock:"
+        Me.Label54.Text = "sampleItem10 Stock:"
         '
         'Label55
         '
@@ -1779,7 +2355,7 @@ Partial Class mainForm
         Me.Label55.Name = "Label55"
         Me.Label55.Size = New System.Drawing.Size(22, 16)
         Me.Label55.TabIndex = 70
-        Me.Label55.Text = "37"
+        Me.Label55.Text = "77"
         '
         'ProgressBar22
         '
@@ -1788,7 +2364,7 @@ Partial Class mainForm
         Me.ProgressBar22.Size = New System.Drawing.Size(159, 23)
         Me.ProgressBar22.Style = System.Windows.Forms.ProgressBarStyle.Continuous
         Me.ProgressBar22.TabIndex = 68
-        Me.ProgressBar22.Value = 38
+        Me.ProgressBar22.Value = 77
         '
         'Label56
         '
@@ -1798,7 +2374,7 @@ Partial Class mainForm
         Me.Label56.Name = "Label56"
         Me.Label56.Size = New System.Drawing.Size(143, 16)
         Me.Label56.TabIndex = 69
-        Me.Label56.Text = "sampleItem1 Stock:"
+        Me.Label56.Text = "sampleItem6 Stock:"
         '
         'Label57
         '
@@ -1808,7 +2384,7 @@ Partial Class mainForm
         Me.Label57.Name = "Label57"
         Me.Label57.Size = New System.Drawing.Size(22, 16)
         Me.Label57.TabIndex = 67
-        Me.Label57.Text = "37"
+        Me.Label57.Text = "24"
         '
         'ProgressBar23
         '
@@ -1817,7 +2393,7 @@ Partial Class mainForm
         Me.ProgressBar23.Size = New System.Drawing.Size(159, 23)
         Me.ProgressBar23.Style = System.Windows.Forms.ProgressBarStyle.Continuous
         Me.ProgressBar23.TabIndex = 65
-        Me.ProgressBar23.Value = 38
+        Me.ProgressBar23.Value = 24
         '
         'Label58
         '
@@ -1827,7 +2403,7 @@ Partial Class mainForm
         Me.Label58.Name = "Label58"
         Me.Label58.Size = New System.Drawing.Size(143, 16)
         Me.Label58.TabIndex = 66
-        Me.Label58.Text = "sampleItem1 Stock:"
+        Me.Label58.Text = "sampleItem5 Stock:"
         '
         'Label59
         '
@@ -1837,7 +2413,7 @@ Partial Class mainForm
         Me.Label59.Name = "Label59"
         Me.Label59.Size = New System.Drawing.Size(22, 16)
         Me.Label59.TabIndex = 64
-        Me.Label59.Text = "37"
+        Me.Label59.Text = "10"
         '
         'ProgressBar24
         '
@@ -1846,7 +2422,7 @@ Partial Class mainForm
         Me.ProgressBar24.Size = New System.Drawing.Size(159, 23)
         Me.ProgressBar24.Style = System.Windows.Forms.ProgressBarStyle.Continuous
         Me.ProgressBar24.TabIndex = 62
-        Me.ProgressBar24.Value = 38
+        Me.ProgressBar24.Value = 10
         '
         'Label60
         '
@@ -1856,7 +2432,7 @@ Partial Class mainForm
         Me.Label60.Name = "Label60"
         Me.Label60.Size = New System.Drawing.Size(143, 16)
         Me.Label60.TabIndex = 63
-        Me.Label60.Text = "sampleItem1 Stock:"
+        Me.Label60.Text = "sampleItem4 Stock:"
         '
         'Label35
         '
@@ -1864,7 +2440,7 @@ Partial Class mainForm
         Me.Label35.BackColor = System.Drawing.Color.Transparent
         Me.Label35.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label35.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label35.Location = New System.Drawing.Point(99, 176)
+        Me.Label35.Location = New System.Drawing.Point(89, 173)
         Me.Label35.Name = "Label35"
         Me.Label35.Size = New System.Drawing.Size(443, 55)
         Me.Label35.TabIndex = 61
@@ -1892,12 +2468,12 @@ Partial Class mainForm
         'Label30
         '
         Me.Label30.AutoSize = True
-        Me.Label30.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label30.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label30.Location = New System.Drawing.Point(408, 287)
         Me.Label30.Name = "Label30"
-        Me.Label30.Size = New System.Drawing.Size(143, 16)
+        Me.Label30.Size = New System.Drawing.Size(141, 15)
         Me.Label30.TabIndex = 59
-        Me.Label30.Text = "sampleItem1 Stock:"
+        Me.Label30.Text = "sampleItem21 Stock:"
         '
         'Label31
         '
@@ -1907,7 +2483,7 @@ Partial Class mainForm
         Me.Label31.Name = "Label31"
         Me.Label31.Size = New System.Drawing.Size(22, 16)
         Me.Label31.TabIndex = 57
-        Me.Label31.Text = "37"
+        Me.Label31.Text = "63"
         '
         'ProgressBar11
         '
@@ -1916,17 +2492,17 @@ Partial Class mainForm
         Me.ProgressBar11.Size = New System.Drawing.Size(159, 23)
         Me.ProgressBar11.Style = System.Windows.Forms.ProgressBarStyle.Continuous
         Me.ProgressBar11.TabIndex = 55
-        Me.ProgressBar11.Value = 38
+        Me.ProgressBar11.Value = 63
         '
         'Label32
         '
         Me.Label32.AutoSize = True
-        Me.Label32.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label32.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label32.Location = New System.Drawing.Point(221, 287)
         Me.Label32.Name = "Label32"
-        Me.Label32.Size = New System.Drawing.Size(143, 16)
+        Me.Label32.Size = New System.Drawing.Size(141, 15)
         Me.Label32.TabIndex = 56
-        Me.Label32.Text = "sampleItem1 Stock:"
+        Me.Label32.Text = "sampleItem20 Stock:"
         '
         'Label33
         '
@@ -1936,7 +2512,7 @@ Partial Class mainForm
         Me.Label33.Name = "Label33"
         Me.Label33.Size = New System.Drawing.Size(22, 16)
         Me.Label33.TabIndex = 54
-        Me.Label33.Text = "37"
+        Me.Label33.Text = "27"
         '
         'ProgressBar12
         '
@@ -1945,17 +2521,17 @@ Partial Class mainForm
         Me.ProgressBar12.Size = New System.Drawing.Size(159, 23)
         Me.ProgressBar12.Style = System.Windows.Forms.ProgressBarStyle.Continuous
         Me.ProgressBar12.TabIndex = 52
-        Me.ProgressBar12.Value = 38
+        Me.ProgressBar12.Value = 27
         '
         'Label34
         '
         Me.Label34.AutoSize = True
-        Me.Label34.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label34.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label34.Location = New System.Drawing.Point(39, 287)
         Me.Label34.Name = "Label34"
-        Me.Label34.Size = New System.Drawing.Size(143, 16)
+        Me.Label34.Size = New System.Drawing.Size(141, 15)
         Me.Label34.TabIndex = 53
-        Me.Label34.Text = "sampleItem1 Stock:"
+        Me.Label34.Text = "sampleItem19 Stock:"
         '
         'Label23
         '
@@ -1979,12 +2555,12 @@ Partial Class mainForm
         'Label24
         '
         Me.Label24.AutoSize = True
-        Me.Label24.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label24.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label24.Location = New System.Drawing.Point(408, 215)
         Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(143, 16)
+        Me.Label24.Size = New System.Drawing.Size(141, 15)
         Me.Label24.TabIndex = 50
-        Me.Label24.Text = "sampleItem1 Stock:"
+        Me.Label24.Text = "sampleItem15 Stock:"
         '
         'Label25
         '
@@ -1994,7 +2570,7 @@ Partial Class mainForm
         Me.Label25.Name = "Label25"
         Me.Label25.Size = New System.Drawing.Size(22, 16)
         Me.Label25.TabIndex = 48
-        Me.Label25.Text = "37"
+        Me.Label25.Text = "42"
         '
         'ProgressBar8
         '
@@ -2003,17 +2579,17 @@ Partial Class mainForm
         Me.ProgressBar8.Size = New System.Drawing.Size(159, 23)
         Me.ProgressBar8.Style = System.Windows.Forms.ProgressBarStyle.Continuous
         Me.ProgressBar8.TabIndex = 46
-        Me.ProgressBar8.Value = 38
+        Me.ProgressBar8.Value = 42
         '
         'Label26
         '
         Me.Label26.AutoSize = True
-        Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label26.Location = New System.Drawing.Point(221, 215)
         Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(143, 16)
+        Me.Label26.Size = New System.Drawing.Size(141, 15)
         Me.Label26.TabIndex = 47
-        Me.Label26.Text = "sampleItem1 Stock:"
+        Me.Label26.Text = "sampleItem14 Stock:"
         '
         'Label27
         '
@@ -2023,7 +2599,7 @@ Partial Class mainForm
         Me.Label27.Name = "Label27"
         Me.Label27.Size = New System.Drawing.Size(22, 16)
         Me.Label27.TabIndex = 45
-        Me.Label27.Text = "37"
+        Me.Label27.Text = "22"
         '
         'ProgressBar9
         '
@@ -2032,17 +2608,17 @@ Partial Class mainForm
         Me.ProgressBar9.Size = New System.Drawing.Size(159, 23)
         Me.ProgressBar9.Style = System.Windows.Forms.ProgressBarStyle.Continuous
         Me.ProgressBar9.TabIndex = 43
-        Me.ProgressBar9.Value = 38
+        Me.ProgressBar9.Value = 22
         '
         'Label28
         '
         Me.Label28.AutoSize = True
-        Me.Label28.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label28.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label28.Location = New System.Drawing.Point(39, 215)
         Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(143, 16)
+        Me.Label28.Size = New System.Drawing.Size(141, 15)
         Me.Label28.TabIndex = 44
-        Me.Label28.Text = "sampleItem1 Stock:"
+        Me.Label28.Text = "sampleItem13 Stock:"
         '
         'Label15
         '
@@ -2052,7 +2628,7 @@ Partial Class mainForm
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(22, 16)
         Me.Label15.TabIndex = 42
-        Me.Label15.Text = "37"
+        Me.Label15.Text = "23"
         '
         'ProgressBar3
         '
@@ -2061,7 +2637,7 @@ Partial Class mainForm
         Me.ProgressBar3.Size = New System.Drawing.Size(159, 23)
         Me.ProgressBar3.Style = System.Windows.Forms.ProgressBarStyle.Continuous
         Me.ProgressBar3.TabIndex = 40
-        Me.ProgressBar3.Value = 38
+        Me.ProgressBar3.Value = 23
         '
         'Label16
         '
@@ -2071,7 +2647,7 @@ Partial Class mainForm
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(143, 16)
         Me.Label16.TabIndex = 41
-        Me.Label16.Text = "sampleItem1 Stock:"
+        Me.Label16.Text = "sampleItem9 Stock:"
         '
         'Label19
         '
@@ -2081,7 +2657,7 @@ Partial Class mainForm
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(22, 16)
         Me.Label19.TabIndex = 39
-        Me.Label19.Text = "77"
+        Me.Label19.Text = "84"
         '
         'ProgressBar5
         '
@@ -2090,7 +2666,7 @@ Partial Class mainForm
         Me.ProgressBar5.Size = New System.Drawing.Size(159, 23)
         Me.ProgressBar5.Style = System.Windows.Forms.ProgressBarStyle.Continuous
         Me.ProgressBar5.TabIndex = 37
-        Me.ProgressBar5.Value = 77
+        Me.ProgressBar5.Value = 84
         '
         'Label20
         '
@@ -2100,7 +2676,7 @@ Partial Class mainForm
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(143, 16)
         Me.Label20.TabIndex = 38
-        Me.Label20.Text = "sampleItem1 Stock:"
+        Me.Label20.Text = "sampleItem8 Stock:"
         '
         'Label21
         '
@@ -2110,7 +2686,7 @@ Partial Class mainForm
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(22, 16)
         Me.Label21.TabIndex = 36
-        Me.Label21.Text = "37"
+        Me.Label21.Text = "16"
         '
         'ProgressBar6
         '
@@ -2119,7 +2695,7 @@ Partial Class mainForm
         Me.ProgressBar6.Size = New System.Drawing.Size(159, 23)
         Me.ProgressBar6.Style = System.Windows.Forms.ProgressBarStyle.Continuous
         Me.ProgressBar6.TabIndex = 34
-        Me.ProgressBar6.Value = 38
+        Me.ProgressBar6.Value = 16
         '
         'Label22
         '
@@ -2129,7 +2705,7 @@ Partial Class mainForm
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(143, 16)
         Me.Label22.TabIndex = 35
-        Me.Label22.Text = "sampleItem1 Stock:"
+        Me.Label22.Text = "sampleItem7 Stock:"
         '
         'Label17
         '
@@ -2139,7 +2715,7 @@ Partial Class mainForm
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(22, 16)
         Me.Label17.TabIndex = 33
-        Me.Label17.Text = "37"
+        Me.Label17.Text = "55"
         '
         'ProgressBar4
         '
@@ -2148,7 +2724,7 @@ Partial Class mainForm
         Me.ProgressBar4.Size = New System.Drawing.Size(159, 23)
         Me.ProgressBar4.Style = System.Windows.Forms.ProgressBarStyle.Continuous
         Me.ProgressBar4.TabIndex = 31
-        Me.ProgressBar4.Value = 38
+        Me.ProgressBar4.Value = 55
         '
         'Label18
         '
@@ -2158,7 +2734,7 @@ Partial Class mainForm
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(143, 16)
         Me.Label18.TabIndex = 32
-        Me.Label18.Text = "sampleItem1 Stock:"
+        Me.Label18.Text = "sampleItem3 Stock:"
         '
         'Label13
         '
@@ -2168,7 +2744,7 @@ Partial Class mainForm
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(22, 16)
         Me.Label13.TabIndex = 30
-        Me.Label13.Text = "37"
+        Me.Label13.Text = "20"
         '
         'ProgressBar2
         '
@@ -2177,7 +2753,7 @@ Partial Class mainForm
         Me.ProgressBar2.Size = New System.Drawing.Size(159, 23)
         Me.ProgressBar2.Style = System.Windows.Forms.ProgressBarStyle.Continuous
         Me.ProgressBar2.TabIndex = 28
-        Me.ProgressBar2.Value = 38
+        Me.ProgressBar2.Value = 20
         '
         'Label14
         '
@@ -2187,7 +2763,7 @@ Partial Class mainForm
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(143, 16)
         Me.Label14.TabIndex = 29
-        Me.Label14.Text = "sampleItem1 Stock:"
+        Me.Label14.Text = "sampleItem2 Stock:"
         '
         'Label11
         '
@@ -2197,7 +2773,7 @@ Partial Class mainForm
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(22, 16)
         Me.Label11.TabIndex = 27
-        Me.Label11.Text = "37"
+        Me.Label11.Text = "41"
         '
         'ProgressBar1
         '
@@ -2206,7 +2782,7 @@ Partial Class mainForm
         Me.ProgressBar1.Size = New System.Drawing.Size(159, 23)
         Me.ProgressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous
         Me.ProgressBar1.TabIndex = 0
-        Me.ProgressBar1.Value = 38
+        Me.ProgressBar1.Value = 41
         '
         'Label12
         '
@@ -2398,597 +2974,6 @@ Partial Class mainForm
         Me.mainTabControl.Size = New System.Drawing.Size(1173, 660)
         Me.mainTabControl.TabIndex = 2
         '
-        'Label104
-        '
-        Me.Label104.AutoSize = True
-        Me.Label104.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label104.Location = New System.Drawing.Point(230, 285)
-        Me.Label104.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label104.Name = "Label104"
-        Me.Label104.Size = New System.Drawing.Size(46, 17)
-        Me.Label104.TabIndex = 53
-        Me.Label104.Text = "(date)"
-        '
-        'Label105
-        '
-        Me.Label105.AutoSize = True
-        Me.Label105.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label105.Location = New System.Drawing.Point(52, 285)
-        Me.Label105.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label105.Name = "Label105"
-        Me.Label105.Size = New System.Drawing.Size(174, 17)
-        Me.Label105.TabIndex = 52
-        Me.Label105.Text = "Account creation Date:"
-        '
-        'Label106
-        '
-        Me.Label106.AutoSize = True
-        Me.Label106.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label106.Location = New System.Drawing.Point(202, 305)
-        Me.Label106.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label106.Name = "Label106"
-        Me.Label106.Size = New System.Drawing.Size(53, 17)
-        Me.Label106.TabIndex = 55
-        Me.Label106.Text = "(count)"
-        '
-        'Label107
-        '
-        Me.Label107.AutoSize = True
-        Me.Label107.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label107.Location = New System.Drawing.Point(52, 305)
-        Me.Label107.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label107.Name = "Label107"
-        Me.Label107.Size = New System.Drawing.Size(152, 17)
-        Me.Label107.TabIndex = 54
-        Me.Label107.Text = "Total Orders Count:"
-        '
-        'ListView4
-        '
-        Me.ListView4.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader9, Me.ColumnHeader11, Me.ColumnHeader12, Me.ColumnHeader13, Me.ColumnHeader14, Me.ColumnHeader15})
-        Me.ListView4.HideSelection = False
-        Me.ListView4.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem5})
-        Me.ListView4.Location = New System.Drawing.Point(55, 324)
-        Me.ListView4.Margin = New System.Windows.Forms.Padding(2)
-        Me.ListView4.Name = "ListView4"
-        Me.ListView4.Size = New System.Drawing.Size(708, 251)
-        Me.ListView4.TabIndex = 56
-        Me.ListView4.UseCompatibleStateImageBehavior = False
-        Me.ListView4.View = System.Windows.Forms.View.Details
-        '
-        'ColumnHeader9
-        '
-        Me.ColumnHeader9.Text = "Order ID"
-        Me.ColumnHeader9.Width = 108
-        '
-        'ColumnHeader11
-        '
-        Me.ColumnHeader11.Text = "Order Details"
-        Me.ColumnHeader11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.ColumnHeader11.Width = 254
-        '
-        'ColumnHeader12
-        '
-        Me.ColumnHeader12.Text = "Delivery Method"
-        Me.ColumnHeader12.Width = 108
-        '
-        'ColumnHeader13
-        '
-        Me.ColumnHeader13.Text = "Due Date"
-        Me.ColumnHeader13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.ColumnHeader13.Width = 133
-        '
-        'ColumnHeader14
-        '
-        Me.ColumnHeader14.Text = "Order Total Amount"
-        Me.ColumnHeader14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.ColumnHeader14.Width = 170
-        '
-        'ColumnHeader15
-        '
-        Me.ColumnHeader15.Text = "Payment Status"
-        Me.ColumnHeader15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.ColumnHeader15.Width = 170
-        '
-        'TabControl1
-        '
-        Me.TabControl1.Controls.Add(Me.TabPage7)
-        Me.TabControl1.Controls.Add(Me.TabPage8)
-        Me.TabControl1.Location = New System.Drawing.Point(5, 4)
-        Me.TabControl1.Name = "TabControl1"
-        Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(1157, 627)
-        Me.TabControl1.TabIndex = 0
-        '
-        'TabPage7
-        '
-        Me.TabPage7.Controls.Add(Me.Panel13)
-        Me.TabPage7.Controls.Add(Me.Panel12)
-        Me.TabPage7.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage7.Name = "TabPage7"
-        Me.TabPage7.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage7.Size = New System.Drawing.Size(1149, 601)
-        Me.TabPage7.TabIndex = 0
-        Me.TabPage7.Text = "Customize Shoe"
-        Me.TabPage7.UseVisualStyleBackColor = True
-        '
-        'TabPage8
-        '
-        Me.TabPage8.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage8.Name = "TabPage8"
-        Me.TabPage8.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage8.Size = New System.Drawing.Size(1149, 601)
-        Me.TabPage8.TabIndex = 1
-        Me.TabPage8.Text = "Add / Modify / Delete options"
-        Me.TabPage8.UseVisualStyleBackColor = True
-        '
-        'Panel12
-        '
-        Me.Panel12.BackColor = System.Drawing.Color.DarkGray
-        Me.Panel12.Controls.Add(Me.Button4)
-        Me.Panel12.Controls.Add(Me.Button7)
-        Me.Panel12.Controls.Add(Me.Button6)
-        Me.Panel12.Controls.Add(Me.Panel14)
-        Me.Panel12.Controls.Add(Me.TextBox15)
-        Me.Panel12.Controls.Add(Me.Label108)
-        Me.Panel12.Location = New System.Drawing.Point(6, 6)
-        Me.Panel12.Name = "Panel12"
-        Me.Panel12.Size = New System.Drawing.Size(760, 589)
-        Me.Panel12.TabIndex = 0
-        '
-        'Panel13
-        '
-        Me.Panel13.Controls.Add(Me.RichTextBox1)
-        Me.Panel13.Controls.Add(Me.Button8)
-        Me.Panel13.Location = New System.Drawing.Point(772, 6)
-        Me.Panel13.Name = "Panel13"
-        Me.Panel13.Size = New System.Drawing.Size(371, 589)
-        Me.Panel13.TabIndex = 1
-        '
-        'Label108
-        '
-        Me.Label108.AutoSize = True
-        Me.Label108.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label108.Location = New System.Drawing.Point(12, 12)
-        Me.Label108.Name = "Label108"
-        Me.Label108.Size = New System.Drawing.Size(91, 20)
-        Me.Label108.TabIndex = 0
-        Me.Label108.Text = "Customer:"
-        '
-        'TextBox15
-        '
-        Me.TextBox15.Location = New System.Drawing.Point(109, 12)
-        Me.TextBox15.Name = "TextBox15"
-        Me.TextBox15.Size = New System.Drawing.Size(239, 20)
-        Me.TextBox15.TabIndex = 1
-        '
-        'Panel14
-        '
-        Me.Panel14.BackColor = System.Drawing.Color.White
-        Me.Panel14.Controls.Add(Me.ComboBox8)
-        Me.Panel14.Controls.Add(Me.ComboBox7)
-        Me.Panel14.Controls.Add(Me.ComboBox6)
-        Me.Panel14.Controls.Add(Me.ComboBox5)
-        Me.Panel14.Controls.Add(Me.ComboBox4)
-        Me.Panel14.Controls.Add(Me.Label114)
-        Me.Panel14.Controls.Add(Me.Label113)
-        Me.Panel14.Controls.Add(Me.Label112)
-        Me.Panel14.Controls.Add(Me.Label111)
-        Me.Panel14.Controls.Add(Me.Label110)
-        Me.Panel14.Controls.Add(Me.Label109)
-        Me.Panel14.Location = New System.Drawing.Point(3, 46)
-        Me.Panel14.Name = "Panel14"
-        Me.Panel14.Size = New System.Drawing.Size(754, 427)
-        Me.Panel14.TabIndex = 3
-        '
-        'Button6
-        '
-        Me.Button6.Location = New System.Drawing.Point(3, 479)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(754, 107)
-        Me.Button6.TabIndex = 4
-        Me.Button6.Text = "Button6"
-        Me.Button6.UseVisualStyleBackColor = True
-        '
-        'Label109
-        '
-        Me.Label109.AutoSize = True
-        Me.Label109.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label109.Location = New System.Drawing.Point(29, 25)
-        Me.Label109.Name = "Label109"
-        Me.Label109.Size = New System.Drawing.Size(594, 50)
-        Me.Label109.TabIndex = 0
-        Me.Label109.Text = "Select a part's option to customize that part with the selected option " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Each par" &
-    "t should have an option selected"
-        '
-        'Label110
-        '
-        Me.Label110.AutoSize = True
-        Me.Label110.Location = New System.Drawing.Point(31, 95)
-        Me.Label110.Name = "Label110"
-        Me.Label110.Size = New System.Drawing.Size(34, 13)
-        Me.Label110.TabIndex = 5
-        Me.Label110.Text = "Body:"
-        '
-        'Label111
-        '
-        Me.Label111.AutoSize = True
-        Me.Label111.Location = New System.Drawing.Point(31, 128)
-        Me.Label111.Name = "Label111"
-        Me.Label111.Size = New System.Drawing.Size(51, 13)
-        Me.Label111.TabIndex = 7
-        Me.Label111.Text = "Label111"
-        '
-        'Label112
-        '
-        Me.Label112.AutoSize = True
-        Me.Label112.Location = New System.Drawing.Point(31, 162)
-        Me.Label112.Name = "Label112"
-        Me.Label112.Size = New System.Drawing.Size(51, 13)
-        Me.Label112.TabIndex = 9
-        Me.Label112.Text = "Label112"
-        '
-        'Label113
-        '
-        Me.Label113.AutoSize = True
-        Me.Label113.Location = New System.Drawing.Point(31, 196)
-        Me.Label113.Name = "Label113"
-        Me.Label113.Size = New System.Drawing.Size(51, 13)
-        Me.Label113.TabIndex = 11
-        Me.Label113.Text = "Label113"
-        '
-        'Label114
-        '
-        Me.Label114.AutoSize = True
-        Me.Label114.Location = New System.Drawing.Point(31, 233)
-        Me.Label114.Name = "Label114"
-        Me.Label114.Size = New System.Drawing.Size(51, 13)
-        Me.Label114.TabIndex = 13
-        Me.Label114.Text = "Label114"
-        '
-        'Button7
-        '
-        Me.Button7.Location = New System.Drawing.Point(524, 11)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(76, 23)
-        Me.Button7.TabIndex = 5
-        Me.Button7.Text = "Select"
-        Me.Button7.UseVisualStyleBackColor = True
-        '
-        'Button4
-        '
-        Me.Button4.Location = New System.Drawing.Point(606, 11)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(141, 23)
-        Me.Button4.TabIndex = 6
-        Me.Button4.Text = "Make for new user"
-        Me.Button4.UseVisualStyleBackColor = True
-        '
-        'ComboBox4
-        '
-        Me.ComboBox4.FormattingEnabled = True
-        Me.ComboBox4.Location = New System.Drawing.Point(95, 92)
-        Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox4.TabIndex = 14
-        '
-        'ComboBox5
-        '
-        Me.ComboBox5.FormattingEnabled = True
-        Me.ComboBox5.Location = New System.Drawing.Point(95, 125)
-        Me.ComboBox5.Name = "ComboBox5"
-        Me.ComboBox5.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox5.TabIndex = 15
-        '
-        'ComboBox6
-        '
-        Me.ComboBox6.FormattingEnabled = True
-        Me.ComboBox6.Location = New System.Drawing.Point(95, 159)
-        Me.ComboBox6.Name = "ComboBox6"
-        Me.ComboBox6.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox6.TabIndex = 16
-        '
-        'ComboBox7
-        '
-        Me.ComboBox7.FormattingEnabled = True
-        Me.ComboBox7.Location = New System.Drawing.Point(95, 193)
-        Me.ComboBox7.Name = "ComboBox7"
-        Me.ComboBox7.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox7.TabIndex = 17
-        '
-        'ComboBox8
-        '
-        Me.ComboBox8.FormattingEnabled = True
-        Me.ComboBox8.Location = New System.Drawing.Point(95, 230)
-        Me.ComboBox8.Name = "ComboBox8"
-        Me.ComboBox8.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox8.TabIndex = 18
-        '
-        'Button8
-        '
-        Me.Button8.Location = New System.Drawing.Point(3, 513)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(365, 73)
-        Me.Button8.TabIndex = 7
-        Me.Button8.Text = "Button8"
-        Me.Button8.UseVisualStyleBackColor = True
-        '
-        'RichTextBox1
-        '
-        Me.RichTextBox1.Location = New System.Drawing.Point(19, 18)
-        Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(337, 489)
-        Me.RichTextBox1.TabIndex = 8
-        Me.RichTextBox1.Text = "Summary: (Customization details and costing details will appear here " & Global.Microsoft.VisualBasic.ChrW(10) & "after click" &
-    "ing the button on the bottom left)"
-        '
-        'Panel15
-        '
-        Me.Panel15.Controls.Add(Me.Panel16)
-        Me.Panel15.Controls.Add(Me.Button10)
-        Me.Panel15.Controls.Add(Me.ComboBox9)
-        Me.Panel15.Controls.Add(Me.Label128)
-        Me.Panel15.Controls.Add(Me.Button9)
-        Me.Panel15.Controls.Add(Me.Label125)
-        Me.Panel15.Controls.Add(Me.Label126)
-        Me.Panel15.Controls.Add(Me.Label127)
-        Me.Panel15.Controls.Add(Me.Label122)
-        Me.Panel15.Controls.Add(Me.Label123)
-        Me.Panel15.Controls.Add(Me.Label124)
-        Me.Panel15.Controls.Add(Me.Label119)
-        Me.Panel15.Controls.Add(Me.Label120)
-        Me.Panel15.Controls.Add(Me.Label121)
-        Me.Panel15.Controls.Add(Me.ListView5)
-        Me.Panel15.Controls.Add(Me.Label118)
-        Me.Panel15.Controls.Add(Me.Label117)
-        Me.Panel15.Controls.Add(Me.Label116)
-        Me.Panel15.Controls.Add(Me.Label115)
-        Me.Panel15.Location = New System.Drawing.Point(5, 4)
-        Me.Panel15.Name = "Panel15"
-        Me.Panel15.Size = New System.Drawing.Size(1152, 621)
-        Me.Panel15.TabIndex = 0
-        '
-        'Label115
-        '
-        Me.Label115.AutoSize = True
-        Me.Label115.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label115.Location = New System.Drawing.Point(16, 14)
-        Me.Label115.Name = "Label115"
-        Me.Label115.Size = New System.Drawing.Size(191, 46)
-        Me.Label115.TabIndex = 0
-        Me.Label115.Text = "Inventory"
-        '
-        'Label116
-        '
-        Me.Label116.AutoSize = True
-        Me.Label116.Location = New System.Drawing.Point(38, 74)
-        Me.Label116.Name = "Label116"
-        Me.Label116.Size = New System.Drawing.Size(51, 13)
-        Me.Label116.TabIndex = 1
-        Me.Label116.Text = "Label116"
-        '
-        'Label117
-        '
-        Me.Label117.AutoSize = True
-        Me.Label117.Location = New System.Drawing.Point(38, 91)
-        Me.Label117.Name = "Label117"
-        Me.Label117.Size = New System.Drawing.Size(51, 13)
-        Me.Label117.TabIndex = 2
-        Me.Label117.Text = "Label117"
-        '
-        'Label118
-        '
-        Me.Label118.AutoSize = True
-        Me.Label118.Location = New System.Drawing.Point(38, 108)
-        Me.Label118.Name = "Label118"
-        Me.Label118.Size = New System.Drawing.Size(51, 13)
-        Me.Label118.TabIndex = 3
-        Me.Label118.Text = "Label118"
-        '
-        'ListView5
-        '
-        Me.ListView5.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader10, Me.ColumnHeader16, Me.ColumnHeader17})
-        Me.ListView5.HideSelection = False
-        Me.ListView5.Location = New System.Drawing.Point(24, 195)
-        Me.ListView5.Name = "ListView5"
-        Me.ListView5.Size = New System.Drawing.Size(1105, 250)
-        Me.ListView5.TabIndex = 4
-        Me.ListView5.UseCompatibleStateImageBehavior = False
-        Me.ListView5.View = System.Windows.Forms.View.Details
-        '
-        'ColumnHeader10
-        '
-        Me.ColumnHeader10.Text = "Material Name"
-        Me.ColumnHeader10.Width = 541
-        '
-        'ColumnHeader16
-        '
-        Me.ColumnHeader16.Text = "Material stock"
-        Me.ColumnHeader16.Width = 234
-        '
-        'ColumnHeader17
-        '
-        Me.ColumnHeader17.Text = "Stock Status"
-        Me.ColumnHeader17.Width = 206
-        '
-        'Label119
-        '
-        Me.Label119.AutoSize = True
-        Me.Label119.Location = New System.Drawing.Point(341, 102)
-        Me.Label119.Name = "Label119"
-        Me.Label119.Size = New System.Drawing.Size(51, 13)
-        Me.Label119.TabIndex = 7
-        Me.Label119.Text = "Label119"
-        '
-        'Label120
-        '
-        Me.Label120.AutoSize = True
-        Me.Label120.Location = New System.Drawing.Point(341, 66)
-        Me.Label120.Name = "Label120"
-        Me.Label120.Size = New System.Drawing.Size(51, 13)
-        Me.Label120.TabIndex = 6
-        Me.Label120.Text = "Label120"
-        '
-        'Label121
-        '
-        Me.Label121.AutoSize = True
-        Me.Label121.Location = New System.Drawing.Point(341, 30)
-        Me.Label121.Name = "Label121"
-        Me.Label121.Size = New System.Drawing.Size(51, 13)
-        Me.Label121.TabIndex = 5
-        Me.Label121.Text = "Label121"
-        '
-        'Label122
-        '
-        Me.Label122.AutoSize = True
-        Me.Label122.Location = New System.Drawing.Point(639, 102)
-        Me.Label122.Name = "Label122"
-        Me.Label122.Size = New System.Drawing.Size(51, 13)
-        Me.Label122.TabIndex = 10
-        Me.Label122.Text = "Label122"
-        '
-        'Label123
-        '
-        Me.Label123.AutoSize = True
-        Me.Label123.Location = New System.Drawing.Point(639, 66)
-        Me.Label123.Name = "Label123"
-        Me.Label123.Size = New System.Drawing.Size(51, 13)
-        Me.Label123.TabIndex = 9
-        Me.Label123.Text = "Label123"
-        '
-        'Label124
-        '
-        Me.Label124.AutoSize = True
-        Me.Label124.Location = New System.Drawing.Point(639, 30)
-        Me.Label124.Name = "Label124"
-        Me.Label124.Size = New System.Drawing.Size(51, 13)
-        Me.Label124.TabIndex = 8
-        Me.Label124.Text = "Label124"
-        '
-        'Label125
-        '
-        Me.Label125.AutoSize = True
-        Me.Label125.Location = New System.Drawing.Point(919, 102)
-        Me.Label125.Name = "Label125"
-        Me.Label125.Size = New System.Drawing.Size(51, 13)
-        Me.Label125.TabIndex = 13
-        Me.Label125.Text = "Label125"
-        '
-        'Label126
-        '
-        Me.Label126.AutoSize = True
-        Me.Label126.Location = New System.Drawing.Point(919, 66)
-        Me.Label126.Name = "Label126"
-        Me.Label126.Size = New System.Drawing.Size(51, 13)
-        Me.Label126.TabIndex = 12
-        Me.Label126.Text = "Label126"
-        '
-        'Label127
-        '
-        Me.Label127.AutoSize = True
-        Me.Label127.Location = New System.Drawing.Point(919, 30)
-        Me.Label127.Name = "Label127"
-        Me.Label127.Size = New System.Drawing.Size(51, 13)
-        Me.Label127.TabIndex = 11
-        Me.Label127.Text = "Label127"
-        '
-        'Button9
-        '
-        Me.Button9.Location = New System.Drawing.Point(465, 166)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(75, 23)
-        Me.Button9.TabIndex = 14
-        Me.Button9.Text = "Button9"
-        Me.Button9.UseVisualStyleBackColor = True
-        '
-        'Label128
-        '
-        Me.Label128.AutoSize = True
-        Me.Label128.Location = New System.Drawing.Point(24, 170)
-        Me.Label128.Name = "Label128"
-        Me.Label128.Size = New System.Drawing.Size(51, 13)
-        Me.Label128.TabIndex = 15
-        Me.Label128.Text = "Label128"
-        '
-        'ComboBox9
-        '
-        Me.ComboBox9.FormattingEnabled = True
-        Me.ComboBox9.Location = New System.Drawing.Point(80, 167)
-        Me.ComboBox9.Name = "ComboBox9"
-        Me.ComboBox9.Size = New System.Drawing.Size(379, 21)
-        Me.ComboBox9.TabIndex = 16
-        '
-        'Button10
-        '
-        Me.Button10.Location = New System.Drawing.Point(182, 451)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(417, 110)
-        Me.Button10.TabIndex = 17
-        Me.Button10.Text = "Button10"
-        Me.Button10.UseVisualStyleBackColor = True
-        '
-        'Panel16
-        '
-        Me.Panel16.Controls.Add(Me.Button11)
-        Me.Panel16.Controls.Add(Me.Label131)
-        Me.Panel16.Controls.Add(Me.Label132)
-        Me.Panel16.Controls.Add(Me.TextBox18)
-        Me.Panel16.Controls.Add(Me.TextBox19)
-        Me.Panel16.Location = New System.Drawing.Point(605, 451)
-        Me.Panel16.Name = "Panel16"
-        Me.Panel16.Size = New System.Drawing.Size(315, 110)
-        Me.Panel16.TabIndex = 52
-        Me.Panel16.Visible = False
-        '
-        'Button11
-        '
-        Me.Button11.Location = New System.Drawing.Point(16, 66)
-        Me.Button11.Margin = New System.Windows.Forms.Padding(2)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(285, 32)
-        Me.Button11.TabIndex = 49
-        Me.Button11.Text = "Confirm Changes"
-        Me.Button11.UseVisualStyleBackColor = True
-        '
-        'Label131
-        '
-        Me.Label131.AutoSize = True
-        Me.Label131.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label131.Location = New System.Drawing.Point(13, 12)
-        Me.Label131.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label131.Name = "Label131"
-        Me.Label131.Size = New System.Drawing.Size(117, 17)
-        Me.Label131.TabIndex = 40
-        Me.Label131.Text = "Material Name:"
-        '
-        'Label132
-        '
-        Me.Label132.AutoSize = True
-        Me.Label132.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label132.Location = New System.Drawing.Point(13, 38)
-        Me.Label132.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label132.Name = "Label132"
-        Me.Label132.Size = New System.Drawing.Size(114, 17)
-        Me.Label132.TabIndex = 41
-        Me.Label132.Text = "Material stock:"
-        '
-        'TextBox18
-        '
-        Me.TextBox18.Location = New System.Drawing.Point(131, 39)
-        Me.TextBox18.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox18.Name = "TextBox18"
-        Me.TextBox18.Size = New System.Drawing.Size(170, 20)
-        Me.TextBox18.TabIndex = 46
-        Me.TextBox18.Text = "(stock)"
-        '
-        'TextBox19
-        '
-        Me.TextBox19.Location = New System.Drawing.Point(134, 12)
-        Me.TextBox19.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox19.Name = "TextBox19"
-        Me.TextBox19.Size = New System.Drawing.Size(167, 20)
-        Me.TextBox19.TabIndex = 45
-        Me.TextBox19.Text = "(name)"
-        '
         'mainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -3013,7 +2998,18 @@ Partial Class mainForm
         Me.Panel8.PerformLayout()
         Me.Panel7.ResumeLayout(False)
         Me.TabPage4.ResumeLayout(False)
+        Me.Panel15.ResumeLayout(False)
+        Me.Panel15.PerformLayout()
+        Me.Panel16.ResumeLayout(False)
+        Me.Panel16.PerformLayout()
         Me.TabPage3.ResumeLayout(False)
+        Me.TabControl1.ResumeLayout(False)
+        Me.TabPage7.ResumeLayout(False)
+        Me.Panel13.ResumeLayout(False)
+        Me.Panel12.ResumeLayout(False)
+        Me.Panel12.PerformLayout()
+        Me.Panel14.ResumeLayout(False)
+        Me.Panel14.PerformLayout()
         Me.TabPage2.ResumeLayout(False)
         Me.Panel11.ResumeLayout(False)
         Me.Panel11.PerformLayout()
@@ -3027,17 +3023,6 @@ Partial Class mainForm
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         Me.mainTabControl.ResumeLayout(False)
-        Me.TabControl1.ResumeLayout(False)
-        Me.TabPage7.ResumeLayout(False)
-        Me.Panel12.ResumeLayout(False)
-        Me.Panel12.PerformLayout()
-        Me.Panel13.ResumeLayout(False)
-        Me.Panel14.ResumeLayout(False)
-        Me.Panel14.PerformLayout()
-        Me.Panel15.ResumeLayout(False)
-        Me.Panel15.PerformLayout()
-        Me.Panel16.ResumeLayout(False)
-        Me.Panel16.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -3271,8 +3256,6 @@ Partial Class mainForm
     Friend WithEvents ComboBox9 As ComboBox
     Friend WithEvents Label128 As Label
     Friend WithEvents Button9 As Button
-    Friend WithEvents Label125 As Label
-    Friend WithEvents Label126 As Label
     Friend WithEvents Label127 As Label
     Friend WithEvents Label122 As Label
     Friend WithEvents Label123 As Label
