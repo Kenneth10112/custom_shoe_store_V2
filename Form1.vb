@@ -109,4 +109,15 @@
 
         End If
     End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Try
+            Dim login As New login()
+            login.Show()
+
+        Catch ex As Exception
+            MessageBox.Show("An error occurred while opening Form2: " & ex.Message)
+
+        End Try
+    End Sub
 End Class
