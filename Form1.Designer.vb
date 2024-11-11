@@ -22,12 +22,12 @@ Partial Class mainForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim ListViewItem1 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SampleCustomer1 created a new order (SampleOrder1)")
-        Dim ListViewItem2 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SampleCustomer1 edited their chosen shoe/s")
-        Dim ListViewItem3 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SampleCustomer1 completed their account details")
-        Dim ListViewItem4 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
-        Dim ListViewItem5 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"SampleID", "Sample Details", "Sample Method", "Sample Date", "sample Total amount"}, -1)
-        Dim ListViewItem6 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"sample ID", "sample name", "sample type"}, -1)
+        Dim ListViewItem13 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SampleCustomer1 created a new order (SampleOrder1)")
+        Dim ListViewItem14 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SampleCustomer1 edited their chosen shoe/s")
+        Dim ListViewItem15 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SampleCustomer1 completed their account details")
+        Dim ListViewItem16 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
+        Dim ListViewItem18 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"SampleID", "Sample Details", "Sample Method", "Sample Date", "sample Total amount"}, -1)
+        Dim ListViewItem17 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"sample ID", "sample name", "sample type"}, -1)
         Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
         Me.btn_Dashboard = New System.Windows.Forms.Button()
         Me.btn_Accounts = New System.Windows.Forms.Button()
@@ -439,7 +439,7 @@ Partial Class mainForm
         Me.ListView3.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader8})
         Me.ListView3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ListView3.HideSelection = False
-        Me.ListView3.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem1, ListViewItem2, ListViewItem3})
+        Me.ListView3.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem13, ListViewItem14, ListViewItem15})
         Me.ListView3.Location = New System.Drawing.Point(0, 0)
         Me.ListView3.Margin = New System.Windows.Forms.Padding(2)
         Me.ListView3.Name = "ListView3"
@@ -865,7 +865,7 @@ Partial Class mainForm
         Me.ListView2.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3, Me.ColumnHeader4, Me.ColumnHeader5, Me.ColumnHeader6, Me.ColumnHeader7})
         Me.ListView2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ListView2.HideSelection = False
-        Me.ListView2.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem4})
+        Me.ListView2.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem16})
         Me.ListView2.Location = New System.Drawing.Point(0, 0)
         Me.ListView2.Margin = New System.Windows.Forms.Padding(2)
         Me.ListView2.Name = "ListView2"
@@ -1474,7 +1474,7 @@ Partial Class mainForm
         '
         Me.ListView4.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader9, Me.ColumnHeader11, Me.ColumnHeader12, Me.ColumnHeader13, Me.ColumnHeader14, Me.ColumnHeader15})
         Me.ListView4.HideSelection = False
-        Me.ListView4.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem5})
+        Me.ListView4.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem18})
         Me.ListView4.Location = New System.Drawing.Point(55, 324)
         Me.ListView4.Margin = New System.Windows.Forms.Padding(2)
         Me.ListView4.Name = "ListView4"
@@ -1865,7 +1865,7 @@ Partial Class mainForm
         Me.ListView1.Alignment = System.Windows.Forms.ListViewAlignment.[Default]
         Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.accountID, Me.accountName, Me.accountType})
         Me.ListView1.HideSelection = False
-        Me.ListView1.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem6})
+        Me.ListView1.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem17})
         Me.ListView1.Location = New System.Drawing.Point(7, 7)
         Me.ListView1.Name = "ListView1"
         Me.ListView1.Size = New System.Drawing.Size(342, 618)
