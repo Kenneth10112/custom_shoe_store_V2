@@ -287,6 +287,7 @@ Partial Class mainForm
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.mainTabControl = New System.Windows.Forms.TabControl()
+        Me.btn_Exit = New System.Windows.Forms.Button()
         Me.FlowLayoutPanel1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.TabPage6.SuspendLayout()
@@ -324,6 +325,7 @@ Partial Class mainForm
         Me.FlowLayoutPanel1.Controls.Add(Me.btn_Orders)
         Me.FlowLayoutPanel1.Controls.Add(Me.btn_logs)
         Me.FlowLayoutPanel1.Controls.Add(Me.btn_Login)
+        Me.FlowLayoutPanel1.Controls.Add(Me.btn_Exit)
         Me.FlowLayoutPanel1.Location = New System.Drawing.Point(0, 126)
         Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
         Me.FlowLayoutPanel1.Padding = New System.Windows.Forms.Padding(5)
@@ -408,9 +410,9 @@ Partial Class mainForm
         Me.Label64.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label64.Location = New System.Drawing.Point(41, 72)
         Me.Label64.Name = "Label64"
-        Me.Label64.Size = New System.Drawing.Size(75, 16)
+        Me.Label64.Size = New System.Drawing.Size(78, 16)
         Me.Label64.TabIndex = 27
-        Me.Label64.Text = "Admin user"
+        Me.Label64.Text = "Admin User"
         '
         'Label65
         '
@@ -418,9 +420,9 @@ Partial Class mainForm
         Me.Label65.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label65.Location = New System.Drawing.Point(10, 25)
         Me.Label65.Name = "Label65"
-        Me.Label65.Size = New System.Drawing.Size(133, 31)
+        Me.Label65.Size = New System.Drawing.Size(142, 31)
         Me.Label65.TabIndex = 26
-        Me.Label65.Text = "Welcome"
+        Me.Label65.Text = "Welcome!"
         '
         'TabPage6
         '
@@ -2974,11 +2976,21 @@ Partial Class mainForm
         Me.mainTabControl.Size = New System.Drawing.Size(1173, 660)
         Me.mainTabControl.TabIndex = 2
         '
+        'btn_Exit
+        '
+        Me.btn_Exit.Location = New System.Drawing.Point(8, 211)
+        Me.btn_Exit.Name = "btn_Exit"
+        Me.btn_Exit.Size = New System.Drawing.Size(135, 26)
+        Me.btn_Exit.TabIndex = 7
+        Me.btn_Exit.Text = "Exit"
+        Me.btn_Exit.UseVisualStyleBackColor = True
+        '
         'mainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1322, 659)
+        Me.ControlBox = False
         Me.Controls.Add(Me.mainTabControl)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.FlowLayoutPanel1)
@@ -3286,4 +3298,5 @@ Partial Class mainForm
     Friend WithEvents Label132 As Label
     Friend WithEvents TextBox18 As TextBox
     Friend WithEvents TextBox19 As TextBox
+    Friend WithEvents btn_Exit As Button
 End Class
