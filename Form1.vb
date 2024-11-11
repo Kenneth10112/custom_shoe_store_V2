@@ -30,11 +30,23 @@
     End Sub
 
     Private Sub btn_CustomizeShoe_Click(sender As Object, e As EventArgs) Handles btn_CustomizeShoe.Click
+        Try
+            If mainTabControl.SelectedIndex <> 2 Then
+                mainTabControl.SelectedIndex = 2
+            End If
+        Catch ex As Exception
 
+        End Try
     End Sub
 
     Private Sub btn_Materials_Click(sender As Object, e As EventArgs) Handles btn_Materials.Click
+        Try
+            If mainTabControl.SelectedIndex <> 3 Then
+                mainTabControl.SelectedIndex = 3
+            End If
+        Catch ex As Exception
 
+        End Try
     End Sub
 
     Private Sub btn_Orders_Click(sender As Object, e As EventArgs) Handles btn_Orders.Click
@@ -87,5 +99,14 @@
 
     Private Sub Button4_Click(sender As Object, e As EventArgs)
 
+    End Sub
+
+    Private Sub btn_Exit_Click(sender As Object, e As EventArgs) Handles btn_Exit.Click
+        Dim result As DialogResult = MessageBox.Show("Are you sure you want to exit?", "Exit Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+
+        If result = DialogResult.Yes Then
+            Me.Close()
+
+        End If
     End Sub
 End Class
