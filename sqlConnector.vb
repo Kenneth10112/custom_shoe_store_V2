@@ -5,7 +5,7 @@ Module sqlConnector
 
         Dim dbName As String = "customshoestore_oop"
         Dim username As String = "root"
-        Dim passwword As String = "password"
+        Dim passwword As String = "administrator"
         Dim server As String = "127.0.0.1"
 
         If Not conn Is Nothing Then
