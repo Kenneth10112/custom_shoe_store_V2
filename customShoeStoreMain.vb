@@ -998,17 +998,368 @@ Public Class mainForm
         End Try
     End Sub
 
-    Dim selectedCustomerColumn As String
-    Dim selectedCustomerValue As String
-    Sub CustomizeShoe_selectCustomer(column As String, Value As String)
-        selectedCustomerColumn = column
-        selectedCustomerValue = Value
+    Dim hasSelectedCustomer As Boolean = False
+    Dim selectedCustomerID As String
+    Dim selectedCustomerUname As String
+    Sub CustomizeShoe_selectCustomer(accID As String, accName As String)
+        selectedCustomerID = accID
+        selectedCustomerUname = accName
 
-        CustomizeShoe_lbl_customer.Text = $"Selected Customer: ({selectedCustomerColumn}: {selectedCustomerValue})"
+        CustomizeShoe_lbl_customer.Text = $"Selected Customer - ( ID: {accID} | Name: {accName} )"
+        hasSelectedCustomer = True
     End Sub
 
     Private Sub CustomizeShoe_btn_selectCustomer_Click(sender As Object, e As EventArgs) Handles CustomizeShoe_btn_selectCustomer.Click
         Dim selectForm As New selectCustomer(sqlConnector.conn, Me)
         selectForm.Show()
     End Sub
+
+    Private Sub CustomizeShoe_viewSummary_Click(sender As Object, e As EventArgs) Handles CustomizeShoe_viewSummary.Click
+        finalizeValid = False
+        Final_selectedAccountID = ""
+        Final_orderDetail = ""
+        Final_claimMethod = ""
+        Final_dueDate = Date.Now
+        Final_totalAmount = 0
+        forStockReduce(0) = ""
+        forStockReduce(1) = ""
+        forStockReduce(2) = ""
+        forStockReduce(3) = ""
+        forStockReduce(4) = ""
+
+
+
+        If Not hasSelectedCustomer Then
+            MessageBox.Show("Select a Customer first!")
+            Return
+        End If
+
+        If CustomizeShoe_cbo_body.SelectedItem Is Nothing Then
+            MessageBox.Show("No Body selected. Select a Body First")
+            Return
+        ElseIf CustomizeShoe_cbo_insole.SelectedItem Is Nothing Then
+            MessageBox.Show("No insole selected. Select a insole First")
+            Return
+        ElseIf CustomizeShoe_cbo_midsole.SelectedItem Is Nothing Then
+            MessageBox.Show("No midsole selected. Select a midsole First")
+            Return
+        ElseIf CustomizeShoe_cbo_outsole.SelectedItem Is Nothing Then
+            MessageBox.Show("No outsole selected. Select a outsole First")
+            Return
+        ElseIf CustomizeShoe_cbo_lace.SelectedItem Is Nothing Then
+            MessageBox.Show("No lace selected. Select a lace First")
+            Return
+        ElseIf CustomizeShoe_cbo_claimMethod.SelectedItem Is Nothing Then
+            MessageBox.Show("No Claim Method selected. Select a Claim Method First")
+            Return
+        End If
+
+        Dim orderDetail As String
+        orderDetail = $"B{getMaterialID(CustomizeShoe_cbo_body.SelectedItem.ToString())}"
+        orderDetail += $"-I{getMaterialID(CustomizeShoe_cbo_insole.SelectedItem.ToString())}"
+        orderDetail += $"-M{getMaterialID(CustomizeShoe_cbo_midsole.SelectedItem.ToString())}"
+        orderDetail += $"-O{getMaterialID(CustomizeShoe_cbo_outsole.SelectedItem.ToString())}"
+        orderDetail += $"-L{getMaterialID(CustomizeShoe_cbo_lace.SelectedItem.ToString())}"
+
+        Dim claimMethod As String = CustomizeShoe_cbo_claimMethod.SelectedItem.ToString()
+        Dim dueDate As Date = Date.Now.AddDays(14)
+        Dim totalAmount As Integer = 0
+        totalAmount += getMaterialPrice(CustomizeShoe_cbo_body.SelectedItem.ToString())
+        totalAmount += getMaterialPrice(CustomizeShoe_cbo_insole.SelectedItem.ToString())
+        totalAmount += getMaterialPrice(CustomizeShoe_cbo_midsole.SelectedItem.ToString())
+        totalAmount += getMaterialPrice(CustomizeShoe_cbo_outsole.SelectedItem.ToString())
+        totalAmount += getMaterialPrice(CustomizeShoe_cbo_lace.SelectedItem.ToString())
+
+        Dim payment_status As String = "unpaid"
+        Dim process_status As String = "not_started"
+
+        Dim summary As String
+        summary = $"Order detail: {orderDetail}"
+        summary += $"{vbCrLf}{vbCrLf}{vbCrLf}{CustomizeShoe_cbo_body.SelectedItem.ToString()}: {getMaterialPrice(CustomizeShoe_cbo_body.SelectedItem.ToString())}"
+        summary += $"{vbCrLf}{CustomizeShoe_cbo_insole.SelectedItem.ToString()}: {getMaterialPrice(CustomizeShoe_cbo_insole.SelectedItem.ToString())}"
+        summary += $"{vbCrLf}{CustomizeShoe_cbo_midsole.SelectedItem.ToString()}: {getMaterialPrice(CustomizeShoe_cbo_midsole.SelectedItem.ToString())}"
+        summary += $"{vbCrLf}{CustomizeShoe_cbo_outsole.SelectedItem.ToString()}: {getMaterialPrice(CustomizeShoe_cbo_outsole.SelectedItem.ToString())}"
+        summary += $"{vbCrLf}{CustomizeShoe_cbo_lace.SelectedItem.ToString()}: {getMaterialPrice(CustomizeShoe_cbo_lace.SelectedItem.ToString())}"
+        summary += $"{vbCrLf}{vbCrLf}Total amount: {totalAmount}"
+        summary += $"{vbCrLf}{vbCrLf}{vbCrLf}Claim method: {claimMethod}"
+        summary += $"{vbCrLf}Due date: {dueDate}"
+        summary += $"{vbCrLf}Payment status: {payment_status}"
+        summary += $"{vbCrLf}Process status: {process_status}"
+        summary += $"{vbCrLf}{vbCrLf}{vbCrLf}Selected Customer - ( ID: {selectedCustomerID} | Name: {selectedCustomerUname} )"
+
+        RTB_summary.Text = summary
+        Final_selectedAccountID = selectedCustomerID
+        Final_orderDetail = orderDetail
+        Final_claimMethod = claimMethod
+        Final_dueDate = dueDate
+        Final_totalAmount = totalAmount
+        forStockReduce(0) = getMaterialID(CustomizeShoe_cbo_body.SelectedItem.ToString())
+        forStockReduce(1) = getMaterialID(CustomizeShoe_cbo_insole.SelectedItem.ToString())
+        forStockReduce(2) = getMaterialID(CustomizeShoe_cbo_midsole.SelectedItem.ToString())
+        forStockReduce(3) = getMaterialID(CustomizeShoe_cbo_outsole.SelectedItem.ToString())
+        forStockReduce(4) = getMaterialID(CustomizeShoe_cbo_lace.SelectedItem.ToString())
+        finalizeValid = True
+
+    End Sub
+
+    Dim forStockReduce(4) As String
+
+    Dim Final_selectedAccountID As String = ""
+    Dim Final_orderDetail As String = ""
+    Dim Final_claimMethod As String = ""
+    Dim Final_dueDate As Date = Date.Now
+    Dim Final_totalAmount As Integer = 0
+    Dim Final_payment_status As String = "unpaid"
+    Dim Final_process_status As String = "not_started"
+
+    Dim finalizeValid As Boolean = False
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        Dim hasEnoughStock As Boolean = True
+
+        For Each stock As String In forStockReduce
+            If Not haveOneStock(stock) Then
+                hasEnoughStock = False
+            End If
+        Next
+
+        If Not hasEnoughStock Then
+            MessageBox.Show("Stock for some material is 0. Cannot Proceed with Order finalization")
+            clearSelections_customize()
+            Return
+        End If
+
+        For Each stock As String In forStockReduce
+            ReduceStock(stock)
+        Next
+
+        If finalizeValid Then
+            addOrder(Final_selectedAccountID, Final_orderDetail, Final_claimMethod, Final_dueDate, Final_totalAmount, Final_payment_status, Final_process_status)
+            CustomizeShoe_lbl_customer.Text = $"Selected Customer:"
+            hasSelectedCustomer = False
+            finalizeValid = False
+            Final_selectedAccountID = ""
+            Final_orderDetail = ""
+            Final_claimMethod = ""
+            Final_dueDate = Date.Now
+            Final_totalAmount = 0
+        End If
+    End Sub
+
+    Sub clearSelections_customize()
+        CustomizeShoe_cbo_body.SelectedItem = Nothing
+        CustomizeShoe_cbo_body.Text = ""
+        CustomizeShoe_cbo_insole.SelectedItem = Nothing
+        CustomizeShoe_cbo_body.Text = ""
+        CustomizeShoe_cbo_midsole.SelectedItem = Nothing
+        CustomizeShoe_cbo_body.Text = ""
+        CustomizeShoe_cbo_outsole.SelectedItem = Nothing
+        CustomizeShoe_cbo_body.Text = ""
+        CustomizeShoe_cbo_lace.SelectedItem = Nothing
+        CustomizeShoe_cbo_body.Text = ""
+        CustomizeShoe_lbl_customer.Text = "Selected Customer:"
+        RTB_summary.Text = ""
+
+
+    End Sub
+
+    Sub addOrder(sai As String, od As String, cm As String, dd As Date, ta As Integer, pys As String, prs As String)
+        Try
+            ' Define the insert query with placeholders
+            Dim sqlQuery As String = $"INSERT INTO orders (customer, order_detail, claim_method, due_date, total_amount, payment_status, process_status)
+                          VALUES (@customer, @orderDetail, @claimMethod, @dueDate, @totalAmount, @paymentStatus, @processStatus);"
+
+
+            ' Create a MySqlCommand
+            Using cmd As New MySqlCommand(sqlQuery, conn)
+                ' Add parameters to prevent SQL injection
+                cmd.Parameters.AddWithValue("@customer", sai)
+                cmd.Parameters.AddWithValue("@orderDetail", od)
+                cmd.Parameters.AddWithValue("@claimMethod", cm)
+                cmd.Parameters.AddWithValue("@dueDate", dd)
+                cmd.Parameters.AddWithValue("@totalAmount", ta)
+                cmd.Parameters.AddWithValue("@paymentStatus", pys)
+                cmd.Parameters.AddWithValue("@processStatus", prs)
+
+                ' Open the connection if closed
+                If conn.State = ConnectionState.Closed Then
+                    conn.Open()
+                End If
+
+                ' Execute the insert query
+                cmd.ExecuteNonQuery()
+            End Using
+
+            MessageBox.Show("Order added successfully.")
+
+        Catch ex As Exception
+            MessageBox.Show($"An error occurred: {ex.Message}{vbCrLf}{ex.StackTrace}")
+        Finally
+            ' Ensure the connection is closed
+            If conn.State = ConnectionState.Open Then
+                conn.Close()
+            End If
+            refresh()
+            clearSelections_customize()
+
+
+        End Try
+    End Sub
+
+    Function ReduceStock(materialID As Integer) As Boolean
+        Dim success As Boolean = False
+
+        Try
+            ' Define the SQL query to reduce stock by 1, ensuring stock is greater than 0
+            Dim sqlQuery As String = "UPDATE materials SET stock = stock - 1 WHERE material_id = @materialID AND stock > 0;"
+
+            ' Create a MySqlCommand
+            Using cmd As New MySqlCommand(sqlQuery, sqlConnector.conn)
+                ' Add parameter to prevent SQL injection
+                cmd.Parameters.AddWithValue("@materialID", materialID)
+
+                ' Open the connection if it's not already open
+                If sqlConnector.conn.State = ConnectionState.Closed Then
+                    sqlConnector.conn.Open()
+                End If
+
+                ' Execute the query and check if rows were affected
+                cmd.ExecuteNonQuery()
+
+            End Using
+
+        Catch ex As Exception
+            ' Handle exceptions and display an error message
+            MessageBox.Show($"An error occurred: {ex.Message}{vbCrLf}{ex.StackTrace}")
+
+        Finally
+            ' Ensure the connection is closed
+            If sqlConnector.conn.State = ConnectionState.Open Then
+                sqlConnector.conn.Close()
+            End If
+        End Try
+
+        ' Return whether the operation was successful
+        Return success
+    End Function
+
+    Function haveOneStock(materialID As Integer) As Boolean
+        Try
+            ' Define the SQL query to check if there is at least 1 stock
+            Dim sqlQuery As String = "SELECT COUNT(*) FROM materials WHERE material_id = @materialID AND stock > 0;"
+
+            ' Create a MySqlCommand
+            Using cmd As New MySqlCommand(sqlQuery, sqlConnector.conn)
+                ' Add parameter to prevent SQL injection
+                cmd.Parameters.AddWithValue("@materialID", materialID)
+
+                ' Open the connection if it's not already open
+                If sqlConnector.conn.State = ConnectionState.Closed Then
+                    sqlConnector.conn.Open()
+                End If
+
+                ' Execute the query and check if at least one stock is available
+                Dim count As Integer = Convert.ToInt32(cmd.ExecuteScalar())
+
+                ' Return true if stock is at least 1, otherwise false
+                Return count > 0
+            End Using
+
+        Catch ex As Exception
+            ' Handle exceptions and display an error message
+            MessageBox.Show($"An error occurred: {ex.Message}{vbCrLf}{ex.StackTrace}")
+
+            Return False
+
+        Finally
+            ' Ensure the connection is closed
+            If sqlConnector.conn.State = ConnectionState.Open Then
+                sqlConnector.conn.Close()
+            End If
+        End Try
+    End Function
+
+
+    Function getMaterialID(materialName As String) As String
+        Dim materialID As String = String.Empty
+
+        Try
+            ' Define the SQL query to fetch the material ID based on the material name
+            Dim sqlQuery As String = "SELECT material_id FROM materials WHERE material_name = @materialName LIMIT 1;"
+
+            ' Create a MySqlCommand
+            Using cmd As New MySqlCommand(sqlQuery, sqlConnector.conn)
+                ' Add parameter to prevent SQL injection
+                cmd.Parameters.AddWithValue("@materialName", materialName)
+
+                ' Open the connection if it's not already open
+                If sqlConnector.conn.State = ConnectionState.Closed Then
+                    sqlConnector.conn.Open()
+                End If
+
+                ' Execute the query and retrieve the result
+                Using reader As MySqlDataReader = cmd.ExecuteReader()
+                    If reader.Read() Then
+                        ' Read the material ID
+                        materialID = reader("material_id").ToString()
+                    End If
+                End Using
+            End Using
+
+        Catch ex As Exception
+            ' Handle exceptions and display an error message
+            MessageBox.Show($"An error occurred: {ex.Message}{vbCrLf}{ex.StackTrace}")
+
+        Finally
+            ' Ensure the connection is closed
+            If sqlConnector.conn.State = ConnectionState.Open Then
+                sqlConnector.conn.Close()
+            End If
+        End Try
+
+        ' Return the material ID as a string
+        Return materialID
+    End Function
+
+    Function getMaterialPrice(materialName As String) As Integer
+        Dim materialPrice As Integer = 0
+
+        Try
+            ' Define the SQL query to fetch the material ID based on the material name
+            Dim sqlQuery As String = "SELECT price FROM materials WHERE material_name = @materialName LIMIT 1;"
+
+            ' Create a MySqlCommand
+            Using cmd As New MySqlCommand(sqlQuery, sqlConnector.conn)
+                ' Add parameter to prevent SQL injection
+                cmd.Parameters.AddWithValue("@materialName", materialName)
+
+                ' Open the connection if it's not already open
+                If sqlConnector.conn.State = ConnectionState.Closed Then
+                    sqlConnector.conn.Open()
+                End If
+
+                ' Execute the query and retrieve the result
+                Using reader As MySqlDataReader = cmd.ExecuteReader()
+                    If reader.Read() Then
+                        ' Read the material ID
+                        materialPrice = Convert.ToInt32(reader("price"))
+                    End If
+                End Using
+            End Using
+
+        Catch ex As Exception
+            ' Handle exceptions and display an error message
+            MessageBox.Show($"An error occurred: {ex.Message}{vbCrLf}{ex.StackTrace}")
+
+        Finally
+            ' Ensure the connection is closed
+            If sqlConnector.conn.State = ConnectionState.Open Then
+                sqlConnector.conn.Close()
+            End If
+        End Try
+
+        ' Return the material ID as a string
+        Return materialPrice
+    End Function
+
+
 End Class

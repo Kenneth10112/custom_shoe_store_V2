@@ -99,23 +99,22 @@ Public Class selectCustomer
     End Sub
 
 
-    Dim selectedColumnParam As String
     Private Sub btn_select_Click(sender As Object, e As EventArgs) Handles btn_select.Click
 
-        If cbo_sortBy.SelectedItem IsNot Nothing Then
-            ' Get the account_id from the selected row
-            Dim columnValue As String = Accounts.CurrentRow.Cells(selectedColumnParam).Value.ToString()
+        If Accounts.CurrentRow IsNot Nothing Then
+            Dim totalRows As Integer = Accounts.Rows.Count
+            Dim selectedRow As Integer = Accounts.CurrentRow.Index + 1
+            If Not selectedRow = totalRows Then
+                Dim selectedRowID As String = Accounts.CurrentRow.Cells("account_id").Value.ToString()
+                Dim selectedRowName As String = Accounts.CurrentRow.Cells("username").Value.ToString()
+                mainform.CustomizeShoe_selectCustomer(selectedRowID, selectedRowName)
+                Dispose()
+            Else
+                MessageBox.Show("select a Valid row first!")
+            End If
 
-            mainform.CustomizeShoe_selectCustomer(selectedColumnParam, columnValue)
-
-            Dispose()
-        Else
-            MessageBox.Show("select a sorting method first!")
         End If
-    End Sub
 
-    Private Sub cbo_sortBy_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbo_sortBy.SelectedIndexChanged
-        selectedColumnParam = cbo_sortBy.SelectedItem.ToString()
     End Sub
 
     Private Sub back_Click(sender As Object, e As EventArgs) Handles back.Click

@@ -22,19 +22,19 @@ Partial Class mainForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim ListViewItem10 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SampleCustomer1 created a new order (SampleOrder1)")
-        Dim ListViewItem11 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SampleCustomer1 edited their chosen shoe/s")
-        Dim ListViewItem12 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SampleCustomer1 completed their account details")
-        Dim DataGridViewCellStyle31 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle32 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle33 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle34 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle35 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle36 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle37 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle38 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle39 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle40 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim ListViewItem1 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SampleCustomer1 created a new order (SampleOrder1)")
+        Dim ListViewItem2 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SampleCustomer1 edited their chosen shoe/s")
+        Dim ListViewItem3 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SampleCustomer1 completed their account details")
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
         Me.btn_Dashboard = New System.Windows.Forms.Button()
         Me.btn_Accounts = New System.Windows.Forms.Button()
@@ -101,11 +101,11 @@ Partial Class mainForm
         Me.Label115 = New System.Windows.Forms.Label()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.Panel13 = New System.Windows.Forms.Panel()
-        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.RTB_summary = New System.Windows.Forms.RichTextBox()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.Panel12 = New System.Windows.Forms.Panel()
         Me.CustomizeShoe_btn_selectCustomer = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
+        Me.CustomizeShoe_viewSummary = New System.Windows.Forms.Button()
         Me.Panel14 = New System.Windows.Forms.Panel()
         Me.CustomizeShoe_cbo_lace = New System.Windows.Forms.ComboBox()
         Me.CustomizeShoe_cbo_midsole = New System.Windows.Forms.ComboBox()
@@ -176,6 +176,8 @@ Partial Class mainForm
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.mainTabControl = New System.Windows.Forms.TabControl()
+        Me.CustomizeShoe_cbo_claimMethod = New System.Windows.Forms.ComboBox()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.FlowLayoutPanel1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.TabPage6.SuspendLayout()
@@ -359,7 +361,7 @@ Partial Class mainForm
         Me.ListView3.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader8})
         Me.ListView3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ListView3.HideSelection = False
-        Me.ListView3.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem10, ListViewItem11, ListViewItem12})
+        Me.ListView3.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem1, ListViewItem2, ListViewItem3})
         Me.ListView3.Location = New System.Drawing.Point(0, 0)
         Me.ListView3.Margin = New System.Windows.Forms.Padding(2)
         Me.ListView3.Name = "ListView3"
@@ -396,10 +398,14 @@ Partial Class mainForm
         '
         'Orders_allOrders
         '
+        Me.Orders_allOrders.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken
         Me.Orders_allOrders.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Orders_allOrders.Location = New System.Drawing.Point(0, 3)
+        Me.Orders_allOrders.MultiSelect = False
         Me.Orders_allOrders.Name = "Orders_allOrders"
+        Me.Orders_allOrders.ReadOnly = True
         Me.Orders_allOrders.RowHeadersWidth = 51
+        Me.Orders_allOrders.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
         Me.Orders_allOrders.Size = New System.Drawing.Size(809, 350)
         Me.Orders_allOrders.TabIndex = 0
         '
@@ -577,37 +583,53 @@ Partial Class mainForm
         '
         'Orders_outgoing
         '
+        Me.Orders_outgoing.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken
         Me.Orders_outgoing.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Orders_outgoing.Location = New System.Drawing.Point(652, 63)
+        Me.Orders_outgoing.MultiSelect = False
         Me.Orders_outgoing.Name = "Orders_outgoing"
+        Me.Orders_outgoing.ReadOnly = True
         Me.Orders_outgoing.RowHeadersWidth = 51
+        Me.Orders_outgoing.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
         Me.Orders_outgoing.Size = New System.Drawing.Size(208, 208)
         Me.Orders_outgoing.TabIndex = 38
         '
         'Orders_finished
         '
+        Me.Orders_finished.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken
         Me.Orders_finished.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Orders_finished.Location = New System.Drawing.Point(438, 63)
+        Me.Orders_finished.MultiSelect = False
         Me.Orders_finished.Name = "Orders_finished"
+        Me.Orders_finished.ReadOnly = True
         Me.Orders_finished.RowHeadersWidth = 51
+        Me.Orders_finished.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
         Me.Orders_finished.Size = New System.Drawing.Size(208, 208)
         Me.Orders_finished.TabIndex = 37
         '
         'Orders_inProgress
         '
+        Me.Orders_inProgress.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken
         Me.Orders_inProgress.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Orders_inProgress.Location = New System.Drawing.Point(224, 63)
+        Me.Orders_inProgress.MultiSelect = False
         Me.Orders_inProgress.Name = "Orders_inProgress"
+        Me.Orders_inProgress.ReadOnly = True
         Me.Orders_inProgress.RowHeadersWidth = 51
+        Me.Orders_inProgress.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
         Me.Orders_inProgress.Size = New System.Drawing.Size(208, 208)
         Me.Orders_inProgress.TabIndex = 36
         '
         'Orders_notStarted
         '
+        Me.Orders_notStarted.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken
         Me.Orders_notStarted.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Orders_notStarted.Location = New System.Drawing.Point(10, 63)
+        Me.Orders_notStarted.MultiSelect = False
         Me.Orders_notStarted.Name = "Orders_notStarted"
+        Me.Orders_notStarted.ReadOnly = True
         Me.Orders_notStarted.RowHeadersWidth = 51
+        Me.Orders_notStarted.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
         Me.Orders_notStarted.Size = New System.Drawing.Size(208, 208)
         Me.Orders_notStarted.TabIndex = 35
         '
@@ -754,23 +776,31 @@ Partial Class mainForm
         '
         'Materials_normal
         '
-        DataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Materials_normal.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle31
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Materials_normal.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.Materials_normal.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken
         Me.Materials_normal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Materials_normal.Location = New System.Drawing.Point(589, 27)
+        Me.Materials_normal.MultiSelect = False
         Me.Materials_normal.Name = "Materials_normal"
+        Me.Materials_normal.ReadOnly = True
         Me.Materials_normal.RowHeadersWidth = 51
+        Me.Materials_normal.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
         Me.Materials_normal.Size = New System.Drawing.Size(287, 191)
         Me.Materials_normal.TabIndex = 49
         '
         'Materials_warning
         '
-        DataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Materials_warning.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle32
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Materials_warning.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle2
+        Me.Materials_warning.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken
         Me.Materials_warning.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Materials_warning.Location = New System.Drawing.Point(296, 27)
+        Me.Materials_warning.MultiSelect = False
         Me.Materials_warning.Name = "Materials_warning"
+        Me.Materials_warning.ReadOnly = True
         Me.Materials_warning.RowHeadersWidth = 51
+        Me.Materials_warning.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
         Me.Materials_warning.Size = New System.Drawing.Size(287, 191)
         Me.Materials_warning.TabIndex = 48
         '
@@ -796,12 +826,16 @@ Partial Class mainForm
         '
         'Materials_critical
         '
-        DataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Materials_critical.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle33
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Materials_critical.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle3
+        Me.Materials_critical.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken
         Me.Materials_critical.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Materials_critical.Location = New System.Drawing.Point(3, 27)
+        Me.Materials_critical.MultiSelect = False
         Me.Materials_critical.Name = "Materials_critical"
+        Me.Materials_critical.ReadOnly = True
         Me.Materials_critical.RowHeadersWidth = 51
+        Me.Materials_critical.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
         Me.Materials_critical.Size = New System.Drawing.Size(287, 191)
         Me.Materials_critical.TabIndex = 47
         '
@@ -867,10 +901,14 @@ Partial Class mainForm
         '
         'Materials_allMaterials
         '
+        Me.Materials_allMaterials.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken
         Me.Materials_allMaterials.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Materials_allMaterials.Location = New System.Drawing.Point(14, 63)
+        Me.Materials_allMaterials.MultiSelect = False
         Me.Materials_allMaterials.Name = "Materials_allMaterials"
+        Me.Materials_allMaterials.ReadOnly = True
         Me.Materials_allMaterials.RowHeadersWidth = 51
+        Me.Materials_allMaterials.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
         Me.Materials_allMaterials.Size = New System.Drawing.Size(696, 327)
         Me.Materials_allMaterials.TabIndex = 53
         '
@@ -897,20 +935,20 @@ Partial Class mainForm
         '
         'Panel13
         '
-        Me.Panel13.Controls.Add(Me.RichTextBox1)
+        Me.Panel13.Controls.Add(Me.RTB_summary)
         Me.Panel13.Controls.Add(Me.Button8)
         Me.Panel13.Location = New System.Drawing.Point(780, 23)
         Me.Panel13.Name = "Panel13"
         Me.Panel13.Size = New System.Drawing.Size(371, 589)
         Me.Panel13.TabIndex = 3
         '
-        'RichTextBox1
+        'RTB_summary
         '
-        Me.RichTextBox1.Location = New System.Drawing.Point(17, 18)
-        Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(337, 489)
-        Me.RichTextBox1.TabIndex = 8
-        Me.RichTextBox1.Text = "Summary: (Customization details and costing details will appear here " & Global.Microsoft.VisualBasic.ChrW(10) & "after click" &
+        Me.RTB_summary.Location = New System.Drawing.Point(17, 18)
+        Me.RTB_summary.Name = "RTB_summary"
+        Me.RTB_summary.Size = New System.Drawing.Size(337, 489)
+        Me.RTB_summary.TabIndex = 8
+        Me.RTB_summary.Text = "Summary: (Customization details and costing details will appear here " & Global.Microsoft.VisualBasic.ChrW(10) & "after click" &
     "ing the button on the bottom left)"
         '
         'Button8
@@ -927,7 +965,7 @@ Partial Class mainForm
         '
         Me.Panel12.BackColor = System.Drawing.Color.DarkGray
         Me.Panel12.Controls.Add(Me.CustomizeShoe_btn_selectCustomer)
-        Me.Panel12.Controls.Add(Me.Button6)
+        Me.Panel12.Controls.Add(Me.CustomizeShoe_viewSummary)
         Me.Panel12.Controls.Add(Me.Panel14)
         Me.Panel12.Controls.Add(Me.CustomizeShoe_lbl_customer)
         Me.Panel12.Location = New System.Drawing.Point(14, 23)
@@ -944,19 +982,21 @@ Partial Class mainForm
         Me.CustomizeShoe_btn_selectCustomer.Text = "Select"
         Me.CustomizeShoe_btn_selectCustomer.UseVisualStyleBackColor = True
         '
-        'Button6
+        'CustomizeShoe_viewSummary
         '
-        Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.Location = New System.Drawing.Point(3, 479)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(754, 107)
-        Me.Button6.TabIndex = 4
-        Me.Button6.Text = "View Summary"
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.CustomizeShoe_viewSummary.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CustomizeShoe_viewSummary.Location = New System.Drawing.Point(3, 477)
+        Me.CustomizeShoe_viewSummary.Name = "CustomizeShoe_viewSummary"
+        Me.CustomizeShoe_viewSummary.Size = New System.Drawing.Size(754, 107)
+        Me.CustomizeShoe_viewSummary.TabIndex = 4
+        Me.CustomizeShoe_viewSummary.Text = "View Summary"
+        Me.CustomizeShoe_viewSummary.UseVisualStyleBackColor = True
         '
         'Panel14
         '
         Me.Panel14.BackColor = System.Drawing.Color.White
+        Me.Panel14.Controls.Add(Me.CustomizeShoe_cbo_claimMethod)
+        Me.Panel14.Controls.Add(Me.Label5)
         Me.Panel14.Controls.Add(Me.CustomizeShoe_cbo_lace)
         Me.Panel14.Controls.Add(Me.CustomizeShoe_cbo_midsole)
         Me.Panel14.Controls.Add(Me.CustomizeShoe_cbo_outsole)
@@ -984,7 +1024,7 @@ Partial Class mainForm
         'CustomizeShoe_cbo_midsole
         '
         Me.CustomizeShoe_cbo_midsole.FormattingEnabled = True
-        Me.CustomizeShoe_cbo_midsole.Location = New System.Drawing.Point(111, 210)
+        Me.CustomizeShoe_cbo_midsole.Location = New System.Drawing.Point(111, 178)
         Me.CustomizeShoe_cbo_midsole.Name = "CustomizeShoe_cbo_midsole"
         Me.CustomizeShoe_cbo_midsole.Size = New System.Drawing.Size(121, 21)
         Me.CustomizeShoe_cbo_midsole.TabIndex = 17
@@ -992,7 +1032,7 @@ Partial Class mainForm
         'CustomizeShoe_cbo_outsole
         '
         Me.CustomizeShoe_cbo_outsole.FormattingEnabled = True
-        Me.CustomizeShoe_cbo_outsole.Location = New System.Drawing.Point(111, 176)
+        Me.CustomizeShoe_cbo_outsole.Location = New System.Drawing.Point(111, 214)
         Me.CustomizeShoe_cbo_outsole.Name = "CustomizeShoe_cbo_outsole"
         Me.CustomizeShoe_cbo_outsole.Size = New System.Drawing.Size(121, 21)
         Me.CustomizeShoe_cbo_outsole.TabIndex = 16
@@ -1025,7 +1065,7 @@ Partial Class mainForm
         'Label113
         '
         Me.Label113.AutoSize = True
-        Me.Label113.Location = New System.Drawing.Point(47, 213)
+        Me.Label113.Location = New System.Drawing.Point(47, 181)
         Me.Label113.Name = "Label113"
         Me.Label113.Size = New System.Drawing.Size(46, 13)
         Me.Label113.TabIndex = 11
@@ -1034,7 +1074,7 @@ Partial Class mainForm
         'Label112
         '
         Me.Label112.AutoSize = True
-        Me.Label112.Location = New System.Drawing.Point(47, 179)
+        Me.Label112.Location = New System.Drawing.Point(47, 217)
         Me.Label112.Name = "Label112"
         Me.Label112.Size = New System.Drawing.Size(46, 13)
         Me.Label112.TabIndex = 9
@@ -1075,9 +1115,9 @@ Partial Class mainForm
         Me.CustomizeShoe_lbl_customer.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CustomizeShoe_lbl_customer.Location = New System.Drawing.Point(12, 14)
         Me.CustomizeShoe_lbl_customer.Name = "CustomizeShoe_lbl_customer"
-        Me.CustomizeShoe_lbl_customer.Size = New System.Drawing.Size(91, 20)
+        Me.CustomizeShoe_lbl_customer.Size = New System.Drawing.Size(167, 20)
         Me.CustomizeShoe_lbl_customer.TabIndex = 0
-        Me.CustomizeShoe_lbl_customer.Text = "Customer:"
+        Me.CustomizeShoe_lbl_customer.Text = "Selected Customer:"
         '
         'TabPage2
         '
@@ -1094,10 +1134,14 @@ Partial Class mainForm
         '
         'Accounts_allAccounts
         '
+        Me.Accounts_allAccounts.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken
         Me.Accounts_allAccounts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Accounts_allAccounts.Location = New System.Drawing.Point(7, 7)
+        Me.Accounts_allAccounts.MultiSelect = False
         Me.Accounts_allAccounts.Name = "Accounts_allAccounts"
+        Me.Accounts_allAccounts.ReadOnly = True
         Me.Accounts_allAccounts.RowHeadersWidth = 51
+        Me.Accounts_allAccounts.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
         Me.Accounts_allAccounts.Size = New System.Drawing.Size(343, 618)
         Me.Accounts_allAccounts.TabIndex = 3
         '
@@ -1216,10 +1260,14 @@ Partial Class mainForm
         '
         'Accounts_allOrders
         '
+        Me.Accounts_allOrders.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken
         Me.Accounts_allOrders.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Accounts_allOrders.Location = New System.Drawing.Point(48, 325)
+        Me.Accounts_allOrders.MultiSelect = False
         Me.Accounts_allOrders.Name = "Accounts_allOrders"
+        Me.Accounts_allOrders.ReadOnly = True
         Me.Accounts_allOrders.RowHeadersWidth = 51
+        Me.Accounts_allOrders.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
         Me.Accounts_allOrders.Size = New System.Drawing.Size(719, 238)
         Me.Accounts_allOrders.TabIndex = 4
         '
@@ -1480,34 +1528,46 @@ Partial Class mainForm
         '
         'Dashboard_Stocks_normal
         '
-        DataGridViewCellStyle34.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Dashboard_Stocks_normal.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle34
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Dashboard_Stocks_normal.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
+        Me.Dashboard_Stocks_normal.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken
         Me.Dashboard_Stocks_normal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Dashboard_Stocks_normal.Location = New System.Drawing.Point(770, 90)
+        Me.Dashboard_Stocks_normal.MultiSelect = False
         Me.Dashboard_Stocks_normal.Name = "Dashboard_Stocks_normal"
+        Me.Dashboard_Stocks_normal.ReadOnly = True
         Me.Dashboard_Stocks_normal.RowHeadersWidth = 51
+        Me.Dashboard_Stocks_normal.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
         Me.Dashboard_Stocks_normal.Size = New System.Drawing.Size(378, 275)
         Me.Dashboard_Stocks_normal.TabIndex = 40
         '
         'Dashboard_Stocks_warning
         '
-        DataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Dashboard_Stocks_warning.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle35
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Dashboard_Stocks_warning.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle5
+        Me.Dashboard_Stocks_warning.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken
         Me.Dashboard_Stocks_warning.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Dashboard_Stocks_warning.Location = New System.Drawing.Point(387, 90)
+        Me.Dashboard_Stocks_warning.MultiSelect = False
         Me.Dashboard_Stocks_warning.Name = "Dashboard_Stocks_warning"
+        Me.Dashboard_Stocks_warning.ReadOnly = True
         Me.Dashboard_Stocks_warning.RowHeadersWidth = 51
+        Me.Dashboard_Stocks_warning.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
         Me.Dashboard_Stocks_warning.Size = New System.Drawing.Size(378, 275)
         Me.Dashboard_Stocks_warning.TabIndex = 39
         '
         'Dashboard_Stocks_critical
         '
-        DataGridViewCellStyle36.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Dashboard_Stocks_critical.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle36
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Dashboard_Stocks_critical.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle6
+        Me.Dashboard_Stocks_critical.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken
         Me.Dashboard_Stocks_critical.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Dashboard_Stocks_critical.Location = New System.Drawing.Point(3, 90)
+        Me.Dashboard_Stocks_critical.MultiSelect = False
         Me.Dashboard_Stocks_critical.Name = "Dashboard_Stocks_critical"
+        Me.Dashboard_Stocks_critical.ReadOnly = True
         Me.Dashboard_Stocks_critical.RowHeadersWidth = 51
+        Me.Dashboard_Stocks_critical.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
         Me.Dashboard_Stocks_critical.Size = New System.Drawing.Size(378, 275)
         Me.Dashboard_Stocks_critical.TabIndex = 38
         '
@@ -1592,34 +1652,46 @@ Partial Class mainForm
         '
         'Dashboard_Orders_outgoing
         '
-        DataGridViewCellStyle37.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Dashboard_Orders_outgoing.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle37
+        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Dashboard_Orders_outgoing.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle7
+        Me.Dashboard_Orders_outgoing.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken
         Me.Dashboard_Orders_outgoing.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Dashboard_Orders_outgoing.Location = New System.Drawing.Point(586, 88)
+        Me.Dashboard_Orders_outgoing.MultiSelect = False
         Me.Dashboard_Orders_outgoing.Name = "Dashboard_Orders_outgoing"
+        Me.Dashboard_Orders_outgoing.ReadOnly = True
         Me.Dashboard_Orders_outgoing.RowHeadersWidth = 51
+        Me.Dashboard_Orders_outgoing.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
         Me.Dashboard_Orders_outgoing.Size = New System.Drawing.Size(187, 149)
         Me.Dashboard_Orders_outgoing.TabIndex = 38
         '
         'Dashboard_Orders_finished
         '
-        DataGridViewCellStyle38.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Dashboard_Orders_finished.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle38
+        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Dashboard_Orders_finished.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle8
+        Me.Dashboard_Orders_finished.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken
         Me.Dashboard_Orders_finished.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Dashboard_Orders_finished.Location = New System.Drawing.Point(393, 88)
+        Me.Dashboard_Orders_finished.MultiSelect = False
         Me.Dashboard_Orders_finished.Name = "Dashboard_Orders_finished"
+        Me.Dashboard_Orders_finished.ReadOnly = True
         Me.Dashboard_Orders_finished.RowHeadersWidth = 51
+        Me.Dashboard_Orders_finished.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
         Me.Dashboard_Orders_finished.Size = New System.Drawing.Size(187, 149)
         Me.Dashboard_Orders_finished.TabIndex = 37
         '
         'Dashboard_Orders_inProgress
         '
-        DataGridViewCellStyle39.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Dashboard_Orders_inProgress.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle39
+        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Dashboard_Orders_inProgress.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle9
+        Me.Dashboard_Orders_inProgress.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken
         Me.Dashboard_Orders_inProgress.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Dashboard_Orders_inProgress.Location = New System.Drawing.Point(200, 88)
+        Me.Dashboard_Orders_inProgress.MultiSelect = False
         Me.Dashboard_Orders_inProgress.Name = "Dashboard_Orders_inProgress"
+        Me.Dashboard_Orders_inProgress.ReadOnly = True
         Me.Dashboard_Orders_inProgress.RowHeadersWidth = 51
+        Me.Dashboard_Orders_inProgress.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
         Me.Dashboard_Orders_inProgress.Size = New System.Drawing.Size(187, 149)
         Me.Dashboard_Orders_inProgress.TabIndex = 36
         '
@@ -1635,12 +1707,16 @@ Partial Class mainForm
         '
         'Dashboard_Orders_notStarted
         '
-        DataGridViewCellStyle40.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Dashboard_Orders_notStarted.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle40
+        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Dashboard_Orders_notStarted.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle10
+        Me.Dashboard_Orders_notStarted.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken
         Me.Dashboard_Orders_notStarted.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Dashboard_Orders_notStarted.Location = New System.Drawing.Point(7, 88)
+        Me.Dashboard_Orders_notStarted.MultiSelect = False
         Me.Dashboard_Orders_notStarted.Name = "Dashboard_Orders_notStarted"
+        Me.Dashboard_Orders_notStarted.ReadOnly = True
         Me.Dashboard_Orders_notStarted.RowHeadersWidth = 51
+        Me.Dashboard_Orders_notStarted.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
         Me.Dashboard_Orders_notStarted.Size = New System.Drawing.Size(187, 149)
         Me.Dashboard_Orders_notStarted.TabIndex = 35
         '
@@ -1715,11 +1791,29 @@ Partial Class mainForm
         Me.mainTabControl.Size = New System.Drawing.Size(1173, 660)
         Me.mainTabControl.TabIndex = 2
         '
+        'CustomizeShoe_cbo_claimMethod
+        '
+        Me.CustomizeShoe_cbo_claimMethod.FormattingEnabled = True
+        Me.CustomizeShoe_cbo_claimMethod.Items.AddRange(New Object() {"pick_up", "delivery"})
+        Me.CustomizeShoe_cbo_claimMethod.Location = New System.Drawing.Point(422, 109)
+        Me.CustomizeShoe_cbo_claimMethod.Name = "CustomizeShoe_cbo_claimMethod"
+        Me.CustomizeShoe_cbo_claimMethod.Size = New System.Drawing.Size(121, 21)
+        Me.CustomizeShoe_cbo_claimMethod.TabIndex = 20
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(346, 112)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(73, 13)
+        Me.Label5.TabIndex = 19
+        Me.Label5.Text = "Claim method:"
+        '
         'mainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1263, 659)
+        Me.ClientSize = New System.Drawing.Size(1329, 659)
         Me.ControlBox = False
         Me.Controls.Add(Me.mainTabControl)
         Me.Controls.Add(Me.Panel1)
@@ -1898,11 +1992,11 @@ Partial Class mainForm
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Panel13 As Panel
-    Friend WithEvents RichTextBox1 As RichTextBox
+    Friend WithEvents RTB_summary As RichTextBox
     Friend WithEvents Button8 As Button
     Friend WithEvents Panel12 As Panel
     Friend WithEvents CustomizeShoe_btn_selectCustomer As Button
-    Friend WithEvents Button6 As Button
+    Friend WithEvents CustomizeShoe_viewSummary As Button
     Friend WithEvents Panel14 As Panel
     Friend WithEvents CustomizeShoe_cbo_lace As ComboBox
     Friend WithEvents CustomizeShoe_cbo_midsole As ComboBox
@@ -1921,4 +2015,6 @@ Partial Class mainForm
     Friend WithEvents Orders_to_inProgress As Button
     Friend WithEvents Orders_finish_to_settled As Button
     Friend WithEvents Orders_outgoing_to_settled As Button
+    Friend WithEvents CustomizeShoe_cbo_claimMethod As ComboBox
+    Friend WithEvents Label5 As Label
 End Class
