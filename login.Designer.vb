@@ -22,29 +22,30 @@ Partial Class login
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.uname = New System.Windows.Forms.TextBox()
+        Me.pass = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.SuspendLayout()
         '
-        'TextBox1
+        'uname
         '
-        Me.TextBox1.Location = New System.Drawing.Point(237, 83)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(172, 20)
-        Me.TextBox1.TabIndex = 0
-        Me.TextBox1.Text = "Username"
+        Me.uname.Location = New System.Drawing.Point(237, 83)
+        Me.uname.Name = "uname"
+        Me.uname.Size = New System.Drawing.Size(172, 20)
+        Me.uname.TabIndex = 0
+        Me.uname.Text = "Username"
         '
-        'TextBox2
+        'pass
         '
-        Me.TextBox2.Location = New System.Drawing.Point(237, 118)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(172, 20)
-        Me.TextBox2.TabIndex = 1
-        Me.TextBox2.Text = "Password"
+        Me.pass.Location = New System.Drawing.Point(237, 118)
+        Me.pass.Name = "pass"
+        Me.pass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.pass.Size = New System.Drawing.Size(172, 20)
+        Me.pass.TabIndex = 1
+        Me.pass.Text = "Password"
         '
         'Label1
         '
@@ -87,13 +88,13 @@ Partial Class login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(694, 404)
+        Me.ClientSize = New System.Drawing.Size(652, 404)
         Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.pass)
+        Me.Controls.Add(Me.uname)
         Me.Name = "login"
         Me.Text = "Log in Form"
         Me.ResumeLayout(False)
@@ -101,8 +102,8 @@ Partial Class login
 
     End Sub
 
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents uname As TextBox
+    Friend WithEvents pass As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents Label2 As Label

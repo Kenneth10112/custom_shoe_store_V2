@@ -5,7 +5,15 @@ Public Class mainForm
     Dim sqlQuery As String
     Dim da As New MySqlDataAdapter
     Dim dt As New DataTable
+    Dim root As login
+    Sub New(rt As login)
 
+        ' This call is required by the designer.
+        InitializeComponent()
+        root = rt
+        ' Add any initialization after the InitializeComponent() call.
+
+    End Sub
 
     Private Sub mainForm_Load(sender As Object, e As EventArgs) Handles Me.Load
         'hide the main form tabControl
@@ -15,6 +23,7 @@ Public Class mainForm
 
         sqlConnector.DbConnect()
         refresh()
+
     End Sub
 
     Sub populateDashboardOrders()
@@ -880,6 +889,9 @@ Public Class mainForm
 
         If result = DialogResult.Yes Then
             Me.Close()
+            root.Dispose()
+
+
 
         End If
     End Sub
@@ -952,11 +964,40 @@ Public Class mainForm
         changeOrderProcessStatus(Orders_finished, "outgoing")
     End Sub
 
+    Sub payOrder(orderID)
+        ' Define the SQL query to fetch the total amount for a specific order
+        sqlQuery = $"SELECT total_amount FROM orders WHERE order_id = {orderID}"
+
+        ' Create a new data adapter with the query and connection
+        Using da As New MySqlDataAdapter(sqlQuery, sqlConnector.conn)
+            Dim dt As New DataTable
+            da.Fill(dt)
+
+            ' Check if there are rows returned
+            If dt.Rows.Count > 0 Then
+                ' Get the first row
+                Dim row As DataRow = dt.Rows(0)
+
+                ' Retrieve the total_amount value
+                Dim totalAmount As String = row("total_amount").ToString()
+
+                Dim payForm As New payment(orderID, totalAmount, Me)
+                payForm.Show()
+
+            End If
+        End Using
+
+    End Sub
+
+    Public paymentSuccess As Boolean = False
     Private Sub Orders_finish_to_settled_Click(sender As Object, e As EventArgs) Handles Orders_finish_to_settled.Click
+        Dim orderID As String = Orders_finished.CurrentRow.Cells("order_id").Value.ToString()
+        payOrder(orderID)
     End Sub
 
     Private Sub Orders_outgoing_to_settled_Click(sender As Object, e As EventArgs) Handles Orders_outgoing_to_settled.Click
-
+        Dim orderID As String = Orders_outgoing.CurrentRow.Cells("order_id").Value.ToString()
+        payOrder(orderID)
     End Sub
 
     Sub changeOrderProcessStatus(fromTable As DataGridView, toProcStat As String)
