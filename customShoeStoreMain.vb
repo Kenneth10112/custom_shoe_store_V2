@@ -1190,13 +1190,13 @@ Public Class mainForm
         CustomizeShoe_cbo_body.SelectedItem = Nothing
         CustomizeShoe_cbo_body.Text = ""
         CustomizeShoe_cbo_insole.SelectedItem = Nothing
-        CustomizeShoe_cbo_body.Text = ""
+        CustomizeShoe_cbo_insole.Text = ""
         CustomizeShoe_cbo_midsole.SelectedItem = Nothing
-        CustomizeShoe_cbo_body.Text = ""
+        CustomizeShoe_cbo_midsole.Text = ""
         CustomizeShoe_cbo_outsole.SelectedItem = Nothing
-        CustomizeShoe_cbo_body.Text = ""
+        CustomizeShoe_cbo_outsole.Text = ""
         CustomizeShoe_cbo_lace.SelectedItem = Nothing
-        CustomizeShoe_cbo_body.Text = ""
+        CustomizeShoe_cbo_lace.Text = ""
         CustomizeShoe_lbl_customer.Text = "Selected Customer:"
         RTB_summary.Text = ""
 
