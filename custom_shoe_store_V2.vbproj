@@ -144,6 +144,12 @@
       <DependentUpon>customShoeStoreMain.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="selectCustomer.Designer.vb">
+      <DependentUpon>selectCustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="selectCustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="updateAccountDetails.Designer.vb">
       <DependentUpon>updateAccountDetails.vb</DependentUpon>
     </Compile>
@@ -188,6 +194,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="customShoeStoreMain.resx">
       <DependentUpon>customShoeStoreMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selectCustomer.resx">
+      <DependentUpon>selectCustomer.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="updateAccountDetails.resx">
       <DependentUpon>updateAccountDetails.vb</DependentUpon>

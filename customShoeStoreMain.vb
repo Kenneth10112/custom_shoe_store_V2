@@ -593,6 +593,123 @@ Public Class mainForm
         End Try
     End Sub
 
+
+    Dim tempMatData As New DataTable
+    Sub populateCustomizeShoeCBOs()
+        ' For tempMatData
+        tempMatData.Clear()
+        sqlQuery = "SELECT * FROM materials"
+        ' Create a new data adapter with the query and connection
+        Using da As New MySqlDataAdapter(sqlQuery, sqlConnector.conn)
+            Dim dt As New DataTable
+            da.Fill(tempMatData) ' ONE TIME INITIALIZATION FOR TEMPMATDATA
+
+
+            ' Check if there are rows returned
+            'If tempMatData.Rows.Count > 0 Then
+            '    For Each row As DataRow In tempMatData.Rows
+            '        MessageBox.Show($"Success: {row("material_name").ToString()}")
+            '    Next
+
+            'End If
+        End Using
+
+        ' For Body
+        CustomizeShoe_cbo_body.Items.Clear()
+        sqlQuery = "SELECT material_name FROM materials WHERE part_group = 'Body'"
+        ' Create a new data adapter with the query and connection
+        Using da As New MySqlDataAdapter(sqlQuery, sqlConnector.conn)
+            Dim dt As New DataTable
+            da.Fill(dt)
+
+            ' Check if there are rows returned
+            If dt.Rows.Count > 0 Then
+                ' Loop through each row
+                For Each row As DataRow In dt.Rows
+                    ' Retrieve the material_name column value and add to ComboBox
+                    Dim materialName As String = row("material_name").ToString()
+                    CustomizeShoe_cbo_body.Items.Add(materialName)
+                Next
+            End If
+        End Using
+
+        ' For insole
+        CustomizeShoe_cbo_insole.Items.Clear()
+        sqlQuery = "SELECT material_name FROM materials WHERE part_group = 'insole'"
+        ' Create a new data adapter with the query and connection
+        Using da As New MySqlDataAdapter(sqlQuery, sqlConnector.conn)
+            Dim dt As New DataTable
+            da.Fill(dt)
+
+            ' Check if there are rows returned
+            If dt.Rows.Count > 0 Then
+                ' Loop through each row
+                For Each row As DataRow In dt.Rows
+                    ' Retrieve the material_name column value and add to ComboBox
+                    Dim materialName As String = row("material_name").ToString()
+                    CustomizeShoe_cbo_insole.Items.Add(materialName)
+                Next
+            End If
+        End Using
+
+        ' For midsole
+        CustomizeShoe_cbo_midsole.Items.Clear()
+        sqlQuery = "SELECT material_name FROM materials WHERE part_group = 'midsole'"
+        ' Create a new data adapter with the query and connection
+        Using da As New MySqlDataAdapter(sqlQuery, sqlConnector.conn)
+            Dim dt As New DataTable
+            da.Fill(dt)
+
+            ' Check if there are rows returned
+            If dt.Rows.Count > 0 Then
+                ' Loop through each row
+                For Each row As DataRow In dt.Rows
+                    ' Retrieve the material_name column value and add to ComboBox
+                    Dim materialName As String = row("material_name").ToString()
+                    CustomizeShoe_cbo_midsole.Items.Add(materialName)
+                Next
+            End If
+        End Using
+
+        ' For outsole
+        CustomizeShoe_cbo_outsole.Items.Clear()
+        sqlQuery = "SELECT material_name FROM materials WHERE part_group = 'outsole'"
+        ' Create a new data adapter with the query and connection
+        Using da As New MySqlDataAdapter(sqlQuery, sqlConnector.conn)
+            Dim dt As New DataTable
+            da.Fill(dt)
+
+            ' Check if there are rows returned
+            If dt.Rows.Count > 0 Then
+                ' Loop through each row
+                For Each row As DataRow In dt.Rows
+                    ' Retrieve the material_name column value and add to ComboBox
+                    Dim materialName As String = row("material_name").ToString()
+                    CustomizeShoe_cbo_outsole.Items.Add(materialName)
+                Next
+            End If
+        End Using
+
+        ' For lace
+        CustomizeShoe_cbo_lace.Items.Clear()
+        sqlQuery = "SELECT material_name FROM materials WHERE part_group = 'lace'"
+        ' Create a new data adapter with the query and connection
+        Using da As New MySqlDataAdapter(sqlQuery, sqlConnector.conn)
+            Dim dt As New DataTable
+            da.Fill(dt)
+
+            ' Check if there are rows returned
+            If dt.Rows.Count > 0 Then
+                ' Loop through each row
+                For Each row As DataRow In dt.Rows
+                    ' Retrieve the material_name column value and add to ComboBox
+                    Dim materialName As String = row("material_name").ToString()
+                    CustomizeShoe_cbo_lace.Items.Add(materialName)
+                Next
+            End If
+        End Using
+    End Sub
+
     Private Sub Material_btn_addMaterial_Click(sender As Object, e As EventArgs) Handles Material_btn_addMaterial.Click
         Try
             ' For getting the latest MatID
@@ -683,6 +800,8 @@ Public Class mainForm
         populateOrders()
         populateMaterials()
         populateMaterialsStatistics()
+
+        populateCustomizeShoeCBOs()
     End Sub
 
 
@@ -877,5 +996,19 @@ Public Class mainForm
 
 
         End Try
+    End Sub
+
+    Dim selectedCustomerColumn As String
+    Dim selectedCustomerValue As String
+    Sub CustomizeShoe_selectCustomer(column As String, Value As String)
+        selectedCustomerColumn = column
+        selectedCustomerValue = Value
+
+        CustomizeShoe_lbl_customer.Text = $"Selected Customer: ({selectedCustomerColumn}: {selectedCustomerValue})"
+    End Sub
+
+    Private Sub CustomizeShoe_btn_selectCustomer_Click(sender As Object, e As EventArgs) Handles CustomizeShoe_btn_selectCustomer.Click
+        Dim selectForm As New selectCustomer(sqlConnector.conn, Me)
+        selectForm.Show()
     End Sub
 End Class
